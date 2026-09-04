@@ -17,7 +17,7 @@ daily.yml   → Copywriting → Hook Optimizer → Visual  →  Telegram: draft 
                                                           │
                                                     approve / reject / revise
                                                           │
-poll_telegram.yml (every ~10 min)  ←──────────────────────
+poll_telegram.yml (every ~5 min)  ←──────────────────────
    └─ approve → Publisher Agent posts live to Facebook/Instagram
    └─ reject  → discarded
    └─ revise  → Copywriting rewrites it, resends for approval (loops)
@@ -90,6 +90,6 @@ dotenv run -- python orchestrator.py poll      # check Telegram replies
 - **Persona drift** is the main thing to actively watch, not a bug — Performance Analyst checks for it weekly, Growth Director checks it monthly.
 - **Gemini model names change** over time on Google's side — if image or text generation starts failing, check the current model ids (see SETUP_GUIDE troubleshooting) and override via the `GEMINI_IMAGE_MODEL` / `GEMINI_TEXT_MODEL` env vars.
 - **One Google API key powers everything** — Gemini handles both text generation (ideas, captions, hooks, analysis) and image generation. There's no separate Anthropic/Claude key in this system.
-- **Approval polling has up to a ~10 minute delay** (GitHub Actions cron granularity), not instant.
+- **Approval polling has up to a ~5 minute delay** (GitHub Actions cron granularity), not instant.
 - **Posting cadence is intentionally capped at one post/day** by the daily calendar pointer, to stay well under Meta's spam-detection thresholds for automated posting.
 - **Meta's Insights metric names change/deprecate periodically.** `lib/meta_api.py` uses reasonable defaults (`page_impressions`, `page_engaged_users`, `reach`, `profile_views`); if `page_analyst`/`performance_analyst`/`growth_director` start erroring on the insights call, check the current valid metric names at https://developers.facebook.com/docs/graph-api/reference/v21.0/insights and adjust the `metrics=` defaults in `lib/meta_api.py`.

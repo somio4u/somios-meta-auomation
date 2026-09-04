@@ -221,7 +221,7 @@ revise 20260904091500: <what to change>
 ```
 
 3. Reply directly in that same Telegram chat:
-   - Send `approve 20260904091500` (using the actual number shown) → it posts live within ~10 minutes.
+   - Send `approve 20260904091500` (using the actual number shown) → it posts live within ~5 minutes.
    - Send `reject 20260904091500` → discards it, nothing posted.
    - Send `revise 20260904091500: make the hook punchier` → it rewrites the caption and sends you a new version to approve — repeat as many times as you like.
 
@@ -237,14 +237,14 @@ By default this becomes an Instagram post under the Craft pillar. To change that
 - `platform:facebook`
 - `pillar:industry`
 
-Within ~10 minutes you'll get the drafted caption back on Telegram for the same approve/reject/revise flow.
+Within ~5 minutes you'll get the drafted caption back on Telegram for the same approve/reject/revise flow.
 
 ---
 
 ## From here on, it runs itself
 
 - **Daily** (~9 AM IST): drafts and sends you one post for approval.
-- **Every ~10 minutes**: checks Telegram for your reply.
+- **Every ~5 minutes**: checks Telegram for your reply.
 - **Weekly** (Sunday): reviews the week's performance by pillar+platform.
 - **Monthly** (1st): full review, checks for persona drift, rebuilds the 30-day plan.
 

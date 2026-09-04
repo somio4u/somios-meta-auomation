@@ -1,4 +1,4 @@
-"""Runs on a ~10 minute cron via GitHub Actions. Checks Telegram for your replies
+"""Runs on a ~5 minute cron via GitHub Actions. Checks Telegram for your replies
 and acts on them:
   approve <id>          -> publishes the pending draft live
   reject <id>           -> discards it
