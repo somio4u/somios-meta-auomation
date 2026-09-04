@@ -26,6 +26,7 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
       - name: Commit generated reports
+        if: always()
         run: |
           git config user.name "content-bot"
           git config user.email "content-bot@users.noreply.github.com"
