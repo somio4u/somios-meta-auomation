@@ -24,7 +24,8 @@ poll_telegram.yml (every ~5 min)  ←──────────────�
    └─ reply/feedback → Copywriting rewrites it, resends for approval (loops)
 
 weekly.yml  → Performance Analyst (pillar+platform breakdown, rebuilds next 7 days)
-monthly.yml → Page Analyst + Growth Director (persona-drift check, rebuilds 30 days)
+monthly.yml → Page Analyst + Growth Director (persona-drift check, strategic review)
+daily.yml auto-regenerates a fresh 10-idea/5-day batch on its own every 5th day
 ```
 
 You can also just send the Telegram bot a **photo** (a poster/still) with a caption
@@ -37,14 +38,14 @@ image, still gated by the same tap-to-approve flow. See SETUP_GUIDE.md Step 11.
 |---|-------|------|-----|
 | 1 | Page Analyst | `agents/page_analyst.py` | Monthly: checks live data against the persona/pillars, flags drift |
 | 2 | Ideation Agent | `agents/ideation_agent.py` | Generates 50 ideas across pillars/platforms |
-| 3 | Calendar Agent | `agents/calendar_agent.py` | Builds the rotating 30-day calendar |
+| 3 | Calendar Agent | `agents/calendar_agent.py` | Builds a rotating 5-day calendar from the latest ideas batch |
 | 4 | Copywriting Agent | `agents/copywriting_agent.py` | Writes full post copy in the Voice; also handles image+context posts and revisions |
 | 5 | Hook Optimizer | `agents/hook_optimizer.py` | Rates/generates hook and caption variants for reference |
 | 6 | Visual Agent | `agents/visual_agent.py` | Gemini-generated moodboard/concept-art image for Craft/Process posts |
 | 7 | Publisher Agent | `agents/publisher_agent.py` | Sends drafts to Telegram for approval; only publishes once approved |
 | 8 | Orchestrator | `orchestrator.py` | Runs the daily/weekly/monthly/poll pipelines, logs everything |
 | 9 | Performance Analyst | `agents/performance_analyst.py` | Weekly pillar+platform performance review |
-| 10 | Growth Director | `agents/growth_director.py` | Monthly full review + 3 growth scenarios, rebuilds the 30-day plan |
+| 10 | Growth Director | `agents/growth_director.py` | Monthly full review + 3 growth scenarios, triggers a fresh 10-idea/5-day batch |
 | — | Inbox Agent | `agents/inbox_agent.py` | Polls Telegram for button taps, reply-to-revise feedback, and photo posts |
 
 The persona and content pillars live in one place — `lib/persona.py` — and every
@@ -60,7 +61,8 @@ odia-ott-content-system/
   data/
     insights/          raw Meta insights pulls
     ideas/             ideation output
-    calendar/          30-day calendar + pointer.json (tracks which day is next)
+    calendar/          rolling 5-day calendar batches + pointer.json (tracks which
+                       day is next; daily() auto-generates a fresh batch every 5th day)
     drafts/            copy + hook-optimizer output per day
     images/            Gemini-generated + user-supplied images, committed to
                        the repo for history/reference. At publish time,

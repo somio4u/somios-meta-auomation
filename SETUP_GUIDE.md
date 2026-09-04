@@ -252,7 +252,8 @@ Within ~5 minutes you'll get the drafted caption back on Telegram with the same 
 - **Daily** (~9 AM IST): drafts and sends you one post for approval.
 - **Every ~5 minutes**: checks Telegram for your reply.
 - **Weekly** (Sunday): reviews the week's performance by pillar+platform.
-- **Monthly** (1st): full review, checks for persona drift, rebuilds the 30-day plan.
+- **Monthly** (1st): full review, checks for persona drift, triggers a fresh batch.
+- Every 5th day, the daily run automatically generates a fresh 10-idea/5-day batch on its own — no manual action needed.
 
 You don't need to keep your PC or the Telegram app open — GitHub runs the schedule, and Telegram delivers the notification whenever your phone next checks in.
 
