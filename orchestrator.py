@@ -30,17 +30,25 @@ def _latest_calendar():
 def daily():
     storage.ensure_dirs()
     fname, calendar = _latest_calendar()
-    if not calendar:
-        _log("daily", False, "no calendar found — run 'monthly' once first to seed ideas+calendar")
-        return
-
     pointer = storage.read_json("calendar", "pointer.json", default={}) or {}
-    if pointer.get("calendar_file") != fname:
+
+    needs_new_batch = (
+        not calendar
+        or pointer.get("calendar_file") != fname
+        or pointer.get("next_day", 1) > len(calendar)
+    )
+    if needs_new_batch:
+        try:
+            ideation_agent.run()
+            calendar_agent.run()
+            _log("auto_reseed", True, "generated a fresh 10 ideas + 5-day calendar batch")
+        except Exception as e:
+            _log("auto_reseed", False, str(e))
+            return
+        fname, calendar = _latest_calendar()
         pointer = {"calendar_file": fname, "next_day": 1}
+
     idx = pointer["next_day"] - 1
-    if idx >= len(calendar):
-        idx = 0
-        pointer["next_day"] = 1
     day = calendar[idx]
 
     try:
@@ -99,7 +107,7 @@ def monthly():
 
     try:
         growth_director.run()
-        _log("growth_director", True, "(also rebuilt ideas + calendar)")
+        _log("growth_director", True, "(also rebuilt a fresh 10 ideas + 5-day calendar batch)")
     except Exception as e:
         _log("growth_director", False, str(e))
 
@@ -107,8 +115,9 @@ def monthly():
 
 
 def seed():
-    """First-time bootstrap: generate the initial ideas + 30-day calendar
-    without needing a month of insights history yet."""
+    """First-time bootstrap: generate the initial 10 ideas + 5-day calendar
+    without needing insights history yet. After this, daily() auto-regenerates
+    a fresh batch every 5 days on its own — this is only needed once to start."""
     storage.ensure_dirs()
     ideation_agent.run()
     calendar_agent.run()

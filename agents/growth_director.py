@@ -1,5 +1,7 @@
 """Agent 10 — Growth Director (monthly). Full review + 3 growth scenarios,
-rebuilds the next 30-day plan."""
+triggers a fresh 10-ideas/5-day calendar batch (the same rolling batch daily()
+regenerates automatically every 5 days — this just also folds in the monthly
+strategic review's report as written context for the human, not the prompt)."""
 import json
 import sys
 import os
@@ -18,9 +20,10 @@ reach, which platform is doing the heavier lifting, whether the persona is landi
 as a real, whole person (not just "hands-on filmmaker" and not generic page content
 either), ideal posting frequency per platform, KPIs to track weekly.
 
-Build the next 30-day plan: 30 fresh ideas across all six pillars (Craft, Industry,
-Process, Culture, Personal Life, People & Reflection), updated pillar weighting if
-one is underperforming or one is crowding out the others, best formats to prioritize.
+Recommend an updated pillar weighting across all six pillars (Craft, Industry,
+Process, Culture, Personal Life, People & Reflection) if one is underperforming or
+one is crowding out the others, and best formats to prioritize — this feeds into
+the next 5-day content batch, generated automatically right after this review.
 
 Give three growth scenarios: cautious, realistic, optimistic, based purely on actual
 data. No income or follower count promises.

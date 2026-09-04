@@ -1,4 +1,4 @@
-"""Agent 2 — Ideation Agent. Generates 50 content ideas for the next 30 days."""
+"""Agent 2 — Ideation Agent. Generates 10 content ideas for the next 5 days."""
 import sys
 import os
 
@@ -14,10 +14,10 @@ claims of fact; if you have nothing verified to say, keep the idea general inste
 of fabricating a number to sound specific):
 {industry_facts}
 
-Generate 50 content ideas for the next 30 days, spread across ALL SIX pillars
+Generate 10 content ideas for the next 5 days, spread across ALL SIX pillars
 (Craft, Industry, Process, Culture, Personal Life, People & Reflection) — don't
-over-index on the professional ones. Aim for roughly a third of the ideas to be
-Personal Life or People & Reflection, not just Craft/Industry/Process/Culture.
+over-index on the professional ones. Include at least 3 that are Personal Life or
+People & Reflection, not just Craft/Industry/Process/Culture.
 Distribute across platforms per the Platform Split above; where an Industry idea
 can genuinely use one of the verified facts above, ground it in that — otherwise
 keep it a real, honest opinion rather than a fabricated data point.
@@ -29,7 +29,7 @@ struggle, are all fair game and should show up regularly, not as rare exceptions
 For every idea include: topic, pillar, platform, format, hook (the scroll-stopping
 IG hook or FB opening line), target_audience, why_it_fits_persona, why_now.
 
-Return a JSON array of 50 objects with exactly these keys: topic, pillar, platform,
+Return a JSON array of 10 objects with exactly these keys: topic, pillar, platform,
 format, hook, target_audience, why_it_fits_persona, why_now.
 """
 
