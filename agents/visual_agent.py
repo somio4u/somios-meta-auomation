@@ -12,7 +12,8 @@ VISUAL_PILLARS = {"craft", "process"}
 
 
 def maybe_generate(topic: str, pillar: str, draft_id: str):
-    if pillar.lower() not in VISUAL_PILLARS:
+    pillar_lower = pillar.lower()
+    if not any(p in pillar_lower for p in VISUAL_PILLARS):
         return None
     prompt = build_visual_prompt(topic, pillar)
     rel_path = os.path.join("data", "images", f"{draft_id}.png")
