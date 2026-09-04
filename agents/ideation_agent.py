@@ -25,7 +25,7 @@ format, hook, target_audience, why_it_fits_persona, why_now.
 
 def run():
     storage.ensure_dirs()
-    ideas = call_llm_json(PROMPT.format(persona=FULL_CONTEXT), max_tokens=8192)
+    ideas = call_llm_json(PROMPT.format(persona=FULL_CONTEXT), max_tokens=16384)
     path = storage.write_json(ideas, "ideas", f"ideas_{storage.today_str()}.json")
     print(f"Wrote {path} ({len(ideas)} ideas)")
     return ideas

@@ -35,7 +35,7 @@ def run():
     ideas = storage.read_json("ideas", latest_ideas_file())
     calendar = call_llm_json(
         PROMPT.format(persona=FULL_CONTEXT, ideas_json=json.dumps(ideas)),
-        max_tokens=8192,
+        max_tokens=16384,
     )
     month = storage.today_str()[:7]
     path = storage.write_json(calendar, "calendar", f"calendar_{month}.json")
