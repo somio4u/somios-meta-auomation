@@ -2,7 +2,7 @@ import os
 import base64
 import requests
 
-GEMINI_IMAGE_MODEL = os.environ.get("GEMINI_IMAGE_MODEL", "gemini-2.5-flash-image")
+GEMINI_IMAGE_MODEL = os.environ.get("GEMINI_IMAGE_MODEL", "gemini-3.1-flash-image")
 
 
 def generate_image(prompt: str, out_path: str) -> str:

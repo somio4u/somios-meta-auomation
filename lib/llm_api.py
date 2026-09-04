@@ -2,7 +2,7 @@ import os
 import json
 import requests
 
-DEFAULT_MODEL = os.environ.get("GEMINI_TEXT_MODEL", "gemini-2.5-flash")
+DEFAULT_MODEL = os.environ.get("GEMINI_TEXT_MODEL", "gemini-flash-latest")
 
 
 def _endpoint(model):
