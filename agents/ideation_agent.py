@@ -44,7 +44,7 @@ def _load_industry_facts():
 def run():
     storage.ensure_dirs()
     facts = _load_industry_facts()
-    ideas = call_llm_json(PROMPT.format(persona=FULL_CONTEXT, industry_facts=facts), max_tokens=16384)
+    ideas = call_llm_json(PROMPT.format(persona=FULL_CONTEXT, industry_facts=facts), max_tokens=4096)
     path = storage.write_json(ideas, "ideas", f"ideas_{storage.today_str()}.json")
     print(f"Wrote {path} ({len(ideas)} ideas)")
     return ideas
