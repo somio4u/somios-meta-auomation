@@ -43,15 +43,36 @@ Return ONLY the finished caption text, nothing else (no headers, no explanation)
 """
 
 IMAGE_CONTEXT_PROMPT = """{persona}
-I'm sending you a photo/poster with this context from me: "{context}"
+I'm sending you a photo with this context from me: "{context}"
 
-Write a complete post built around this image for platform: {platform} (pillar: {pillar}).
-If Instagram: scroll-stopping first line, a short craft-focused insight tied to what's
-in the image, a line inviting comments, a natural non-salesy CTA.
-If Facebook: an opening line that earns a read, then a short, genuine reflection tied
-to the image and my context, ending in a milestone note, a collaborator tag, or an
-open question.
+FIRST, work out what kind of moment this actually is — pick exactly one:
+- PROFESSIONAL: a poster, a shot from a project, a craft/BTS moment, anything
+  genuinely tied to your filmmaking work.
+- PERSONAL: family, your own life, a relationship, a personal moment or milestone —
+  nothing to do with your professional film work, even if the photo looks nice.
+- GENERIC: doesn't clearly fit either (a general thought, something AI-related,
+  a random observation, etc).
+
+THEN write the post to match what you picked:
+- If PROFESSIONAL: write as the filmmaker persona — craft-focused insight tied to
+  what's in the image (lighting/color/framing/etc. ONLY if genuinely relevant to
+  what's actually in the photo), in the established Voice.
+- If PERSONAL: do NOT mention camera angles, lighting, color grading, "on set," or
+  any filmmaking/craft language at all. Write like an actual person sharing a real
+  moment — warm, simple, honest. No OTT/film-industry framing.
+- If GENERIC: write naturally about what's actually there. Don't force a film angle
+  onto content that has nothing to do with filmmaking.
+
+Platform: {platform} (pillar as given: {pillar}, but override this in your own head
+if the content clearly isn't Professional — a personal or generic moment should
+just read as a normal, honest post, pillar label aside).
 """ + LANGUAGE_STYLE + """
+Hashtags — override the general rule above with this: only include hashtags that are
+genuinely specific to THIS post's actual subject. Never add #OdiaCinema, #OTTOdisha,
+or any film-industry hashtag to a PERSONAL or GENERIC post — those only belong on
+posts that are actually about your professional film work. A personal post can go
+with zero hashtags, or none at all, that's fine.
+
 Write in the Voice defined above. Return ONLY the finished caption text.
 """
 
@@ -61,6 +82,11 @@ Here is a draft post you wrote:
 {draft}
 ---
 I want this change: "{feedback}"
+
+If my feedback says this is personal, casual, generic, or otherwise not about your
+professional film work, strip out ALL camera/lighting/color-grading/"on set"/film-craft
+language and industry hashtags entirely — write it like an actual person, not a
+filmmaker persona.
 """ + LANGUAGE_STYLE + """
 Rewrite the full post incorporating that feedback, staying in the Voice defined above.
 Return ONLY the finished caption text, nothing else.
