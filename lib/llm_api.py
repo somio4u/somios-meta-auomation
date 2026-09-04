@@ -3,7 +3,7 @@ import json
 import time
 import requests
 
-DEFAULT_MODEL = os.environ.get("GEMINI_TEXT_MODEL", "gemini-flash-latest")
+DEFAULT_MODEL = os.environ.get("GEMINI_TEXT_MODEL", "gemini-3.5-flash")
 RETRY_STATUS_CODES = {429, 500, 502, 503, 504}
 MAX_RETRIES = 5
 
