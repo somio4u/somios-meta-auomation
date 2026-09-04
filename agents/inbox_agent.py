@@ -69,6 +69,17 @@ def _revise(pending, feedback):
     return None  # resend_for_approval already sends the new draft; no extra message needed
 
 
+def _ack(callback_query_id: str, text: str = None):
+    """Telegram only accepts answerCallbackQuery within a short window of the
+    button tap — our poll can run minutes later, so this can legitimately
+    fail. It's just the little loading-spinner/toast UI nicety, not required
+    for the actual approve/reject to have worked, so never let it crash the run."""
+    try:
+        telegram_api.answer_callback_query(callback_query_id, text)
+    except Exception:
+        pass
+
+
 def _handle_callback(callback_query: dict):
     data = callback_query.get("data", "")
     if ":" not in data:
@@ -76,7 +87,7 @@ def _handle_callback(callback_query: dict):
     action, draft_id = data.split(":", 1)
     pending = _load_pending(draft_id)
     if not pending:
-        telegram_api.answer_callback_query(callback_query["id"], "Draft not found.")
+        _ack(callback_query["id"], "Draft not found.")
         return
 
     if action == "approve":
@@ -86,7 +97,7 @@ def _handle_callback(callback_query: dict):
     else:
         return
 
-    telegram_api.answer_callback_query(callback_query["id"], result[:200])
+    _ack(callback_query["id"], result[:200])
     telegram_api.send_message(result)
 
 
@@ -176,15 +187,20 @@ def poll():
     updates = telegram_api.get_updates(offset=state["offset"])
 
     for update in updates:
-        if "callback_query" in update:
-            _handle_callback(update["callback_query"])
-        else:
-            message = update.get("message") or update.get("edited_message")
-            if message:
-                _handle_message(message)
-        state["offset"] = update["update_id"] + 1
-
-    storage.write_json(state, "telegram_state", "offset.json")
+        try:
+            if "callback_query" in update:
+                _handle_callback(update["callback_query"])
+            else:
+                message = update.get("message") or update.get("edited_message")
+                if message:
+                    _handle_message(message)
+        except Exception as e:
+            # Never let one bad update block/retry-loop the rest of the queue —
+            # advance past it regardless and log what happened.
+            print(f"inbox_agent: failed to handle update {update.get('update_id')}: {e}")
+        finally:
+            state["offset"] = update["update_id"] + 1
+            storage.write_json(state, "telegram_state", "offset.json")
 
 
 if __name__ == "__main__":
