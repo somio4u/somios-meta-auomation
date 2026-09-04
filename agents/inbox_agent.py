@@ -36,6 +36,9 @@ def _handle_text(text: str):
         if not pending:
             telegram_api.send_message(f"No pending draft with id {m.group(1)}.")
             return
+        if pending.get("status") != "pending":
+            telegram_api.send_message(f"{pending['id']} was already {pending.get('status')} — ignoring duplicate approve.")
+            return
         try:
             post_id = publisher_agent.publish_approved(pending)
             pending["status"] = "published"
@@ -48,7 +51,7 @@ def _handle_text(text: str):
     m = REJECT_RE.match(text)
     if m:
         pending = _load_pending(m.group(1))
-        if pending:
+        if pending and pending.get("status") == "pending":
             pending["status"] = "rejected"
             _save_pending(pending)
             telegram_api.send_message(f"Rejected {pending['id']}.")
@@ -60,6 +63,9 @@ def _handle_text(text: str):
         pending = _load_pending(draft_id)
         if not pending:
             telegram_api.send_message(f"No pending draft with id {draft_id}.")
+            return
+        if pending.get("status") != "pending":
+            telegram_api.send_message(f"{pending['id']} was already {pending.get('status')} — ignoring duplicate revise.")
             return
         new_caption = copywriting_agent.revise(pending["caption"], feedback)
         pending["caption"] = new_caption
