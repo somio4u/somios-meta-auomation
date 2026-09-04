@@ -1,8 +1,11 @@
 import os
 import base64
+import time
 import requests
 
 GEMINI_IMAGE_MODEL = os.environ.get("GEMINI_IMAGE_MODEL", "gemini-3.1-flash-image")
+RETRY_STATUS_CODES = {429, 500, 502, 503, 504}
+MAX_RETRIES = 5
 
 
 def generate_image(prompt: str, out_path: str) -> str:
@@ -16,7 +19,14 @@ def generate_image(prompt: str, out_path: str) -> str:
         f"{GEMINI_IMAGE_MODEL}:generateContent?key={api_key}"
     )
     payload = {"contents": [{"parts": [{"text": prompt}]}]}
-    resp = requests.post(url, json=payload, timeout=120)
+
+    resp = None
+    for attempt in range(MAX_RETRIES):
+        resp = requests.post(url, json=payload, timeout=120)
+        if resp.status_code in RETRY_STATUS_CODES and attempt < MAX_RETRIES - 1:
+            time.sleep(2 ** attempt)
+            continue
+        break
     resp.raise_for_status()
     data = resp.json()
 

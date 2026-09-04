@@ -1,8 +1,11 @@
 import os
 import json
+import time
 import requests
 
 DEFAULT_MODEL = os.environ.get("GEMINI_TEXT_MODEL", "gemini-flash-latest")
+RETRY_STATUS_CODES = {429, 500, 502, 503, 504}
+MAX_RETRIES = 5
 
 
 def _endpoint(model):
@@ -17,11 +20,21 @@ def call_llm(prompt: str, system: str = None, max_tokens: int = 4096, model: str
     }
     if system:
         payload["systemInstruction"] = {"parts": [{"text": system}]}
-    resp = requests.post(_endpoint(model or DEFAULT_MODEL), json=payload, timeout=120)
-    resp.raise_for_status()
-    data = resp.json()
-    parts = data["candidates"][0]["content"]["parts"]
-    return "".join(p.get("text", "") for p in parts)
+
+    url = _endpoint(model or DEFAULT_MODEL)
+    last_error = None
+    for attempt in range(MAX_RETRIES):
+        resp = requests.post(url, json=payload, timeout=120)
+        if resp.status_code in RETRY_STATUS_CODES and attempt < MAX_RETRIES - 1:
+            last_error = resp
+            time.sleep(2 ** attempt)  # 1s, 2s, 4s, 8s, 16s
+            continue
+        resp.raise_for_status()
+        data = resp.json()
+        parts = data["candidates"][0]["content"]["parts"]
+        return "".join(p.get("text", "") for p in parts)
+
+    last_error.raise_for_status()
 
 
 def call_llm_json(prompt: str, system: str = None, max_tokens: int = 4096, model: str = None):
