@@ -15,6 +15,18 @@ from lib import storage
 from lib.llm_api import call_llm
 from lib.persona import FULL_CONTEXT
 
+LANGUAGE_STYLE = """
+LANGUAGE AND LENGTH (strict):
+- Plain, everyday English — the words a person actually says out loud, not essay
+  vocabulary. If a simpler word says the same thing, use the simpler word.
+- SHORT. A handful of short lines total (roughly 3-6 short sentences/lines), not
+  paragraphs of prose, even for Facebook.
+- If Instagram: end with 3-6 specific, niche hashtags relevant to this exact post
+  (e.g. #OdiaCinema #OTTOdisha) — never generic ones like #viral or #instagood,
+  never more than 6.
+- If Facebook: no hashtags at all.
+"""
+
 CALENDAR_PROMPT = """{persona}
 Write a complete post for this topic: {topic}
 Pillar: {pillar} | Platform: {platform} | Format: {format}
@@ -23,9 +35,9 @@ If Instagram: first line hook that stops the scroll before "see more," then a sh
 craft-focused insight or BTS moment, one line inviting comments, a natural non-salesy
 CTA.
 If Facebook: an opening line that earns a read (not a hook-for-hook's-sake line),
-then a genuine reflection or industry observation in long-form prose, ending in either
-a milestone note, a tag to collaborators, or an open question to the audience.
-
+then a short, genuine reflection or industry observation, ending in either a
+milestone note, a tag to collaborators, or an open question to the audience.
+""" + LANGUAGE_STYLE + """
 Write in the Voice defined above — perceptive, witty, insider, never corporate.
 Return ONLY the finished caption text, nothing else (no headers, no explanation).
 """
@@ -36,10 +48,10 @@ I'm sending you a photo/poster with this context from me: "{context}"
 Write a complete post built around this image for platform: {platform} (pillar: {pillar}).
 If Instagram: scroll-stopping first line, a short craft-focused insight tied to what's
 in the image, a line inviting comments, a natural non-salesy CTA.
-If Facebook: an opening line that earns a read, then genuine reflection in long-form
-prose tied to the image and my context, ending in a milestone note, a collaborator tag,
-or an open question.
-
+If Facebook: an opening line that earns a read, then a short, genuine reflection tied
+to the image and my context, ending in a milestone note, a collaborator tag, or an
+open question.
+""" + LANGUAGE_STYLE + """
 Write in the Voice defined above. Return ONLY the finished caption text.
 """
 
@@ -49,7 +61,7 @@ Here is a draft post you wrote:
 {draft}
 ---
 I want this change: "{feedback}"
-
+""" + LANGUAGE_STYLE + """
 Rewrite the full post incorporating that feedback, staying in the Voice defined above.
 Return ONLY the finished caption text, nothing else.
 """

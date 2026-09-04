@@ -14,6 +14,9 @@ above, 10 caption/opening variations, 5 comment-bait questions that a fellow
 filmmaker or genuine regional-cinema fan would actually want to answer — not generic
 engagement bait.
 
+Keep every hook, variation, and question in plain, everyday English — short lines,
+no fancy vocabulary.
+
 Rate each for: curiosity, relatability to industry peers vs. general audience, share
 potential, risk of sounding like generic marketing instead of an insider's voice.
 
