@@ -17,5 +17,10 @@ def upload_image(abs_path: str) -> str:
     with open(abs_path, "rb") as f:
         image_b64 = base64.b64encode(f.read()).decode("utf-8")
     resp = requests.post(IMGBB_UPLOAD_URL, data={"key": api_key, "image": image_b64}, timeout=60)
-    resp.raise_for_status()
+    if resp.status_code >= 400:
+        try:
+            detail = resp.json().get("error", {}).get("message", resp.text)
+        except ValueError:
+            detail = resp.text
+        raise requests.exceptions.HTTPError(f"{resp.status_code} error from imgbb: {detail}", response=resp)
     return resp.json()["data"]["url"]
