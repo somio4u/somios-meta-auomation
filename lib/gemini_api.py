@@ -5,7 +5,7 @@ import requests
 
 GEMINI_IMAGE_MODEL = os.environ.get("GEMINI_IMAGE_MODEL", "gemini-3.1-flash-image")
 RETRY_STATUS_CODES = {429, 500, 502, 503, 504}
-MAX_RETRIES = 5
+MAX_RETRIES = 7
 
 
 def generate_image(prompt: str, out_path: str) -> str:
@@ -24,7 +24,7 @@ def generate_image(prompt: str, out_path: str) -> str:
     for attempt in range(MAX_RETRIES):
         resp = requests.post(url, json=payload, timeout=120)
         if resp.status_code in RETRY_STATUS_CODES and attempt < MAX_RETRIES - 1:
-            time.sleep(2 ** attempt)
+            time.sleep(min(2 ** attempt, 30))
             continue
         break
     resp.raise_for_status()

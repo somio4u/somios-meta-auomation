@@ -5,7 +5,7 @@ import requests
 
 DEFAULT_MODEL = os.environ.get("GEMINI_TEXT_MODEL", "gemini-3.5-flash")
 RETRY_STATUS_CODES = {429, 500, 502, 503, 504}
-MAX_RETRIES = 5
+MAX_RETRIES = 7
 
 
 def _endpoint(model):
@@ -27,7 +27,7 @@ def call_llm(prompt: str, system: str = None, max_tokens: int = 4096, model: str
         resp = requests.post(url, json=payload, timeout=120)
         if resp.status_code in RETRY_STATUS_CODES and attempt < MAX_RETRIES - 1:
             last_error = resp
-            time.sleep(2 ** attempt)  # 1s, 2s, 4s, 8s, 16s
+            time.sleep(min(2 ** attempt, 30))  # 1,2,4,8,16,30,30s
             continue
         resp.raise_for_status()
         data = resp.json()
