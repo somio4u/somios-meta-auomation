@@ -3,7 +3,7 @@ import sys
 import os
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from lib.claude_api import call_claude_json
+from lib.llm_api import call_llm_json
 from lib.persona import FULL_CONTEXT
 
 PROMPT = """{persona}
@@ -23,7 +23,7 @@ Return JSON: {{"hooks": [...], "caption_variations": [...], "comment_bait_questi
 
 
 def optimize(draft_caption: str) -> dict:
-    return call_claude_json(PROMPT.format(persona=FULL_CONTEXT, draft=draft_caption), max_tokens=4096)
+    return call_llm_json(PROMPT.format(persona=FULL_CONTEXT, draft=draft_caption), max_tokens=4096)
 
 
 if __name__ == "__main__":

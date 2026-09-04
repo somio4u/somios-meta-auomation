@@ -6,7 +6,7 @@ import os
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from lib import storage, meta_api
-from lib.claude_api import call_claude
+from lib.llm_api import call_llm
 from lib.persona import FULL_CONTEXT
 from agents import ideation_agent, calendar_agent
 
@@ -32,7 +32,7 @@ def run():
         "facebook": meta_api.get_page_insights(period="days_28"),
         "instagram": meta_api.get_ig_insights(period="days_28"),
     }
-    report = call_claude(PROMPT.format(persona=FULL_CONTEXT, monthly_insights_json=json.dumps(insights)))
+    report = call_llm(PROMPT.format(persona=FULL_CONTEXT, monthly_insights_json=json.dumps(insights)))
     path = storage.append_markdown(report, "reports", f"monthly_growth_{storage.today_str()}.md")
     print(f"Wrote {path}")
 

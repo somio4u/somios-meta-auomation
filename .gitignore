@@ -4,3 +4,7 @@ __pycache__/
 .venv/
 venv/
 data/telegram_state/*.json
+tokens*
+*token*.txt
+*secret*.txt
+*api*key*.txt

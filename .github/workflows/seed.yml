@@ -17,7 +17,6 @@ jobs:
       - run: pip install -r requirements.txt
       - run: python orchestrator.py seed
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GITHUB_REPOSITORY: ${{ github.repository }}
           GITHUB_BRANCH: main

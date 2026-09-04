@@ -6,7 +6,7 @@ import os
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from lib import storage, meta_api
-from lib.claude_api import call_claude
+from lib.llm_api import call_llm
 from lib.persona import FULL_CONTEXT
 
 PROMPT = """{persona}
@@ -33,7 +33,7 @@ def run():
     }
     storage.write_json(insights, "insights", f"insights_{storage.today_str()}.json")
 
-    report = call_claude(PROMPT.format(persona=FULL_CONTEXT, insights_json=json.dumps(insights)))
+    report = call_llm(PROMPT.format(persona=FULL_CONTEXT, insights_json=json.dumps(insights)))
 
     path = storage.append_markdown(report, "reports", f"page_diagnosis_{storage.today_str()}.md")
     print(f"Wrote {path}")

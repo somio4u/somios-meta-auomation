@@ -6,7 +6,7 @@ import os
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from lib import storage, meta_api
-from lib.claude_api import call_claude
+from lib.llm_api import call_llm
 from lib.persona import FULL_CONTEXT
 
 PROMPT = """{persona}
@@ -27,7 +27,7 @@ def run():
         "instagram": meta_api.get_ig_insights(),
         "publish_log": storage.read_text("reports", f"publish_log_{storage.today_str()[:7]}.md", default=None),
     }
-    report = call_claude(PROMPT.format(persona=FULL_CONTEXT, insights_json=json.dumps(insights)))
+    report = call_llm(PROMPT.format(persona=FULL_CONTEXT, insights_json=json.dumps(insights)))
     path = storage.append_markdown(report, "reports", f"weekly_performance_{storage.today_str()}.md")
     print(f"Wrote {path}")
     return report

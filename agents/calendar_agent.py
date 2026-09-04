@@ -5,7 +5,7 @@ import os
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from lib import storage
-from lib.claude_api import call_claude_json
+from lib.llm_api import call_llm_json
 from lib.persona import FULL_CONTEXT
 
 PROMPT = """{persona}
@@ -33,7 +33,7 @@ def latest_ideas_file():
 def run():
     storage.ensure_dirs()
     ideas = storage.read_json("ideas", latest_ideas_file())
-    calendar = call_claude_json(
+    calendar = call_llm_json(
         PROMPT.format(persona=FULL_CONTEXT, ideas_json=json.dumps(ideas)),
         max_tokens=8192,
     )

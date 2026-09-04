@@ -4,7 +4,7 @@ import os
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from lib import storage
-from lib.claude_api import call_claude_json
+from lib.llm_api import call_llm_json
 from lib.persona import FULL_CONTEXT
 
 PROMPT = """{persona}
@@ -25,7 +25,7 @@ format, hook, target_audience, why_it_fits_persona, why_now.
 
 def run():
     storage.ensure_dirs()
-    ideas = call_claude_json(PROMPT.format(persona=FULL_CONTEXT), max_tokens=8192)
+    ideas = call_llm_json(PROMPT.format(persona=FULL_CONTEXT), max_tokens=8192)
     path = storage.write_json(ideas, "ideas", f"ideas_{storage.today_str()}.json")
     print(f"Wrote {path} ({len(ideas)} ideas)")
     return ideas

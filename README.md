@@ -6,8 +6,7 @@ Runs 24/7 on GitHub Actions (free tier) — no PC or app needs to stay open.
 **Every post is reviewed and approved by you on Telegram before it goes live.**
 
 See [SETUP_GUIDE.md](SETUP_GUIDE.md) for the full first-time setup (Meta, Gemini,
-Anthropic, Telegram, GitHub Secrets) — start there if this is your first time
-running it.
+Telegram, GitHub Secrets) — start there if this is your first time running it.
 
 ## How it works
 
@@ -29,7 +28,7 @@ monthly.yml → Page Analyst + Growth Director (persona-drift check, rebuilds 30
 
 You can also just send the Telegram bot a **photo** (a poster/still) with a caption
 describing context — it skips the calendar entirely and drafts a post around that
-image, still gated by the same approve/reject/revise flow. See SETUP_GUIDE.md §9.
+image, still gated by the same approve/reject/revise flow. See SETUP_GUIDE.md Step 10.
 
 ## Agent map
 
@@ -55,7 +54,7 @@ agent imports from there, so the voice can't drift between agents.
 ```
 odia-ott-content-system/
   agents/            the 9 agents + inbox_agent
-  lib/                persona.py, claude_api.py, gemini_api.py, meta_api.py,
+  lib/                persona.py, llm_api.py, gemini_api.py, meta_api.py,
                        telegram_api.py, image_host.py, storage.py
   data/
     insights/          raw Meta insights pulls
@@ -89,7 +88,8 @@ dotenv run -- python orchestrator.py poll      # check Telegram replies
 
 - **Meta token expires ~every 60 days** — you'll need to regenerate it (SETUP_GUIDE §2). No automatic renewal is possible without a Meta "System User," which isn't set up here.
 - **Persona drift** is the main thing to actively watch, not a bug — Performance Analyst checks for it weekly, Growth Director checks it monthly.
-- **Gemini model names change** over time on Google's side — if image generation starts failing, check the current model id (see SETUP_GUIDE §10 troubleshooting).
+- **Gemini model names change** over time on Google's side — if image or text generation starts failing, check the current model ids (see SETUP_GUIDE troubleshooting) and override via the `GEMINI_IMAGE_MODEL` / `GEMINI_TEXT_MODEL` env vars.
+- **One Google API key powers everything** — Gemini handles both text generation (ideas, captions, hooks, analysis) and image generation. There's no separate Anthropic/Claude key in this system.
 - **Approval polling has up to a ~10 minute delay** (GitHub Actions cron granularity), not instant.
 - **Posting cadence is intentionally capped at one post/day** by the daily calendar pointer, to stay well under Meta's spam-detection thresholds for automated posting.
 - **Meta's Insights metric names change/deprecate periodically.** `lib/meta_api.py` uses reasonable defaults (`page_impressions`, `page_engaged_users`, `reach`, `profile_views`); if `page_analyst`/`performance_analyst`/`growth_director` start erroring on the insights call, check the current valid metric names at https://developers.facebook.com/docs/graph-api/reference/v21.0/insights and adjust the `metrics=` defaults in `lib/meta_api.py`.

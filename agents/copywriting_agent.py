@@ -12,7 +12,7 @@ import json
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from lib import storage
-from lib.claude_api import call_claude
+from lib.llm_api import call_llm
 from lib.persona import FULL_CONTEXT
 
 CALENDAR_PROMPT = """{persona}
@@ -56,7 +56,7 @@ Return ONLY the finished caption text, nothing else.
 
 
 def write_from_calendar_day(day: dict) -> str:
-    return call_claude(CALENDAR_PROMPT.format(
+    return call_llm(CALENDAR_PROMPT.format(
         persona=FULL_CONTEXT,
         topic=day["topic"], pillar=day["pillar"],
         platform=day["platform"], format=day.get("format", ""),
@@ -64,13 +64,13 @@ def write_from_calendar_day(day: dict) -> str:
 
 
 def write_from_image_context(context: str, pillar: str, platform: str) -> str:
-    return call_claude(IMAGE_CONTEXT_PROMPT.format(
+    return call_llm(IMAGE_CONTEXT_PROMPT.format(
         persona=FULL_CONTEXT, context=context, pillar=pillar, platform=platform,
     ))
 
 
 def revise(draft: str, feedback: str) -> str:
-    return call_claude(REVISE_PROMPT.format(persona=FULL_CONTEXT, draft=draft, feedback=feedback))
+    return call_llm(REVISE_PROMPT.format(persona=FULL_CONTEXT, draft=draft, feedback=feedback))
 
 
 def run_for_day(day: dict):
