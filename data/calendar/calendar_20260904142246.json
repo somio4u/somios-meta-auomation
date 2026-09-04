@@ -1,0 +1,62 @@
+[
+  {
+    "day": 1,
+    "date": "October 16",
+    "topic": "Color grading a gritty night sequence set in Cuttack's alleyways",
+    "pillar": "The Craft",
+    "platform": "Instagram",
+    "format": "Carousel (Raw vs. Graded side-by-side)",
+    "hook": "We didn't light this alley to make it look clean. We lit it to make you feel the humidity of Cuttack at 2 AM.",
+    "best_posting_time": "7:30 PM IST",
+    "cta": "Swipe to see the grade breakdown. Which version speaks to you more—the raw street reality or the final moody grade?",
+    "goal": "engagement"
+  },
+  {
+    "day": 2,
+    "date": "October 17",
+    "topic": "How the melodrama of Jatra translates into modern OTT cliffhangers",
+    "pillar": "The Culture",
+    "platform": "Facebook",
+    "format": "Long-form text post",
+    "hook": "If you think OTT cliffhangers were invented in Beverly Hills, you've never sat through a 1 AM Jatra in Ganjam.",
+    "best_posting_time": "11:00 AM IST",
+    "cta": "What's the most unforgettable Jatra climax you've ever witnessed? Let's talk about native storytelling structures in the comments.",
+    "goal": "industry_credibility"
+  },
+  {
+    "day": 3,
+    "date": "October 18",
+    "topic": "Balancing script writing with parenthood",
+    "pillar": "Personal Life",
+    "platform": "Instagram",
+    "format": "Single Photo with personal caption",
+    "hook": "The script says 'Exterior. Dawn.' but my actual dawn is trying to slip my arm out from under a sleeping six-year-old without waking him.",
+    "best_posting_time": "8:30 AM IST",
+    "cta": "To all the parents trying to build something while holding onto these fleeting morning moments—how are we holding up today?",
+    "goal": "reach"
+  },
+  {
+    "day": 4,
+    "date": "October 19",
+    "topic": "Spotlight on Dada, a veteran set makeup artist of 40 years",
+    "pillar": "People & Reflection",
+    "platform": "Facebook",
+    "format": "Photo and story",
+    "hook": "He’s spent forty years painting the faces of Odia cinema’s gods and villains, yet his own face tells the most honest story.",
+    "best_posting_time": "4:00 PM IST",
+    "cta": "Next time you watch an old Odia classic, look past the actors for a moment. Look at the lines, the shadows, the sheer dedication of the crew behind them. Share this to celebrate our unsung veterans.",
+    "goal": "shares"
+  },
+  {
+    "day": 5,
+    "date": "October 20",
+    "topic": "Rewriting Bombay-style dialogue into authentic Sambalpuri slang",
+    "pillar": "The Process",
+    "platform": "Instagram",
+    "format": "Stories/Carousel (Script markup)",
+    "hook": "This scene was perfectly written on a laptop in South Bombay. It died a necessary death the moment we heard how it sounded in Sambalpuri.",
+    "best_posting_time": "6:00 PM IST",
+    "cta": "Check the marked-up script in the slides. Do you agree with the changes, or did we lose something in translation? Let me know.",
+    "goal": "followers"
+  }
+]
