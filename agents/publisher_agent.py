@@ -53,9 +53,10 @@ def _notify(pending: dict):
 
 
 def publish_approved(pending: dict) -> str:
-    if pending["platform"] == "facebook":
+    platform = pending["platform"].lower()
+    if platform == "facebook":
         post_id = meta_api.post_to_facebook(pending["caption"])
-    elif pending["platform"] == "instagram":
+    elif platform == "instagram":
         if not pending.get("image_path"):
             raise ValueError("Instagram posts require an image.")
         abs_path = os.path.join(storage.BASE, pending["image_path"])
