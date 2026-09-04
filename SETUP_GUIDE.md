@@ -177,7 +177,17 @@ This one key powers everything the system generates — ideas, captions, hooks, 
 
 ---
 
-## STEP 7 — Add all 6 secrets to GitHub
+## STEP 7 — Get an imgbb image-hosting key
+
+Instagram's API needs to fetch your generated images from a genuinely public URL. Since your GitHub repo is private, a free image host (imgbb.com) is used instead — it's a one-time signup.
+
+1. Go to `https://api.imgbb.com/`
+2. Sign in or create a free account if asked.
+3. Copy the API key shown on that page and label it **IMGBB_API_KEY** in Notepad.
+
+---
+
+## STEP 8 — Add all 7 secrets to GitHub
 
 1. In your browser, go to your repository: `https://github.com/YOUR-USERNAME/odia-ott-content-system`
 2. Click **Settings** (top menu of the repo, not your account settings).
@@ -193,12 +203,13 @@ This one key powers everything the system generates — ideas, captions, hooks, 
 | `META_IG_BUSINESS_ID` | from Step 4.15 |
 | `TELEGRAM_BOT_TOKEN` | from Step 6.7 |
 | `TELEGRAM_CHAT_ID` | from Step 6.10 |
+| `IMGBB_API_KEY` | from Step 7 |
 
 These values never appear in your code — GitHub only injects them while a scheduled run is happening.
 
 ---
 
-## STEP 8 — Turn on Actions and generate your first content
+## STEP 9 — Turn on Actions and generate your first content
 
 1. On your repo page, click the **Actions** tab (top menu).
 2. If you see a message about enabling workflows, click **"I understand my workflows, go ahead and enable them"**.
@@ -209,7 +220,7 @@ These values never appear in your code — GitHub only injects them while a sche
 
 ---
 
-## STEP 9 — Test the daily pipeline and your first approval
+## STEP 10 — Test the daily pipeline and your first approval
 
 1. Actions tab → click **"Daily Content Pipeline"** in the sidebar → **Run workflow** → **Run workflow**.
 2. Within a couple of minutes, check Telegram on your phone — you should get a message from your bot with a draft caption (and sometimes an image) plus instructions like:
@@ -227,7 +238,7 @@ revise 20260904091500: <what to change>
 
 ---
 
-## STEP 10 — Send your own poster/photo for a post (optional, whenever you want)
+## STEP 11 — Send your own poster/photo for a post (optional, whenever you want)
 
 Just send your Telegram bot a **photo**, with a caption describing the context, e.g.:
 
@@ -253,7 +264,8 @@ You don't need to keep your PC or the Telegram app open — GitHub runs the sche
 ## Troubleshooting
 
 - **PowerShell shows a red error you don't understand at any step**: copy the exact text and send it to me.
-- **No Telegram message ever arrives**: Actions tab → click the failed/latest run → read the red error line — usually a secret name was typed wrong in Step 7.
-- **Posts stop going out after ~2 months**: your Meta token expired — redo Step 4, sections "Now the developer app" through "Turn it into a 60-day token", and update the `META_PAGE_ACCESS_TOKEN` secret in Step 7.
+- **No Telegram message ever arrives**: Actions tab → click the failed/latest run → read the red error line — usually a secret name was typed wrong in Step 8.
+- **Posts stop going out after ~2 months**: your Meta token expired — redo Step 4, sections "Now the developer app" through "Turn it into a 60-day token", and update the `META_PAGE_ACCESS_TOKEN` secret in Step 8.
 - **Gemini image generation fails**: Google occasionally renames its image models. Check `https://ai.google.dev/gemini-api/docs/image-generation` for the current model id, then add a repository secret named `GEMINI_IMAGE_MODEL` with that id.
 - **Gemini text generation fails** (ideas/captions/hooks/reports): similarly, check `https://ai.google.dev/gemini-api/docs/models` for the current model id, then add a repository secret named `GEMINI_TEXT_MODEL` with that id.
+- **Instagram publish fails with "Only photo or video can be accepted as media type"**: your `IMGBB_API_KEY` secret is missing or wrong — recheck Step 7/8.

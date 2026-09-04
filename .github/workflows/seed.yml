@@ -18,8 +18,6 @@ jobs:
       - run: python orchestrator.py seed
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GITHUB_REPOSITORY: ${{ github.repository }}
-          GITHUB_BRANCH: main
       - name: Commit initial ideas + calendar
         run: |
           git config user.name "content-bot"

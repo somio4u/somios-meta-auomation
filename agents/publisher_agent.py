@@ -56,7 +56,8 @@ def publish_approved(pending: dict) -> str:
     elif pending["platform"] == "instagram":
         if not pending.get("image_path"):
             raise ValueError("Instagram posts require an image.")
-        image_url = image_host.public_url_for(pending["image_path"])
+        abs_path = os.path.join(storage.BASE, pending["image_path"])
+        image_url = image_host.upload_image(abs_path)
         post_id = meta_api.post_to_instagram(image_url, pending["caption"])
     else:
         raise ValueError(f"Unknown platform: {pending['platform']}")

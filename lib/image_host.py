@@ -1,11 +1,21 @@
 import os
+import base64
+import requests
 
-def public_url_for(repo_relative_path: str) -> str:
-    """Instagram's API needs a public image URL. Since generated/user-supplied
-    images get committed to the GitHub repo, raw.githubusercontent.com gives us
-    a free public URL with no extra hosting service — as long as the file has
-    already been pushed to the branch before this URL is used."""
-    repo = os.environ["GITHUB_REPOSITORY"]
-    branch = os.environ.get("GITHUB_BRANCH", "main")
-    rel = repo_relative_path.replace("\\", "/").lstrip("/")
-    return f"https://raw.githubusercontent.com/{repo}/{branch}/{rel}"
+IMGBB_UPLOAD_URL = "https://api.imgbb.com/1/upload"
+
+
+def upload_image(abs_path: str) -> str:
+    """Uploads an image to imgbb.com and returns a public URL.
+
+    Instagram's publish API needs to fetch the image over a plain public URL
+    with no auth — our GitHub repo is private, so raw.githubusercontent.com
+    URLs aren't fetchable by Instagram's servers (they'd get GitHub's
+    login-required response instead of the image). imgbb gives a genuinely
+    public URL without needing to expose the rest of the repo."""
+    api_key = os.environ["IMGBB_API_KEY"]
+    with open(abs_path, "rb") as f:
+        image_b64 = base64.b64encode(f.read()).decode("utf-8")
+    resp = requests.post(IMGBB_UPLOAD_URL, data={"key": api_key, "image": image_b64}, timeout=60)
+    resp.raise_for_status()
+    return resp.json()["data"]["url"]

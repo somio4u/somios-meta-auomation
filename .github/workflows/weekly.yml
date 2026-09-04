@@ -25,8 +25,6 @@ jobs:
           META_IG_BUSINESS_ID: ${{ secrets.META_IG_BUSINESS_ID }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          GITHUB_REPOSITORY: ${{ github.repository }}
-          GITHUB_BRANCH: main
       - name: Commit generated reports
         run: |
           git config user.name "content-bot"

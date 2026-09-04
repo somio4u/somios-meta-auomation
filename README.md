@@ -61,9 +61,12 @@ odia-ott-content-system/
     ideas/             ideation output
     calendar/          30-day calendar + pointer.json (tracks which day is next)
     drafts/            copy + hook-optimizer output per day
-    images/            Gemini-generated + user-supplied images (committed to
-                       the repo so raw.githubusercontent.com can serve them
-                       publicly for Instagram's API)
+    images/            Gemini-generated + user-supplied images, committed to
+                       the repo for history/reference. At publish time,
+                       lib/image_host.py uploads the image to imgbb.com to get
+                       a genuinely public URL for Instagram's API — needed
+                       because this repo is private, so raw.githubusercontent.com
+                       URLs aren't fetchable by Instagram's servers.
     pending_approval/  drafts awaiting your Telegram approve/reject/revise
     reports/           diagnosis / weekly / monthly / publish logs
   .github/workflows/   daily.yml, poll_telegram.yml, weekly.yml, monthly.yml, seed.yml
