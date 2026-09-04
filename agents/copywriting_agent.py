@@ -21,10 +21,14 @@ LANGUAGE AND LENGTH (strict):
   vocabulary. If a simpler word says the same thing, use the simpler word.
 - SHORT. A handful of short lines total (roughly 3-6 short sentences/lines), not
   paragraphs of prose, even for Facebook.
-- If Instagram: end with 3-6 specific, niche hashtags relevant to this exact post
-  (e.g. #OdiaCinema #OTTOdisha) — never generic ones like #viral or #instagood,
-  never more than 6.
-- If Facebook: no hashtags at all.
+- Hashtags depend on what this post is actually about:
+  - If it's genuinely about your professional film/OTT work, AND the platform is
+    Instagram: end with 3-6 specific, niche hashtags relevant to this exact post
+    (e.g. #OdiaCinema #OTTOdisha) — never generic ones like #viral or #instagood,
+    never more than 6.
+  - If it's personal, casual, or generic (not about your professional film work),
+    OR the platform is Facebook: NO hashtags at all, full stop. Do not add
+    #OdiaCinema, #OTTOdisha, or any other hashtag just because it's a habit.
 """
 
 CALENDAR_PROMPT = """{persona}
