@@ -11,9 +11,12 @@ from lib.persona import FULL_CONTEXT
 PROMPT = """{persona}
 Turn these ideas into a 30 day calendar: {ideas_json}
 
-Rotate pillar and platform so consecutive days never repeat the same pillar+platform
-combo. Weight toward Instagram for Craft/Process content, Facebook for Industry/
-Culture content, per the platform split above.
+Rotate across all six pillars so consecutive days never repeat the same
+pillar+platform combo, and so Personal Life / People & Reflection show up
+regularly through the month, not clustered or rare. Weight toward Instagram for
+Craft/Process/visual-Personal content, Facebook for Industry/Culture/Reflection
+content, per the platform split above — but the pillar just sets direction, the
+day's actual post has freedom within it.
 
 For each day return an object with: day (1-30), date, topic, pillar, platform,
 format, hook, best_posting_time, cta, goal (reach/engagement/shares/followers/

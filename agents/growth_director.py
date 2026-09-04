@@ -15,11 +15,12 @@ Reviewing a full month: {monthly_insights_json}
 
 Tell me: which pillar is building genuine audience/industry credibility vs. just
 reach, which platform is doing the heavier lifting, whether the persona is landing
-as "hands-on filmmaker" or reading as generic page content, ideal posting frequency
-per platform, KPIs to track weekly.
+as a real, whole person (not just "hands-on filmmaker" and not generic page content
+either), ideal posting frequency per platform, KPIs to track weekly.
 
-Build the next 30-day plan: 30 fresh ideas across all four pillars, updated pillar
-weighting if one is underperforming, best formats to prioritize.
+Build the next 30-day plan: 30 fresh ideas across all six pillars (Craft, Industry,
+Process, Culture, Personal Life, People & Reflection), updated pillar weighting if
+one is underperforming or one is crowding out the others, best formats to prioritize.
 
 Give three growth scenarios: cautious, realistic, optimistic, based purely on actual
 data. No income or follower count promises.

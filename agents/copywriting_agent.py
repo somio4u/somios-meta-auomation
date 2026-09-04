@@ -24,23 +24,33 @@ LANGUAGE AND LENGTH (strict):
 - Hashtags depend on what this post is actually about:
   - If it's genuinely about your professional film/OTT work, AND the platform is
     Instagram: end with 3-6 specific, niche hashtags relevant to this exact post
-    (e.g. #OdiaCinema #OTTOdisha) — never generic ones like #viral or #instagood,
-    never more than 6.
+    (e.g. #OdiaCinema #OTTOdisha, or something specific to the actual project/topic)
+    — never more than 6.
   - If it's personal, casual, or generic (not about your professional film work),
-    OR the platform is Facebook: NO hashtags at all, full stop. Do not add
-    #OdiaCinema, #OTTOdisha, or any other hashtag just because it's a habit.
+    OR the platform is Facebook: NO hashtags at all, full stop.
+  - Either way, NEVER use a hashtag that's just a generic label describing the post
+    TYPE rather than its actual specific subject — banned examples include #beautiful,
+    #family, #industry, #personalpost, #viral, #instagood. A hashtag has to name the
+    real, specific thing this post is about, not the category it falls into.
 """
 
 CALENDAR_PROMPT = """{persona}
 Write a complete post for this topic: {topic}
 Pillar: {pillar} | Platform: {platform} | Format: {format}
 
-If Instagram: first line hook that stops the scroll before "see more," then a short
-craft-focused insight or BTS moment, one line inviting comments, a natural non-salesy
-CTA.
-If Facebook: an opening line that earns a read (not a hook-for-hook's-sake line),
-then a short, genuine reflection or industry observation, ending in either a
-milestone note, a tag to collaborators, or an open question to the audience.
+The pillar sets the general direction, not a fixed template — write what actually
+fits this specific topic:
+- If it's Craft/Process/Industry-with-a-project-angle: first line hook, a genuine
+  craft-focused insight or BTS moment, one line inviting comments, a natural CTA.
+- If it's Industry as current events/trends: ground it in something real and
+  specific happening in the space (a real trend, a real number, a real shift) —
+  not just an abstract opinion.
+- If it's Culture, People & Reflection, or Personal Life: write like an actual
+  person sharing a real thought, story, or moment — no forced camera/lighting/
+  craft language, no forced CTA if it doesn't fit, just something true and worth
+  reading. Family/personal content should read as genuinely personal, not branded.
+If Instagram: open with a line that stops the scroll before "see more."
+If Facebook: open with a line that earns a read (not a hook-for-hook's-sake line).
 """ + LANGUAGE_STYLE + """
 Write in the Voice defined above — perceptive, witty, insider, never corporate.
 Return ONLY the finished caption text, nothing else (no headers, no explanation).
@@ -74,8 +84,10 @@ just read as a normal, honest post, pillar label aside).
 Hashtags — override the general rule above with this: only include hashtags that are
 genuinely specific to THIS post's actual subject. Never add #OdiaCinema, #OTTOdisha,
 or any film-industry hashtag to a PERSONAL or GENERIC post — those only belong on
-posts that are actually about your professional film work. A personal post can go
-with zero hashtags, or none at all, that's fine.
+posts that are actually about your professional film work. Never use a generic
+label hashtag either way (#family, #beautiful, #personalpost, etc.) — a hashtag
+names the real specific thing, not the category. A personal post can go with zero
+hashtags, that's fine.
 
 Write in the Voice defined above. Return ONLY the finished caption text.
 """
