@@ -23,7 +23,7 @@ Return JSON: {{"hooks": [...], "caption_variations": [...], "comment_bait_questi
 
 
 def optimize(draft_caption: str) -> dict:
-    return call_llm_json(PROMPT.format(persona=FULL_CONTEXT, draft=draft_caption), max_tokens=4096)
+    return call_llm_json(PROMPT.format(persona=FULL_CONTEXT, draft=draft_caption), max_tokens=16384)
 
 
 if __name__ == "__main__":
