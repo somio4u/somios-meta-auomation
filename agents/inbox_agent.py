@@ -1,8 +1,9 @@
-"""Runs on a ~5 minute cron via GitHub Actions. Checks Telegram for your replies
-and acts on them:
-  approve <id>          -> publishes the pending draft live
-  reject <id>           -> discards it
-  revise <id>: <notes>  -> rewrites the draft with your feedback, resends for approval
+"""Runs on a ~5 minute cron via GitHub Actions. Checks Telegram for your input
+and acts on it. Three ways to respond to a draft, from easiest to most manual:
+  1. Tap the Approve/Reject button under the message.
+  2. Just reply to the message with your feedback — that revises it and
+     resends for approval, no typing an id required.
+  3. Type "approve <id>" / "reject <id>" / "revise <id>: <notes>" manually.
 Also handles you sending a photo (a poster/still) with a caption: that's treated as
 a brand-new "quick post" request — no calendar slot needed. Add "platform:facebook"
 or "pillar:industry" etc. anywhere in the caption to override the defaults
@@ -29,6 +30,66 @@ def _save_pending(pending):
     storage.write_json(pending, "pending_approval", f"{pending['id']}.json")
 
 
+def _find_pending_by_message_id(message_id):
+    for fname in storage.list_files("pending_approval"):
+        if not fname.endswith(".json"):
+            continue
+        data = storage.read_json("pending_approval", fname)
+        if data and data.get("telegram_message_id") == message_id and data.get("status") == "pending":
+            return data
+    return None
+
+
+def _approve(pending):
+    if pending.get("status") != "pending":
+        return f"{pending['id']} was already {pending.get('status')} — ignoring duplicate approve."
+    try:
+        post_id = publisher_agent.publish_approved(pending)
+        pending["status"] = "published"
+        _save_pending(pending)
+        return f"Published {pending['id']} to {pending['platform']} (post id {post_id})."
+    except Exception as e:
+        return f"Publish failed for {pending['id']}: {e}"
+
+
+def _reject(pending):
+    if pending.get("status") != "pending":
+        return f"{pending['id']} was already {pending.get('status')}."
+    pending["status"] = "rejected"
+    _save_pending(pending)
+    return f"Rejected {pending['id']}."
+
+
+def _revise(pending, feedback):
+    if pending.get("status") != "pending":
+        return f"{pending['id']} was already {pending.get('status')} — ignoring duplicate revise."
+    new_caption = copywriting_agent.revise(pending["caption"], feedback)
+    pending["caption"] = new_caption
+    publisher_agent.resend_for_approval(pending, feedback)
+    return None  # resend_for_approval already sends the new draft; no extra message needed
+
+
+def _handle_callback(callback_query: dict):
+    data = callback_query.get("data", "")
+    if ":" not in data:
+        return
+    action, draft_id = data.split(":", 1)
+    pending = _load_pending(draft_id)
+    if not pending:
+        telegram_api.answer_callback_query(callback_query["id"], "Draft not found.")
+        return
+
+    if action == "approve":
+        result = _approve(pending)
+    elif action == "reject":
+        result = _reject(pending)
+    else:
+        return
+
+    telegram_api.answer_callback_query(callback_query["id"], result[:200])
+    telegram_api.send_message(result)
+
+
 def _handle_text(text: str):
     m = APPROVE_RE.match(text)
     if m:
@@ -36,25 +97,16 @@ def _handle_text(text: str):
         if not pending:
             telegram_api.send_message(f"No pending draft with id {m.group(1)}.")
             return
-        if pending.get("status") != "pending":
-            telegram_api.send_message(f"{pending['id']} was already {pending.get('status')} — ignoring duplicate approve.")
-            return
-        try:
-            post_id = publisher_agent.publish_approved(pending)
-            pending["status"] = "published"
-            _save_pending(pending)
-            telegram_api.send_message(f"Published {pending['id']} to {pending['platform']} (post id {post_id}).")
-        except Exception as e:
-            telegram_api.send_message(f"Publish failed for {pending['id']}: {e}")
+        telegram_api.send_message(_approve(pending))
         return
 
     m = REJECT_RE.match(text)
     if m:
         pending = _load_pending(m.group(1))
-        if pending and pending.get("status") == "pending":
-            pending["status"] = "rejected"
-            _save_pending(pending)
-            telegram_api.send_message(f"Rejected {pending['id']}.")
+        if not pending:
+            telegram_api.send_message(f"No pending draft with id {m.group(1)}.")
+            return
+        telegram_api.send_message(_reject(pending))
         return
 
     m = REVISE_RE.match(text)
@@ -64,12 +116,9 @@ def _handle_text(text: str):
         if not pending:
             telegram_api.send_message(f"No pending draft with id {draft_id}.")
             return
-        if pending.get("status") != "pending":
-            telegram_api.send_message(f"{pending['id']} was already {pending.get('status')} — ignoring duplicate revise.")
-            return
-        new_caption = copywriting_agent.revise(pending["caption"], feedback)
-        pending["caption"] = new_caption
-        publisher_agent.resend_for_approval(pending, feedback)
+        result = _revise(pending, feedback)
+        if result:
+            telegram_api.send_message(result)
         return
 
 
@@ -99,18 +148,40 @@ def _handle_photo(message: dict):
     )
 
 
+def _handle_message(message: dict):
+    if "photo" in message:
+        _handle_photo(message)
+        return
+
+    text = message.get("text")
+    if not text:
+        return
+
+    reply_to = message.get("reply_to_message")
+    is_explicit_command = APPROVE_RE.match(text) or REJECT_RE.match(text) or REVISE_RE.match(text)
+    if reply_to and not is_explicit_command:
+        pending = _find_pending_by_message_id(reply_to.get("message_id"))
+        if pending:
+            result = _revise(pending, text.strip())
+            if result:
+                telegram_api.send_message(result)
+            return
+
+    _handle_text(text)
+
+
 def poll():
     storage.ensure_dirs()
     state = storage.read_json("telegram_state", "offset.json", default={"offset": None})
     updates = telegram_api.get_updates(offset=state["offset"])
 
     for update in updates:
-        message = update.get("message") or update.get("edited_message")
-        if message:
-            if "photo" in message:
-                _handle_photo(message)
-            elif "text" in message:
-                _handle_text(message["text"])
+        if "callback_query" in update:
+            _handle_callback(update["callback_query"])
+        else:
+            message = update.get("message") or update.get("edited_message")
+            if message:
+                _handle_message(message)
         state["offset"] = update["update_id"] + 1
 
     storage.write_json(state, "telegram_state", "offset.json")

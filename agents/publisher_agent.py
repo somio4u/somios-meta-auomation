@@ -36,18 +36,20 @@ def resend_for_approval(pending: dict, feedback: str):
 
 def _notify(pending: dict):
     instructions = (
-        f"\n\n---\nID: {pending['id']} | {pending['platform']} | {pending['pillar']}\n"
-        f"Reply with one of:\n"
-        f"approve {pending['id']}\n"
-        f"reject {pending['id']}\n"
-        f"revise {pending['id']}: <what to change>"
+        f"\n\n---\n{pending['platform']} | {pending['pillar']}\n"
+        f"Tap a button below, or just reply to this message with what to change."
     )
     text = pending["caption"] + instructions
+    keyboard = telegram_api.approve_reject_keyboard(pending["id"])
     if pending.get("image_path"):
         abs_path = os.path.join(storage.BASE, pending["image_path"])
-        telegram_api.send_photo(abs_path, text)
+        resp = telegram_api.send_photo(abs_path, text, reply_markup=keyboard)
     else:
-        telegram_api.send_message(text)
+        resp = telegram_api.send_message(text, reply_markup=keyboard)
+    message_id = resp.get("result", {}).get("message_id")
+    if message_id:
+        pending["telegram_message_id"] = message_id
+        storage.write_json(pending, "pending_approval", f"{pending['id']}.json")
 
 
 def publish_approved(pending: dict) -> str:

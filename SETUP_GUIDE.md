@@ -223,18 +223,13 @@ These values never appear in your code — GitHub only injects them while a sche
 ## STEP 10 — Test the daily pipeline and your first approval
 
 1. Actions tab → click **"Daily Content Pipeline"** in the sidebar → **Run workflow** → **Run workflow**.
-2. Within a couple of minutes, check Telegram on your phone — you should get a message from your bot with a draft caption (and sometimes an image) plus instructions like:
+2. Within a couple of minutes, check Telegram on your phone — you should get a message from your bot with a draft caption (and sometimes an image) and two buttons underneath: **Approve** and **Reject**.
+3. To act on it:
+   - **Tap Approve** → it posts live within ~5 minutes. No typing needed.
+   - **Tap Reject** → discards it, nothing posted.
+   - **Just reply to that message** with what you'd like changed (e.g. "make this shorter") → it rewrites the caption and sends you a new version with fresh buttons — repeat as many times as you like, no need to type an id.
 
-```
-approve 20260904091500
-reject 20260904091500
-revise 20260904091500: <what to change>
-```
-
-3. Reply directly in that same Telegram chat:
-   - Send `approve 20260904091500` (using the actual number shown) → it posts live within ~5 minutes.
-   - Send `reject 20260904091500` → discards it, nothing posted.
-   - Send `revise 20260904091500: make the hook punchier` → it rewrites the caption and sends you a new version to approve — repeat as many times as you like.
+(If you ever need it, typing `approve <id>` / `reject <id>` / `revise <id>: <notes>` still works too — the id is the number shown near the buttons.)
 
 ---
 
@@ -248,7 +243,7 @@ By default this becomes an Instagram post under the Craft pillar. To change that
 - `platform:facebook`
 - `pillar:industry`
 
-Within ~5 minutes you'll get the drafted caption back on Telegram for the same approve/reject/revise flow.
+Within ~5 minutes you'll get the drafted caption back on Telegram with the same Approve/Reject buttons and reply-to-revise flow.
 
 ---
 

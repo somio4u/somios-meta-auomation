@@ -13,14 +13,15 @@ Telegram, GitHub Secrets) — start there if this is your first time running it.
 ```
 GitHub Actions (cron)                                  Your phone
 ──────────────────────                                 ──────────
-daily.yml   → Copywriting → Hook Optimizer → Visual  →  Telegram: draft sent
+daily.yml   → Copywriting → Hook Optimizer → Visual  →  Telegram: draft + buttons
                                                           │
-                                                    approve / reject / revise
+                                              tap Approve/Reject, or just
+                                                reply with what to change
                                                           │
 poll_telegram.yml (every ~5 min)  ←──────────────────────
-   └─ approve → Publisher Agent posts live to Facebook/Instagram
-   └─ reject  → discarded
-   └─ revise  → Copywriting rewrites it, resends for approval (loops)
+   └─ Approve tap    → Publisher Agent posts live to Facebook/Instagram
+   └─ Reject tap     → discarded
+   └─ reply/feedback → Copywriting rewrites it, resends for approval (loops)
 
 weekly.yml  → Performance Analyst (pillar+platform breakdown, rebuilds next 7 days)
 monthly.yml → Page Analyst + Growth Director (persona-drift check, rebuilds 30 days)
@@ -28,7 +29,7 @@ monthly.yml → Page Analyst + Growth Director (persona-drift check, rebuilds 30
 
 You can also just send the Telegram bot a **photo** (a poster/still) with a caption
 describing context — it skips the calendar entirely and drafts a post around that
-image, still gated by the same approve/reject/revise flow. See SETUP_GUIDE.md Step 10.
+image, still gated by the same tap-to-approve flow. See SETUP_GUIDE.md Step 11.
 
 ## Agent map
 
@@ -44,7 +45,7 @@ image, still gated by the same approve/reject/revise flow. See SETUP_GUIDE.md St
 | 8 | Orchestrator | `orchestrator.py` | Runs the daily/weekly/monthly/poll pipelines, logs everything |
 | 9 | Performance Analyst | `agents/performance_analyst.py` | Weekly pillar+platform performance review |
 | 10 | Growth Director | `agents/growth_director.py` | Monthly full review + 3 growth scenarios, rebuilds the 30-day plan |
-| — | Inbox Agent | `agents/inbox_agent.py` | Polls Telegram for your approve/reject/revise replies and photo posts |
+| — | Inbox Agent | `agents/inbox_agent.py` | Polls Telegram for button taps, reply-to-revise feedback, and photo posts |
 
 The persona and content pillars live in one place — `lib/persona.py` — and every
 agent imports from there, so the voice can't drift between agents.
