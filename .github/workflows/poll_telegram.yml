@@ -2,7 +2,7 @@ name: Poll Telegram Approvals
 
 on:
   schedule:
-    - cron: "*/5 * * * *"   # every 5 minutes (GitHub's minimum reliable interval)
+    - cron: "* * * * *"   # every minute — safe now the repo is Public (unlimited free Actions minutes); cron-job.org is the primary reliable trigger, this is just a backup in case it ever has an outage
   workflow_dispatch: {}
 
 permissions:

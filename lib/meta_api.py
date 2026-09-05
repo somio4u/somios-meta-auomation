@@ -57,6 +57,22 @@ def post_to_instagram(image_url: str, caption: str) -> str:
     _raise_with_body(r)
     creation_id = r.json()["id"]
 
+    # Instagram processes the container asynchronously — publishing before it's
+    # FINISHED fails with "Media ID is not available." Poll status first.
+    for _ in range(10):
+        status_r = requests.get(f"{GRAPH}/{creation_id}",
+                                 params={"fields": "status_code"},
+                                 headers=_headers(), timeout=30)
+        _raise_with_body(status_r)
+        status = status_r.json().get("status_code")
+        if status == "FINISHED":
+            break
+        if status == "ERROR":
+            raise RuntimeError(f"Instagram media container {creation_id} failed processing (status ERROR).")
+        time.sleep(3)
+    else:
+        raise RuntimeError(f"Instagram media container {creation_id} never finished processing in time.")
+
     r2 = requests.post(f"{GRAPH}/{ig_id}/media_publish",
                         params={"creation_id": creation_id},
                         headers=_headers(), timeout=60)

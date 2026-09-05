@@ -1,4 +1,5 @@
-"""Runs on a ~5 minute cron via GitHub Actions. Checks Telegram for your input
+"""Runs on a ~1 minute cron (external cron-job.org ping, GitHub's own schedule
+kept only as a backup). Checks Telegram for your input
 and acts on it. Three ways to respond to a draft, from easiest to most manual:
   1. Tap the Approve/Reject button under the message.
   2. Just reply to the message with your feedback — that revises it and

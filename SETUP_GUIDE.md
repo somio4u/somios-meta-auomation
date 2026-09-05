@@ -225,7 +225,7 @@ These values never appear in your code — GitHub only injects them while a sche
 1. Actions tab → click **"Daily Content Pipeline"** in the sidebar → **Run workflow** → **Run workflow**.
 2. Within a couple of minutes, check Telegram on your phone — you should get a message from your bot with a draft caption (and sometimes an image) and two buttons underneath: **Approve** and **Reject**.
 3. To act on it:
-   - **Tap Approve** → it posts live within ~5 minutes. No typing needed.
+   - **Tap Approve** → it posts live within about a minute. No typing needed.
    - **Tap Reject** → discards it, nothing posted.
    - **Just reply to that message** with what you'd like changed (e.g. "make this shorter") → it rewrites the caption and sends you a new version with fresh buttons — repeat as many times as you like, no need to type an id.
 
@@ -243,14 +243,14 @@ By default this becomes an Instagram post under the Craft pillar. To change that
 - `platform:facebook`
 - `pillar:industry`
 
-Within ~5 minutes you'll get the drafted caption back on Telegram with the same Approve/Reject buttons and reply-to-revise flow.
+Within about a minute you'll get the drafted caption back on Telegram with the same Approve/Reject buttons and reply-to-revise flow.
 
 ---
 
 ## From here on, it runs itself
 
 - **Daily** (~9 AM IST): drafts and sends you one post for approval.
-- **Every ~5 minutes**: checks Telegram for your reply.
+- **About every minute**: checks Telegram for your reply (via cron-job.org).
 - **Weekly** (Sunday): reviews the week's performance by pillar+platform.
 - **Monthly** (1st): full review, checks for persona drift, triggers a fresh batch.
 - Every 5th day, the daily run automatically generates a fresh 10-idea/5-day batch on its own — no manual action needed.
