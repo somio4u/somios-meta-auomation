@@ -1,0 +1,292 @@
+{
+  "hooks": [
+    {
+      "text": "The remake industry in Cuttack is officially dead, and honestly, we should all be celebrating.",
+      "ratings": {
+        "curiosity": 9,
+        "relatability": "Both (Industry peers & General audience)",
+        "share_potential": 9,
+        "marketing_speak_risk": 1
+      }
+    },
+    {
+      "text": "You can’t sell a copied South movie to someone who already watched the original on their phone last night.",
+      "ratings": {
+        "curiosity": 8,
+        "relatability": "General audience",
+        "share_potential": 9,
+        "marketing_speak_risk": 1
+      }
+    },
+    {
+      "text": "The easiest way to lose money in Odia cinema right now is to buy a remake right.",
+      "ratings": {
+        "curiosity": 9,
+        "relatability": "Industry peers",
+        "share_potential": 8,
+        "marketing_speak_risk": 2
+      }
+    },
+    {
+      "text": "I remember when 'writing' an Odia movie meant sitting in a room with a South DVD and a translator.",
+      "ratings": {
+        "curiosity": 9,
+        "relatability": "Both",
+        "share_potential": 9,
+        "marketing_speak_risk": 1
+      }
+    },
+    {
+      "text": "Our audience got high-speed 5G before our film industry got original scripts.",
+      "ratings": {
+        "curiosity": 8,
+        "relatability": "General audience",
+        "share_potential": 9,
+        "marketing_speak_risk": 1
+      }
+    },
+    {
+      "text": "If your script doesn't smell like our own streets, don't bother pitching it anymore.",
+      "ratings": {
+        "curiosity": 7,
+        "relatability": "Industry peers",
+        "share_potential": 8,
+        "marketing_speak_risk": 2
+      }
+    },
+    {
+      "text": "Copy-paste cinema is dead. The internet killed it, and I’m glad it did.",
+      "ratings": {
+        "curiosity": 8,
+        "relatability": "Both",
+        "share_potential": 8,
+        "marketing_speak_risk": 2
+      }
+    },
+    {
+      "text": "Why spend crores copying a Telugu hit when our own neighborhoods have better stories?",
+      "ratings": {
+        "curiosity": 8,
+        "relatability": "Both",
+        "share_potential": 9,
+        "marketing_speak_risk": 1
+      }
+    },
+    {
+      "text": "The era of translating blockbusters line-for-line is over. What do we do now?",
+      "ratings": {
+        "curiosity": 9,
+        "relatability": "Industry peers",
+        "share_potential": 7,
+        "marketing_speak_risk": 1
+      }
+    },
+    {
+      "text": "Audiences are smarter than the producers who try to trick them with remakes.",
+      "ratings": {
+        "curiosity": 8,
+        "relatability": "General audience",
+        "share_potential": 8,
+        "marketing_speak_risk": 2
+      }
+    },
+    {
+      "text": "A WhatsApp group of film kids in Bhubaneswar has better ideas than the old studio boards.",
+      "ratings": {
+        "curiosity": 9,
+        "relatability": "Industry peers",
+        "share_potential": 8,
+        "marketing_speak_risk": 1
+      }
+    },
+    {
+      "text": "If you're still pitching 'South-style action' in Odia, you're living in 2012.",
+      "ratings": {
+        "curiosity": 8,
+        "relatability": "Industry peers",
+        "share_potential": 8,
+        "marketing_speak_risk": 1
+      }
+    },
+    {
+      "text": "We used to blame the audience for bad films. Now, they're the ones demanding better from us.",
+      "ratings": {
+        "curiosity": 8,
+        "relatability": "Both",
+        "share_potential": 9,
+        "marketing_speak_risk": 2
+      }
+    },
+    {
+      "text": "The death of the remake is the best thing that ever happened to young Odia writers.",
+      "ratings": {
+        "curiosity": 7,
+        "relatability": "Industry peers",
+        "share_potential": 8,
+        "marketing_speak_risk": 1
+      }
+    },
+    {
+      "text": "Nobody wants a dubbed Telugu film with Odia faces anymore. We want our own chaos.",
+      "ratings": {
+        "curiosity": 9,
+        "relatability": "Both",
+        "share_potential": 9,
+        "marketing_speak_risk": 1
+      }
+    }
+  ],
+  "caption_variations": [
+    {
+      "text": "There was a time when writing a script just meant having a DVD player and a fast translator. Thankfully, those days are gone. Our audience has 5G now. They’ve watched the original before you even print your poster.",
+      "ratings": {
+        "curiosity": 9,
+        "relatability": "Both",
+        "share_potential": 9,
+        "marketing_speak_risk": 1
+      }
+    },
+    {
+      "text": "The movies making noise today aren't the ones with imported action sequences. They're the ones that smell of our soil, our slang, and our beautiful chaos. If it doesn't feel like home, it simply doesn't work.",
+      "ratings": {
+        "curiosity": 8,
+        "relatability": "General audience",
+        "share_potential": 9,
+        "marketing_speak_risk": 1
+      }
+    },
+    {
+      "text": "If you’re a writer in Odisha, this is your time. The copy-paste machine has finally broken down because the audience is too smart for it. What are you writing today?",
+      "ratings": {
+        "curiosity": 8,
+        "relatability": "Industry peers",
+        "share_potential": 8,
+        "marketing_speak_risk": 2
+      }
+    },
+    {
+      "text": "Watching my son stream international shows on his phone made me realize: we can't fool the next generation with lazy remakes. They know what good storytelling looks like, and they want it in their own language.",
+      "ratings": {
+        "curiosity": 8,
+        "relatability": "Both",
+        "share_potential": 8,
+        "marketing_speak_risk": 1
+      }
+    },
+    {
+      "text": "The remake era is dead. Let's not mourn it. Let’s build something real instead.",
+      "ratings": {
+        "curiosity": 7,
+        "relatability": "Both",
+        "share_potential": 8,
+        "marketing_speak_risk": 1
+      }
+    },
+    {
+      "text": "Buying South remake rights used to be a safe bet. Today, it’s a financial suicide note. The streaming era has changed the rules of Odia cinema, and the playing field is finally level.",
+      "ratings": {
+        "curiosity": 9,
+        "relatability": "Industry peers",
+        "share_potential": 8,
+        "marketing_speak_risk": 2
+      }
+    },
+    {
+      "text": "The real victory isn't just making a hit movie; it's making a hit that could only happen in Cuttack, Sambalpur, or Puri. Hyper-local is the only way forward.",
+      "ratings": {
+        "curiosity": 8,
+        "relatability": "Both",
+        "share_potential": 9,
+        "marketing_speak_risk": 2
+      }
+    },
+    {
+      "text": "Let's talk about the lazy years. Changing the names, keeping the same camera angles, and copying the sound effects from a Telugu hit. It’s terrifying for the old machinery to lose that crutch, but liberating for the rest of us.",
+      "ratings": {
+        "curiosity": 9,
+        "relatability": "Both",
+        "share_potential": 9,
+        "marketing_speak_risk": 1
+      }
+    },
+    {
+      "text": "The best part about the death of remakes? We finally have to trust our own writers. We have to trust our own language and its unique rhythm, instead of trying to sound like someone else.",
+      "ratings": {
+        "curiosity": 8,
+        "relatability": "Industry peers",
+        "share_potential": 8,
+        "marketing_speak_risk": 1
+      }
+    },
+    {
+      "text": "Now that we can't copy anymore, we actually have to write. It's a scary time to be a lazy filmmaker in Odisha, but a great time to be a real one.",
+      "ratings": {
+        "curiosity": 9,
+        "relatability": "Industry peers",
+        "share_potential": 9,
+        "marketing_speak_risk": 1
+      }
+    }
+  ],
+  "comment_bait_questions": [
+    {
+      "text": "For the writers here: what’s one hyper-local Odia slang or quirk you’ve been dying to put into a script but were told 'it won't appeal to everyone'?",
+      "ratings": {
+        "curiosity": 8,
+        "relatability": "Industry peers",
+        "share_potential": 7,
+        "marketing_speak_risk": 1
+      }
+    },
+    {
+      "text": "Which Odia movie from the last few years made you feel, 'Yes, this is exactly how we actually live and talk'?",
+      "ratings": {
+        "curiosity": 8,
+        "relatability": "General audience",
+        "share_potential": 8,
+        "marketing_speak_risk": 1
+      }
+    },
+    {
+      "text": "If you're a viewer: what's the one setting in Odisha (a specific town, a local festival, a subculture) you haven't seen on screen yet but want to?",
+      "ratings": {
+        "curiosity": 9,
+        "relatability": "General audience",
+        "share_potential": 8,
+        "marketing_speak_risk": 1
+      }
+    },
+    {
+      "text": "To my filmmaker peers: what’s the hardest part of pitching an original story to producers who are still stuck in the 2010s 'South remake' mindset?",
+      "ratings": {
+        "curiosity": 9,
+        "relatability": "Industry peers",
+        "share_potential": 7,
+        "marketing_speak_risk": 1
+      }
+    },
+    {
+      "text": "Do you think we’ve completely killed the remake, or is it just hiding under a different name on regional OTT platforms?",
+      "ratings": {
+        "curiosity": 8,
+        "relatability": "Both",
+        "share_potential": 8,
+        "marketing_speak_risk": 2
+      }
+    }
+  ],
+  "top_3": [
+    {
+      "text": "I remember when 'writing' an Odia movie meant sitting in a room with a South DVD and a translator.",
+      "why": "It uses a sharp, self-deprecating historical truth about regional cinema that immediately validates the writer's insider credentials. It is witty, punchy, and highly relatable to anyone who observed the industry over the last two decades."
+    },
+    {
+      "text": "Now that we can't copy anymore, we actually have to write. It's a scary time to be a lazy filmmaker in Odisha, but a great time to be a real one.",
+      "why": "It draws a clear line in the sand between the old guard and the new wave. It challenges industry peers while giving the general audience a reason to cheer for the future of local content."
+    },
+    {
+      "text": "If you're a viewer: what's the one setting in Odisha (a specific town, a local festival, a subculture) you haven't seen on screen yet but want to?",
+      "why": "It shifts the conversation from passive consumption to active collaboration. It respects the audience's intelligence and roots the discussion deeply in geography and local culture."
+    }
+  ]
+}
