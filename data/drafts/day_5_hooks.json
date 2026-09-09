@@ -1,0 +1,292 @@
+{
+  "hooks": [
+    {
+      "text": "\"Local texture\" is just Bombay-speak for \"we don't get it.\"",
+      "ratings": {
+        "curiosity": "High. It exposes an industry euphemism immediately.",
+        "relatability_peers_vs_audience": "Extremely relatable to regional creators; eye-opening for general audiences.",
+        "share_potential": "Very high, especially among regional filmmakers and writers.",
+        "generic_marketing_risk": "Zero. It is highly specific and blunt."
+      }
+    },
+    {
+      "text": "Three months of sleepless nights, gone in a fifteen-minute Zoom call.",
+      "ratings": {
+        "curiosity": "High. Makes the reader want to know what was lost.",
+        "relatability_peers_vs_audience": "Relatable to anyone who has ever pitched anything in any industry.",
+        "share_potential": "High due to the universal feeling of wasted effort.",
+        "generic_marketing_risk": "Low. It feels like an honest, raw diary entry."
+      }
+    },
+    {
+      "text": "My pitch deck was eighty pages of real life, and it got swiped left in seconds.",
+      "ratings": {
+        "curiosity": "Medium-High. Uses modern dating terminology for business rejection.",
+        "relatability_peers_vs_audience": "Relatable to creative professionals and younger audiences.",
+        "share_potential": "Medium. Engaging but slightly stylized.",
+        "generic_marketing_risk": "Low. Sounds personal, not corporate."
+      }
+    },
+    {
+      "text": "They want our stories, they just want them cleaned up by a Mumbai writer first.",
+      "ratings": {
+        "curiosity": "Very High. Bold statement that stirs local pride and debate.",
+        "relatability_peers_vs_audience": "Deeply felt by regional filmmakers fighting for creative control.",
+        "share_potential": "Very High. This is a highly shareable, contrarian take.",
+        "generic_marketing_risk": "Zero. It's direct, provocative, and authentic."
+      }
+    },
+    {
+      "text": "The hardest part of pitching is pretending you aren't heartbroken when the camera turns off.",
+      "ratings": {
+        "curiosity": "Medium. Focuses on the emotional reality of the creator.",
+        "relatability_peers_vs_audience": "High for freelancers and creatives; humanizing for general audiences.",
+        "share_potential": "Medium-High. Empathy-driven sharing.",
+        "generic_marketing_risk": "Low. Very vulnerable and unpolished."
+      }
+    },
+    {
+      "text": "\"We love the flavor, but...\" is the ultimate industry death sentence.",
+      "ratings": {
+        "curiosity": "High. Sets up a specific pattern that creators recognize.",
+        "relatability_peers_vs_audience": "Extremely high for anyone pitching culturally specific work.",
+        "share_potential": "High. Captures a collective frustration.",
+        "generic_marketing_risk": "Low. Highly insider-focused."
+      }
+    },
+    {
+      "text": "Ever watched three months of work disappear while staring at a tiny mute icon?",
+      "ratings": {
+        "curiosity": "High. Evokes a very specific, painful digital visual.",
+        "relatability_peers_vs_audience": "Extremely relatable in the post-pandemic remote work era.",
+        "share_potential": "High. Relatable across sectors.",
+        "generic_marketing_risk": "Low. Sharp and observational."
+      }
+    },
+    {
+      "text": "If I had a rupee for every time a platform asked for \"rooted\" but rejected \"local,\" I'd make my own movie.",
+      "ratings": {
+        "curiosity": "Medium-High. Highlights a massive hypocrisy in streaming strategy.",
+        "relatability_peers_vs_audience": "Very high for regional writers dealing with corporate briefs.",
+        "share_potential": "High. Witty and conversational.",
+        "generic_marketing_risk": "Low. Speaks directly to the local versus corporate tension."
+      }
+    },
+    {
+      "text": "The coffee tastes a bit more bitter when you're staring at an empty whiteboard again.",
+      "ratings": {
+        "curiosity": "Medium. Sensory and quiet.",
+        "relatability_peers_vs_audience": "High for writers and artists starting over.",
+        "share_potential": "Medium. More reflective than viral.",
+        "generic_marketing_risk": "Zero. Very cinematic and personal."
+      }
+    },
+    {
+      "text": "It takes ninety days to build a world and ninety seconds for an executive to get bored of it.",
+      "ratings": {
+        "curiosity": "High. Sharp contrast in numbers makes the reader stop.",
+        "relatability_peers_vs_audience": "Deeply relatable for anyone working in creative services.",
+        "share_potential": "High. Very punchy and true.",
+        "generic_marketing_risk": "Low. Sounds like a quote from an indie director's memoir."
+      }
+    },
+    {
+      "text": "We spent three months writing a script just to be told it's \"too regional.\"",
+      "ratings": {
+        "curiosity": "Medium. Direct and plain-spoken.",
+        "relatability_peers_vs_audience": "Extremely high for non-Hindi filmmakers.",
+        "share_potential": "High. Stirs up regional pride.",
+        "generic_marketing_risk": "Low. Clear, honest frustration."
+      }
+    },
+    {
+      "text": "I just closed a pitch deck that had my whole heart in it.",
+      "ratings": {
+        "curiosity": "Medium. Simple, direct statement of loss.",
+        "relatability_peers_vs_audience": "High for anyone trying to build something original.",
+        "share_potential": "Medium. Very personal.",
+        "generic_marketing_risk": "Low. Raw and unpretentious."
+      }
+    },
+    {
+      "text": "There is a very specific kind of silence that happens right after a bad pitch ends.",
+      "ratings": {
+        "curiosity": "High. Captures an unspoken professional moment.",
+        "relatability_peers_vs_audience": "High for filmmakers, agency folks, and writers.",
+        "share_potential": "Medium-High. Niche but deeply felt.",
+        "generic_marketing_risk": "Low. Highly atmospheric."
+      }
+    },
+    {
+      "text": "They want the aesthetic of our streets, but not the actual people living on them.",
+      "ratings": {
+        "curiosity": "Very High. Critiques the shallow exoticization of regional culture.",
+        "relatability_peers_vs_audience": "Deeply resonant with regional artists and cultural critics.",
+        "share_potential": "Very High. Strong social-commentary angle.",
+        "generic_marketing_risk": "Zero. Uncompromising and insightful."
+      }
+    },
+    {
+      "text": "Back to page one.",
+      "ratings": {
+        "curiosity": "Medium. Minimalist and dramatic.",
+        "relatability_peers_vs_audience": "High for any writer or creator.",
+        "share_potential": "Low. Too short to share on its own, but works as a strong setup.",
+        "generic_marketing_risk": "Low. Utterly simple."
+      }
+    }
+  ],
+  "caption_variations": [
+    {
+      "text": "\"They loved the local texture.\" That’s the polite feedback we got after spending three months building a world from scratch. It stings, but the desk gets cleared, the coffee gets remade, and we start the next draft.",
+      "ratings": {
+        "curiosity": "High",
+        "relatability_peers_vs_audience": "High for writers; accessible to the public.",
+        "share_potential": "Medium-High",
+        "generic_marketing_risk": "None. Reads like an unfiltered production diary."
+      }
+    },
+    {
+      "text": "A fifteen-minute Zoom call to reject ninety days of sleepless nights. It’s brutal, but this is the job. We don’t cry over spilled ink. We just find a better story to tell.",
+      "ratings": {
+        "curiosity": "High",
+        "relatability_peers_vs_audience": "Very high across creative sectors.",
+        "share_potential": "High",
+        "generic_marketing_risk": "Low. Strong, resilient tone without feeling like toxic positivity."
+      }
+    },
+    {
+      "text": "When they ask for \"rooted\" stories but panic when you show them actual mud, you realize the gap between corporate offices and the rest of the country. We go again.",
+      "ratings": {
+        "curiosity": "Very High",
+        "relatability_peers_vs_audience": "Resonates heavily with creators outside major metro areas.",
+        "share_potential": "Very High",
+        "generic_marketing_risk": "None. Punchy, authentic, and culturally relevant."
+      }
+    },
+    {
+      "text": "Three months of pitch decks, character arcs, and pilot episodes. All gone because it was \"too local.\" If being true to where we come from is a risk, I’m glad we took it.",
+      "ratings": {
+        "curiosity": "High",
+        "relatability_peers_vs_audience": "Stirs a strong sense of regional pride and artistic integrity.",
+        "share_potential": "Very High",
+        "generic_marketing_risk": "None. Feels deeply personal and defiant."
+      }
+    },
+    {
+      "text": "The laptop screen goes black. The meeting is over. The silence in the room is heavy. But then you look at the whiteboard, wipe it clean, and start writing again.",
+      "ratings": {
+        "curiosity": "Medium-High",
+        "relatability_peers_vs_audience": "High. Highly visual and sensory.",
+        "share_potential": "Medium",
+        "generic_marketing_risk": "Low. Sounds like a scene out of a film about filmmaking."
+      }
+    },
+    {
+      "text": "It’s easy to get angry when a platform doesn't get your vision. It’s harder—and better—to take that energy and put it into a sharper draft. No excuses, just work.",
+      "ratings": {
+        "curiosity": "Medium",
+        "relatability_peers_vs_audience": "High. Speaks to professional maturity.",
+        "share_potential": "Medium-High",
+        "generic_marketing_risk": "Low-Medium. Bordering on motivational, but saved by its practical, working-class tone."
+      }
+    },
+    {
+      "text": "Ninety days of work summarized in a polite \"no thank you.\" It hurts, especially when you believe in the characters. But the coffee is fresh, and page one is waiting.",
+      "ratings": {
+        "curiosity": "High",
+        "relatability_peers_vs_audience": "High. Captures the specific pain of losing characters you created.",
+        "share_potential": "Medium",
+        "generic_marketing_risk": "None. Simple and grounded."
+      }
+    },
+    {
+      "text": "They loved the flavor, but feared the heat. That’s regional filmmaking in a nutshell. We don’t dilute the spice just to make it easier to swallow. We find a better kitchen.",
+      "ratings": {
+        "curiosity": "Very High",
+        "relatability_peers_vs_audience": "Brilliant metaphor that both peers and general audience will immediately grasp.",
+        "share_potential": "Very High",
+        "generic_marketing_risk": "None. Highly stylish, sharp, and uniquely regional."
+      }
+    },
+    {
+      "text": "Your heart is on page forty-two, but their eyes are on the budget sheet. That’s the disconnect. Back to the desk. We have a better world to build today.",
+      "ratings": {
+        "curiosity": "Medium-High",
+        "relatability_peers_vs_audience": "Deeply relatable for anyone navigating the art-versus-commerce divide.",
+        "share_potential": "Medium-High",
+        "generic_marketing_risk": "None. Feels like a private note-to-self."
+      }
+    },
+    {
+      "text": "A rejected pitch isn't a dead end; it's just a detour. The story stays, the deck changes, the writer keeps going. Let’s do it again.",
+      "ratings": {
+        "curiosity": "Medium",
+        "relatability_peers_vs_audience": "Broadly relatable.",
+        "share_potential": "Medium",
+        "generic_marketing_risk": "Medium. Slightly closer to conventional motivational writing, but grounded enough."
+      }
+    }
+  ],
+  "comment_bait_questions": [
+    {
+      "text": "How do you pitch a hyper-local story to a metro room without losing the very thing that makes it real?",
+      "ratings": {
+        "curiosity": "High",
+        "relatability_peers_vs_audience": "Very high for industry peers and serious cinema lovers.",
+        "share_potential": "Medium-High. Invites long-form, thoughtful answers.",
+        "generic_marketing_risk": "None. It's a genuine, complex problem creative professionals face daily."
+      }
+    },
+    {
+      "text": "To my fellow writers: what's the most \"polite\" rejection line you've ever received that made you want to scream?",
+      "ratings": {
+        "curiosity": "Very High",
+        "relatability_peers_vs_audience": "Extremely high. Everyone has a funny or painful story here.",
+        "share_potential": "Very High. Great for driving a highly active, conversational comment section.",
+        "generic_marketing_risk": "None. It's conversational, funny, and therapeutic."
+      }
+    },
+    {
+      "text": "At what point do we stop chasing national platforms and focus entirely on building our own independent spaces?",
+      "ratings": {
+        "curiosity": "Very High",
+        "relatability_peers_vs_audience": "Deeply relevant to regional artists, producers, and cultural advocates.",
+        "share_potential": "High. Sparks crucial debates about distribution and regional pride.",
+        "generic_marketing_risk": "None. Speaks to a real structural crisis in the industry."
+      }
+    },
+    {
+      "text": "How do you handle the transition from a soul-crushing rejection back to page one without losing your drive?",
+      "ratings": {
+        "curiosity": "Medium-High",
+        "relatability_peers_vs_audience": "High for any creator or entrepreneur.",
+        "share_potential": "Medium. Empathy-focused.",
+        "generic_marketing_risk": "Low. Feels like a late-night, post-pitch conversation over tea."
+      }
+    },
+    {
+      "text": "Have you ever watered down a script to make a platform happy, only to regret it later?",
+      "ratings": {
+        "curiosity": "High",
+        "relatability_peers_vs_audience": "Highly relatable for writers and directors.",
+        "share_potential": "Medium. A bit sensitive, but yields very honest responses.",
+        "generic_marketing_risk": "None. Unfiltered and slightly risky."
+      }
+    }
+  ],
+  "top_3": [
+    {
+      "text": "They loved the flavor, but feared the heat. That’s regional filmmaking in a nutshell. We don’t dilute the spice just to make it easier to swallow. We find a better kitchen.",
+      "why": "It is a perfect, punchy metaphor that completely avoids corporate jargon. It respects the local culture without being overly academic, framing regional identity as something powerful rather than something that needs to be compromised."
+    },
+    {
+      "text": "\"Local texture\" is just Bombay-speak for \"we don't get it.\"",
+      "why": "This hook is incredibly sharp and cuts straight to the point. It exposes the systemic gap between big-city corporate offices and regional creators with zero hesitation. It will immediately stop any regional creator or cinema fan mid-scroll."
+    },
+    {
+      "text": "To my fellow writers: what's the most \"polite\" rejection line you've ever received that made you want to scream?",
+      "why": "It shifts the spotlight from a single rejection to a shared industry experience. It's witty, relatable, and invites actual storytelling in the comments from peers who have been through the exact same grinder."
+    }
+  ]
+}
