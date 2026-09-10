@@ -1,52 +1,292 @@
 {
   "hooks": [
-    "You can't fake a hundred years of dampness on a studio floor.",
-    "Old Cuttack at 5 PM does not need a production designer.",
-    "We spent three hours today squeezed between crumbling wooden doors and tangled cables.",
-    "No budget in the world can replicate the texture of an old Cuttack lane.",
-    "This is where our Episode 3 chase begins. No sets, just real grit.",
-    "Why do we spend lakhs on sets when Cuttack offers this for free?",
-    "If you want real tension, you don't build it. You find it.",
-    "Most art directors would cry trying to recreate this level of beautiful decay.",
-    "We found our Episode 3 location. It smells like old wood and rain.",
-    "You can't buy this kind of cinematic texture.",
-    "This lane has more character than half the sets we build.",
-    "Squeezing a camera crew through these alleys is going to be a nightmare. I can't wait.",
-    "Some stories can only be told where they actually happened.",
-    "We didn't design this. Cuttack did.",
-    "Forget green screens. Give me old wooden doors and tangled cables any day."
+    {
+      "text": "Left my desk for five minutes and lost my head writer job.",
+      "ratings": {
+        "curiosity": 9,
+        "peer_relatability": 8,
+        "share_potential": 8,
+        "generic_marketing_risk": 2
+      }
+    },
+    {
+      "text": "My seven-year-old just did a script doctor job on my new pilot.",
+      "ratings": {
+        "curiosity": 8,
+        "peer_relatability": 9,
+        "share_potential": 8,
+        "generic_marketing_risk": 1
+      }
+    },
+    {
+      "text": "Apparently, my dramatic pacing is \"too boring\" for a second grader.",
+      "ratings": {
+        "curiosity": 8,
+        "peer_relatability": 9,
+        "share_potential": 7,
+        "generic_marketing_risk": 1
+      }
+    },
+    {
+      "text": "Kids don't care about character arcs; they want laser-dogs.",
+      "ratings": {
+        "curiosity": 9,
+        "peer_relatability": 7,
+        "share_potential": 9,
+        "generic_marketing_risk": 2
+      }
+    },
+    {
+      "text": "I've been writing drama for ten years, but my son just schooled me in three frames.",
+      "ratings": {
+        "curiosity": 8,
+        "peer_relatability": 8,
+        "share_potential": 7,
+        "generic_marketing_risk": 2
+      }
+    },
+    {
+      "text": "Note to self: never leave an open notebook near a seven-year-old.",
+      "ratings": {
+        "curiosity": 7,
+        "peer_relatability": 8,
+        "share_potential": 8,
+        "generic_marketing_risk": 1
+      }
+    },
+    {
+      "text": "The harshest script feedback I've ever received came from my own kid.",
+      "ratings": {
+        "curiosity": 9,
+        "peer_relatability": 9,
+        "share_potential": 8,
+        "generic_marketing_risk": 2
+      }
+    },
+    {
+      "text": "My son looked at my storyboard and asked why nobody was flying.",
+      "ratings": {
+        "curiosity": 8,
+        "peer_relatability": 7,
+        "share_potential": 7,
+        "generic_marketing_risk": 1
+      }
+    },
+    {
+      "text": "Just got replaced as director of my own project by a kid in pajamas.",
+      "ratings": {
+        "curiosity": 9,
+        "peer_relatability": 8,
+        "share_potential": 8,
+        "generic_marketing_risk": 2
+      }
+    },
+    {
+      "text": "He told me my dialogue has too many words. He's not wrong.",
+      "ratings": {
+        "curiosity": 8,
+        "peer_relatability": 9,
+        "share_potential": 7,
+        "generic_marketing_risk": 1
+      }
+    },
+    {
+      "text": "The newest member of our writers' room is seven and sleeps with a nightlight.",
+      "ratings": {
+        "curiosity": 9,
+        "peer_relatability": 8,
+        "share_potential": 9,
+        "generic_marketing_risk": 2
+      }
+    },
+    {
+      "text": "I spent three weeks on this scene. My kid fixed it in thirty seconds.",
+      "ratings": {
+        "curiosity": 8,
+        "peer_relatability": 9,
+        "share_potential": 8,
+        "generic_marketing_risk": 2
+      }
+    },
+    {
+      "text": "My son's pitch: \"Less talking, more laser-dogs.\"",
+      "ratings": {
+        "curiosity": 9,
+        "peer_relatability": 7,
+        "share_potential": 9,
+        "generic_marketing_risk": 1
+      }
+    },
+    {
+      "text": "This is what happens when you leave a storyboard pad open at home.",
+      "ratings": {
+        "curiosity": 7,
+        "peer_relatability": 8,
+        "share_potential": 7,
+        "generic_marketing_risk": 1
+      }
+    },
+    {
+      "text": "We worry so much about structure, but kids just go straight for the fun.",
+      "ratings": {
+        "curiosity": 7,
+        "peer_relatability": 8,
+        "share_potential": 7,
+        "generic_marketing_risk": 3
+      }
+    }
   ],
   "caption_variations": [
-    "Old Cuttack at 5 PM doesn’t need an art department. We spent the evening squeezed between decaying wooden doors and a messy web of black cables. You just can’t paint this kind of history onto a studio wall. This is the exact spot where our episode three chase sequence kicks off. Which frame feels the most raw to you—1, 2, or 3?",
-    "No set designer can match the damp, faded walls of these lanes. We were out scouting in Cuttack today, squeezed into alleys that haven't changed in a century. This is the backdrop for our big chase scene in Episode 3. Which frame has that real grit—1, 2, or 3?",
-    "There is a specific kind of beauty in Cuttack’s chaos. Tangled overhead wires, ancient wooden doors, and walls damp from years of monsoon. We’re staging a major chase here for Episode 3. It's going to be tight, messy, and absolutely real. Which shot catches your eye first?",
-    "I'll take a real, decaying Cuttack alley over a sterile studio floor any day. Spent the afternoon squeezing the camera team through 19th-century doorways for our upcoming series. Episode 3 starts right here. Frame 1, 2, or 3—which one feels most alive?",
-    "We spent hours today getting lost in the back alleys of Cuttack. You can smell the history in the wood and see the grit on the walls. It’s the perfect, chaotic setting for our next sequence. Swipe to see where the camera goes. Which frame speaks to you?",
-    "Production design is great, but Cuttack does it better. We found this perfect, claustrophobic spot for a key chase sequence in Episode 3. No paint, no artificial aging—just pure, unfiltered local texture. Tell me, which frame looks most intense?",
-    "Filming in real locations is a logistics nightmare, but look at these frames. You can't fake this level of wear and tear. This is where the tension builds in our new series. Which shot has the best mood—1, 2, or 3?",
-    "Sometimes the location does 90% of the work for you. We were scouting Cuttack lanes today, dodging cables and old wooden gates. This is the playground for our Episode 3 action. Which frame feels most cinematic to you?",
-    "You can't build soul. You have to go out and find it. These Cuttack alleys have been standing for a hundred years, and they are perfect for what we are shooting next month. Which of these three frames hits the hardest?",
-    "Behind the scenes of our location scout today. We're setting a high-stakes chase right in the heart of old Cuttack. Squeezing gear through here will be tough, but the visuals will be worth it. Which angle do you prefer?"
+    {
+      "text": "Left my script pad open for ten minutes and got replaced. My seven-year-old decided my dialogue was too slow and pitched a three-frame sequence involving a \"laser-dog.\" Honestly, his framing is bolder than mine. Might have to option this.",
+      "ratings": {
+        "curiosity": 8,
+        "peer_relatability": 9,
+        "share_potential": 8,
+        "generic_marketing_risk": 1
+      }
+    },
+    {
+      "text": "Spent all night tweaking a slow-burn dialogue scene for our next regional project. My seven-year-old found the notepad, crossed out three lines of subtext, and drew a dog shooting lasers out of its eyes. Sometimes we seriously overthink the draft.",
+      "ratings": {
+        "curiosity": 8,
+        "peer_relatability": 9,
+        "share_potential": 8,
+        "generic_marketing_risk": 1
+      }
+    },
+    {
+      "text": "The toughest critic in regional cinema is currently in the second grade. He took one look at my storyboard, called it \"too sleepy,\" and added a sci-fi twist. Honestly? His pacing is much tighter than mine.",
+      "ratings": {
+        "curiosity": 8,
+        "peer_relatability": 8,
+        "share_potential": 7,
+        "generic_marketing_risk": 2
+      }
+    },
+    {
+      "text": "Writers' room update: my son just pitched a three-frame sequence that makes my whole pilot look like a slow indie film. He wants a laser-dog. Honestly, it's a solid hook. Might run with it.",
+      "ratings": {
+        "curiosity": 9,
+        "peer_relatability": 8,
+        "share_potential": 8,
+        "generic_marketing_risk": 1
+      }
+    },
+    {
+      "text": "We spend years studying three-act structure and pacing. Then a seven-year-old with a red crayon shows you how to actually move a story forward. Less talking, more action. I'm taking notes.",
+      "ratings": {
+        "curiosity": 7,
+        "peer_relatability": 9,
+        "share_potential": 8,
+        "generic_marketing_risk": 2
+      }
+    },
+    {
+      "text": "Left my workspace for a cup of tea and came back to find my dialogue violently edited. My kid decided my characters talk too much. He replaced the subtext with a laser-dog. Might have to give him a co-writer credit on this one.",
+      "ratings": {
+        "curiosity": 8,
+        "peer_relatability": 9,
+        "share_potential": 8,
+        "generic_marketing_risk": 1
+      }
+    },
+    {
+      "text": "My son looked at my script layout and asked, \"Why are they just standing there?\" Good question. He fixed it with a three-frame action sequence. Kids are the ultimate script doctors.",
+      "ratings": {
+        "curiosity": 8,
+        "peer_relatability": 9,
+        "share_potential": 8,
+        "generic_marketing_risk": 1
+      }
+    },
+    {
+      "text": "You know you're overcomplicating a scene when your seven-year-old points out that a laser-dog would make the ending way better. Honestly, his framing has a lot of energy. I might be out of a job soon.",
+      "ratings": {
+        "curiosity": 8,
+        "peer_relatability": 8,
+        "share_potential": 7,
+        "generic_marketing_risk": 1
+      }
+    },
+    {
+      "text": "House rules: lock your notebook. Otherwise, your kid will rewrite your gritty regional drama into a sci-fi blockbuster before lunch. Honestly, his storyboard pacing is elite.",
+      "ratings": {
+        "curiosity": 8,
+        "peer_relatability": 9,
+        "share_potential": 8,
+        "generic_marketing_risk": 2
+      }
+    },
+    {
+      "text": "Trying to build deep, realistic worlds, but my son is out here pitching pure cinema. His three-frame sequence has more momentum than my entire first act. Back to the drawing board.",
+      "ratings": {
+        "curiosity": 7,
+        "peer_relatability": 8,
+        "share_potential": 7,
+        "generic_marketing_risk": 2
+      }
+    }
   ],
   "comment_bait_questions": [
-    "For the filmmakers here: how do you handle sound design in a tight alley like this with all the natural echo?",
-    "If you're from Cuttack, did you instantly recognize this lane? Or is it too hidden?",
-    "Would you light a narrow space like this with warm, practical streetlights or keep it cold and blue for a chase?",
-    "What’s the biggest challenge you’ve faced when shooting action in extremely tight, real-world spaces?",
-    "Does a high-speed chase in a cramped lane feel more tense than one on a wide-open highway?"
+    {
+      "question": "What's the weirdest script note your kid or family member has given you that actually made sense?",
+      "ratings": {
+        "curiosity": 8,
+        "peer_relatability": 9,
+        "share_potential": 8,
+        "generic_marketing_risk": 1
+      }
+    },
+    {
+      "question": "At what point in your creative process do you realize you're overcomplicating a simple scene?",
+      "ratings": {
+        "curiosity": 7,
+        "peer_relatability": 9,
+        "share_potential": 6,
+        "generic_marketing_risk": 2
+      }
+    },
+    {
+      "question": "If you had to add a \"laser-dog\" equivalent to your current project to fix the pacing, what would it be?",
+      "ratings": {
+        "curiosity": 9,
+        "peer_relatability": 8,
+        "share_potential": 9,
+        "generic_marketing_risk": 1
+      }
+    },
+    {
+      "question": "Do you prefer writing tight, fast-paced action blocks, or do you always default to heavy dialogue first?",
+      "ratings": {
+        "curiosity": 7,
+        "peer_relatability": 9,
+        "share_potential": 6,
+        "generic_marketing_risk": 2
+      }
+    },
+    {
+      "question": "Who is the most honest, non-industry critic in your house who keeps your storytelling grounded?",
+      "ratings": {
+        "curiosity": 8,
+        "peer_relatability": 9,
+        "share_potential": 8,
+        "generic_marketing_risk": 1
+      }
+    }
   ],
   "top_3": [
     {
-      "text": "Old Cuttack at 5 PM does not need a production designer.",
-      "why": "It instantly establishes the creative tension between studio polish and real-world grit. Highly relatable to filmmakers and deeply nostalgic for locals."
+      "text": "Left my desk for five minutes and lost my head writer job.",
+      "why": "It has an incredibly high curiosity loop. It sounds like real office/set drama, but immediately shifts into a lighthearted family story that shows the creator's human side without losing his filmmaker identity."
     },
     {
-      "text": "You can't fake a hundred years of dampness on a studio floor.",
-      "why": "Focuses on the technical reality of production design while using sensory, visual language. High curiosity factor."
+      "text": "My seven-year-old just did a script doctor job on my new pilot.",
+      "why": "Using industry terms like 'script doctor' and 'pilot' keeps it highly relatable to industry peers, while the mention of his kid makes it warm and universally engaging for a general audience."
     },
     {
-      "text": "Squeezing a camera crew through these Cuttack alleys is going to be a nightmare. I can't wait.",
-      "why": "Feels incredibly authentic to set life. Shows the physical grind of filmmaking with a touch of wit, which appeals to industry peers and excites the audience."
+      "text": "If you had to add a \"laser-dog\" equivalent to your current project to fix the pacing, what would it be?",
+      "why": "It's a highly specific, fun, and creative prompt. It forces writers and film lovers to look at their serious work with some humor, driving highly entertaining comments instead of generic 'congrats' replies."
     }
   ]
 }
