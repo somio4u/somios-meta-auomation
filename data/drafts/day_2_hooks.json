@@ -1,292 +1,52 @@
 {
   "hooks": [
-    {
-      "text": "The remake industry in Cuttack is officially dead, and honestly, we should all be celebrating.",
-      "ratings": {
-        "curiosity": 9,
-        "relatability": "Both (Industry peers & General audience)",
-        "share_potential": 9,
-        "marketing_speak_risk": 1
-      }
-    },
-    {
-      "text": "You can’t sell a copied South movie to someone who already watched the original on their phone last night.",
-      "ratings": {
-        "curiosity": 8,
-        "relatability": "General audience",
-        "share_potential": 9,
-        "marketing_speak_risk": 1
-      }
-    },
-    {
-      "text": "The easiest way to lose money in Odia cinema right now is to buy a remake right.",
-      "ratings": {
-        "curiosity": 9,
-        "relatability": "Industry peers",
-        "share_potential": 8,
-        "marketing_speak_risk": 2
-      }
-    },
-    {
-      "text": "I remember when 'writing' an Odia movie meant sitting in a room with a South DVD and a translator.",
-      "ratings": {
-        "curiosity": 9,
-        "relatability": "Both",
-        "share_potential": 9,
-        "marketing_speak_risk": 1
-      }
-    },
-    {
-      "text": "Our audience got high-speed 5G before our film industry got original scripts.",
-      "ratings": {
-        "curiosity": 8,
-        "relatability": "General audience",
-        "share_potential": 9,
-        "marketing_speak_risk": 1
-      }
-    },
-    {
-      "text": "If your script doesn't smell like our own streets, don't bother pitching it anymore.",
-      "ratings": {
-        "curiosity": 7,
-        "relatability": "Industry peers",
-        "share_potential": 8,
-        "marketing_speak_risk": 2
-      }
-    },
-    {
-      "text": "Copy-paste cinema is dead. The internet killed it, and I’m glad it did.",
-      "ratings": {
-        "curiosity": 8,
-        "relatability": "Both",
-        "share_potential": 8,
-        "marketing_speak_risk": 2
-      }
-    },
-    {
-      "text": "Why spend crores copying a Telugu hit when our own neighborhoods have better stories?",
-      "ratings": {
-        "curiosity": 8,
-        "relatability": "Both",
-        "share_potential": 9,
-        "marketing_speak_risk": 1
-      }
-    },
-    {
-      "text": "The era of translating blockbusters line-for-line is over. What do we do now?",
-      "ratings": {
-        "curiosity": 9,
-        "relatability": "Industry peers",
-        "share_potential": 7,
-        "marketing_speak_risk": 1
-      }
-    },
-    {
-      "text": "Audiences are smarter than the producers who try to trick them with remakes.",
-      "ratings": {
-        "curiosity": 8,
-        "relatability": "General audience",
-        "share_potential": 8,
-        "marketing_speak_risk": 2
-      }
-    },
-    {
-      "text": "A WhatsApp group of film kids in Bhubaneswar has better ideas than the old studio boards.",
-      "ratings": {
-        "curiosity": 9,
-        "relatability": "Industry peers",
-        "share_potential": 8,
-        "marketing_speak_risk": 1
-      }
-    },
-    {
-      "text": "If you're still pitching 'South-style action' in Odia, you're living in 2012.",
-      "ratings": {
-        "curiosity": 8,
-        "relatability": "Industry peers",
-        "share_potential": 8,
-        "marketing_speak_risk": 1
-      }
-    },
-    {
-      "text": "We used to blame the audience for bad films. Now, they're the ones demanding better from us.",
-      "ratings": {
-        "curiosity": 8,
-        "relatability": "Both",
-        "share_potential": 9,
-        "marketing_speak_risk": 2
-      }
-    },
-    {
-      "text": "The death of the remake is the best thing that ever happened to young Odia writers.",
-      "ratings": {
-        "curiosity": 7,
-        "relatability": "Industry peers",
-        "share_potential": 8,
-        "marketing_speak_risk": 1
-      }
-    },
-    {
-      "text": "Nobody wants a dubbed Telugu film with Odia faces anymore. We want our own chaos.",
-      "ratings": {
-        "curiosity": 9,
-        "relatability": "Both",
-        "share_potential": 9,
-        "marketing_speak_risk": 1
-      }
-    }
+    "We need to stop writing every Odia character like they grew up in the exact same pincode.",
+    "A Cuttack boy and a Sambalpur boy don’t just speak differently—they think differently.",
+    "If your script uses 'standard' Odia for a character from the west, you're losing the drama before the camera rolls.",
+    "I’ve sat in writers' rooms where we spent two hours arguing over a single Sambalpur verb.",
+    "Standardized language is the easiest way to kill a good character.",
+    "The magic isn't in the clean grammar; it's in the dirt of the street slang.",
+    "Why does every Odia OTT show sound like a textbook?",
+    "You can't capture Cuttack's attitude if your dialogue is grammatically perfect.",
+    "We are flattening our own map just to make things easy for the edit.",
+    "The moment a character speaks, you should know exactly which tea stall they hang out at.",
+    "People don't speak 'neutral' languages in real life.",
+    "A change in dialect changes the entire body language of an actor.",
+    "If you're writing a Western Odisha story from a desk in Bhubaneswar, it shows.",
+    "Audiences can smell fake regional accents from a mile away.",
+    "We don't need subtitles for our own soil."
   ],
   "caption_variations": [
-    {
-      "text": "There was a time when writing a script just meant having a DVD player and a fast translator. Thankfully, those days are gone. Our audience has 5G now. They’ve watched the original before you even print your poster.",
-      "ratings": {
-        "curiosity": 9,
-        "relatability": "Both",
-        "share_potential": 9,
-        "marketing_speak_risk": 1
-      }
-    },
-    {
-      "text": "The movies making noise today aren't the ones with imported action sequences. They're the ones that smell of our soil, our slang, and our beautiful chaos. If it doesn't feel like home, it simply doesn't work.",
-      "ratings": {
-        "curiosity": 8,
-        "relatability": "General audience",
-        "share_potential": 9,
-        "marketing_speak_risk": 1
-      }
-    },
-    {
-      "text": "If you’re a writer in Odisha, this is your time. The copy-paste machine has finally broken down because the audience is too smart for it. What are you writing today?",
-      "ratings": {
-        "curiosity": 8,
-        "relatability": "Industry peers",
-        "share_potential": 8,
-        "marketing_speak_risk": 2
-      }
-    },
-    {
-      "text": "Watching my son stream international shows on his phone made me realize: we can't fool the next generation with lazy remakes. They know what good storytelling looks like, and they want it in their own language.",
-      "ratings": {
-        "curiosity": 8,
-        "relatability": "Both",
-        "share_potential": 8,
-        "marketing_speak_risk": 1
-      }
-    },
-    {
-      "text": "The remake era is dead. Let's not mourn it. Let’s build something real instead.",
-      "ratings": {
-        "curiosity": 7,
-        "relatability": "Both",
-        "share_potential": 8,
-        "marketing_speak_risk": 1
-      }
-    },
-    {
-      "text": "Buying South remake rights used to be a safe bet. Today, it’s a financial suicide note. The streaming era has changed the rules of Odia cinema, and the playing field is finally level.",
-      "ratings": {
-        "curiosity": 9,
-        "relatability": "Industry peers",
-        "share_potential": 8,
-        "marketing_speak_risk": 2
-      }
-    },
-    {
-      "text": "The real victory isn't just making a hit movie; it's making a hit that could only happen in Cuttack, Sambalpur, or Puri. Hyper-local is the only way forward.",
-      "ratings": {
-        "curiosity": 8,
-        "relatability": "Both",
-        "share_potential": 9,
-        "marketing_speak_risk": 2
-      }
-    },
-    {
-      "text": "Let's talk about the lazy years. Changing the names, keeping the same camera angles, and copying the sound effects from a Telugu hit. It’s terrifying for the old machinery to lose that crutch, but liberating for the rest of us.",
-      "ratings": {
-        "curiosity": 9,
-        "relatability": "Both",
-        "share_potential": 9,
-        "marketing_speak_risk": 1
-      }
-    },
-    {
-      "text": "The best part about the death of remakes? We finally have to trust our own writers. We have to trust our own language and its unique rhythm, instead of trying to sound like someone else.",
-      "ratings": {
-        "curiosity": 8,
-        "relatability": "Industry peers",
-        "share_potential": 8,
-        "marketing_speak_risk": 1
-      }
-    },
-    {
-      "text": "Now that we can't copy anymore, we actually have to write. It's a scary time to be a lazy filmmaker in Odisha, but a great time to be a real one.",
-      "ratings": {
-        "curiosity": 9,
-        "relatability": "Industry peers",
-        "share_potential": 9,
-        "marketing_speak_risk": 1
-      }
-    }
+    "If you make a character from Sambalpur speak the exact same flat, standardized Odia as someone from Cuttack, you aren’t just being lazy with the writing—you’re flattening the map. The sharp sass in Cuttacki street slang and the heavy, rhythmic warmth of Sambalpuri carry entirely different worldviews, not just different pronunciations.",
+    "We often water down our dialects on screen because we're afraid a section of the audience won't understand. But people don't watch films for perfect translation; they watch for truth. If a character from Bargarh doesn't sound like Bargarh, the magic is gone.",
+    "I was reading through a script last week where a character from Balasore sounded exactly like a news reader from DD Odia. We had to scratch it. The grit of our stories lies in the local flavor, not the standardized dictionary.",
+    "Dialect isn't just a gimmick or a comic relief tool. It's identity. When we force a 'neutral' Odia on screen, we lose the humor, the grit, and the texture of how our people actually live.",
+    "My son asked me why two characters in an old Odia movie sounded exactly the same even though one was from Rourkela and the other from Puri. It made me realize how long we've been lazy with our writing.",
+    "When we write dialogue, we often write for convenience, not reality. But the real joy is in the rhythm—the heavy, melodic pull of Sambalpur vs. the fast, sharp delivery of Cuttack. Let's let them breathe on screen.",
+    "You can't fake the warmth of a Sambalpuri conversation. It’s not just about changing a few words at the end of a sentence; it’s about a completely different way of looking at the world.",
+    "Every time we sterilize our language for the sake of 'broader reach,' we lose what makes regional cinema actually special. The audience wants the dirt, the local tea-stall gossip, the real deal.",
+    "It takes extra effort to coach actors on specific regional dialects, but the payoff on the monitor is unmatched. The moment the voice fits the face and the place, the scene just works.",
+    "If we want to build a real OTT wave in Odisha, we have to stop treating our diverse dialects as regional accents that need fixing. They are our biggest strength."
   ],
   "comment_bait_questions": [
-    {
-      "text": "For the writers here: what’s one hyper-local Odia slang or quirk you’ve been dying to put into a script but were told 'it won't appeal to everyone'?",
-      "ratings": {
-        "curiosity": 8,
-        "relatability": "Industry peers",
-        "share_potential": 7,
-        "marketing_speak_risk": 1
-      }
-    },
-    {
-      "text": "Which Odia movie from the last few years made you feel, 'Yes, this is exactly how we actually live and talk'?",
-      "ratings": {
-        "curiosity": 8,
-        "relatability": "General audience",
-        "share_potential": 8,
-        "marketing_speak_risk": 1
-      }
-    },
-    {
-      "text": "If you're a viewer: what's the one setting in Odisha (a specific town, a local festival, a subculture) you haven't seen on screen yet but want to?",
-      "ratings": {
-        "curiosity": 9,
-        "relatability": "General audience",
-        "share_potential": 8,
-        "marketing_speak_risk": 1
-      }
-    },
-    {
-      "text": "To my filmmaker peers: what’s the hardest part of pitching an original story to producers who are still stuck in the 2010s 'South remake' mindset?",
-      "ratings": {
-        "curiosity": 9,
-        "relatability": "Industry peers",
-        "share_potential": 7,
-        "marketing_speak_risk": 1
-      }
-    },
-    {
-      "text": "Do you think we’ve completely killed the remake, or is it just hiding under a different name on regional OTT platforms?",
-      "ratings": {
-        "curiosity": 8,
-        "relatability": "Both",
-        "share_potential": 8,
-        "marketing_speak_risk": 2
-      }
-    }
+    "Which Odia film or show do you think actually got the regional dialect 100% right without making it a caricature?",
+    "Writers, do you find yourselves fighting with producers to keep the local slang raw, or do they always ask to tone it down?",
+    "As a viewer, does a slightly off-accent ruin a good performance for you, or can you look past it if the story is strong?",
+    "What's that one local slang word from your town that you’ve never heard spoken naturally on screen?",
+    "If we did a show set entirely in Western Odisha, would you want authentic Sambalpuri dialogue with subtitles, or a slightly simplified version?"
   ],
   "top_3": [
     {
-      "text": "I remember when 'writing' an Odia movie meant sitting in a room with a South DVD and a translator.",
-      "why": "It uses a sharp, self-deprecating historical truth about regional cinema that immediately validates the writer's insider credentials. It is witty, punchy, and highly relatable to anyone who observed the industry over the last two decades."
+      "text": "A Cuttack boy and a Sambalpur boy don’t just speak differently—they think differently.",
+      "why": "High curiosity and high relatability for both industry peers and general audience. It immediately sets up a cultural tension and contrasts two distinct worldviews without using marketing jargon."
     },
     {
-      "text": "Now that we can't copy anymore, we actually have to write. It's a scary time to be a lazy filmmaker in Odisha, but a great time to be a real one.",
-      "why": "It draws a clear line in the sand between the old guard and the new wave. It challenges industry peers while giving the general audience a reason to cheer for the future of local content."
+      "text": "We need to stop writing every Odia character like they grew up in the exact same pincode.",
+      "why": "Strong share potential. It’s a bold, slightly punchy statement that criticizes a real, ongoing issue in regional writing, making it highly relatable to people who want to see authentic stories."
     },
     {
-      "text": "If you're a viewer: what's the one setting in Odisha (a specific town, a local festival, a subculture) you haven't seen on screen yet but want to?",
-      "why": "It shifts the conversation from passive consumption to active collaboration. It respects the audience's intelligence and roots the discussion deeply in geography and local culture."
+      "text": "If you make a character from Sambalpur speak the exact same flat, standardized Odia as someone from Cuttack, you aren’t just being lazy with the writing—you’re flattening the map.",
+      "why": "This is an incredibly strong long-form opener for Facebook. It avoids sounding like a generic corporate post, instantly establishing the author as an insider who cares about the actual craft and geography of storytelling."
     }
   ]
 }
