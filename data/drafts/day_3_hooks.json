@@ -1,52 +1,292 @@
 {
   "hooks": [
-    "My six-year-old just called me out on my composition.",
-    "Spent thirty minutes today explaining negative space to a kid playing with Legos.",
-    "Kids don't know what 'rule of thirds' means, but they feel it.",
-    "\"Why can't the green Lego guy just stand in the middle?\"",
-    "I block scenes for a living, but today a six-year-old schooled me.",
-    "We worry so much about framing theory, but children just get it.",
-    "Teaching composition to my son using green Legos and a plastic castle.",
-    "Why do we lose our natural sense of visual balance as we grow up?",
-    "My son's Lego castle has better framing than my first short film.",
-    "No camera, no monitor, just two Lego blocks and a lesson in framing.",
-    "He didn't care about the term 'room to breathe,' but he got the geometry.",
-    "Film school takes four years; a box of Legos takes twenty minutes.",
-    "Trying to explain to my son why center-framing isn't always the answer.",
-    "His composition is already looking cleaner than mine.",
-    "A green Lego guy, a plastic castle, and a sudden lesson in visual storytelling."
+    {
+      "text": "Cuttack streetlights don't just shine; they sweat.",
+      "ratings": {
+        "curiosity": "High",
+        "relatability": "Strong connection for locals, intriguing for outsiders",
+        "share_potential": "High",
+        "corporate_risk": "None - feels highly artistic and poetic"
+      }
+    },
+    {
+      "text": "We spent three hours in Resolve just trying to get the sweat right.",
+      "ratings": {
+        "curiosity": "High",
+        "relatability": "Instantly speaks to industry peers who know the grading struggle",
+        "share_potential": "Medium",
+        "corporate_risk": "None"
+      }
+    },
+    {
+      "text": "If you grew up in these lanes, you know this exact shade of yellow.",
+      "ratings": {
+        "curiosity": "Medium",
+        "relatability": "Pure nostalgia for a general regional audience",
+        "share_potential": "Very High",
+        "corporate_risk": "None"
+      }
+    },
+    {
+      "text": "A default warm LUT cannot replicate a Cuttack summer night.",
+      "ratings": {
+        "curiosity": "Medium",
+        "relatability": "High for filmmakers; accessible enough for film fans",
+        "share_potential": "High",
+        "corporate_risk": "None"
+      }
+    },
+    {
+      "text": "Most digital cameras hate Cuttack's humidity. We had to paint it back in.",
+      "ratings": {
+        "curiosity": "High",
+        "relatability": "Great hook for technical peers and cinema lovers",
+        "share_potential": "Medium",
+        "corporate_risk": "None"
+      }
+    },
+    {
+      "text": "Why do digital yellow tones always look so fake?",
+      "ratings": {
+        "curiosity": "High",
+        "relatability": "Direct question that gets film geeks talking",
+        "share_potential": "Medium",
+        "corporate_risk": "None"
+      }
+    },
+    {
+      "text": "This isn't just a color grade; it's a memory of 2 AM wanderings.",
+      "ratings": {
+        "curiosity": "Medium",
+        "relatability": "Leans heavily into personal and cultural connection",
+        "share_potential": "High",
+        "corporate_risk": "None"
+      }
+    },
+    {
+      "text": "We shot this in flat log, but the air that night was heavy.",
+      "ratings": {
+        "curiosity": "High",
+        "relatability": "Good mix of technical terminology and sensory writing",
+        "share_potential": "Medium",
+        "corporate_risk": "None"
+      }
+    },
+    {
+      "text": "How do you color grade the smell of old damp walls?",
+      "ratings": {
+        "curiosity": "Very High",
+        "relatability": "Appeals to anyone who values sensory filmmaking",
+        "share_potential": "High",
+        "corporate_risk": "None"
+      }
+    },
+    {
+      "text": "Standard cinematic lookbooks don't work for Odisha.",
+      "ratings": {
+        "curiosity": "High",
+        "relatability": "Hits the sweet spot of regional pride and filmmaking craft",
+        "share_potential": "Very High",
+        "corporate_risk": "None"
+      }
+    },
+    {
+      "text": "We split the midtone yellows because the raw footage looked too clean.",
+      "ratings": {
+        "curiosity": "Medium",
+        "relatability": "Very high for editors, colorists, and directors",
+        "share_potential": "Low",
+        "corporate_risk": "None"
+      }
+    },
+    {
+      "text": "That specific, dusty orange of old streetlamps is hard to find now.",
+      "ratings": {
+        "curiosity": "Medium",
+        "relatability": "Warm, relatable nostalgic hook for general audience",
+        "share_potential": "High",
+        "corporate_risk": "None"
+      }
+    },
+    {
+      "text": "If the grade feels too clean, it isn't Cuttack.",
+      "ratings": {
+        "curiosity": "High",
+        "relatability": "High cultural and stylistic relevance",
+        "share_potential": "High",
+        "corporate_risk": "None"
+      }
+    },
+    {
+      "text": "My colorist wanted to use a standard film print LUT. I said no.",
+      "ratings": {
+        "curiosity": "High",
+        "relatability": "Great behind-the-scenes conflict for peers",
+        "share_potential": "Medium",
+        "corporate_risk": "None"
+      }
+    },
+    {
+      "text": "You can't shoot a regional thriller with a Hollywood color palette.",
+      "ratings": {
+        "curiosity": "High",
+        "relatability": "Very strong for regional cinema advocates",
+        "share_potential": "Very High",
+        "corporate_risk": "None"
+      }
+    }
   ],
   "caption_variations": [
-    "My son asked why the green Lego guy couldn’t just stand in the exact middle of his castle. We ended up having a half-hour chat about \"room to breathe\" and why corners feel alive. He didn't care about the jargon, but he got the geometry instantly.",
-    "I spend weeks blocking scenes for actors, but my kid just solved a framing issue with two Legos. He wanted his green toy in the center. I showed him how the corner gives it \"room to breathe.\" Now his Lego castle looks like an A24 frame.",
-    "\"Why can't he just stand in the middle?\" my son asked, holding a green Lego figure. Instead of a quick answer, we spent thirty minutes on the living room floor talking about visual breathing room. Kids are natural directors before we ruin them with theory.",
-    "We overcomplicate composition. My six-year-old wanted his Lego knight dead center in the castle. We shifted it to the side, talked about the empty space, and his eyes lit up. He got the geometry without needing the words.",
-    "It takes years of film school to learn what a child understands intuitively. Today, a conversation about a green Lego guy's placement in a plastic castle reminded me why we need to let our frames breathe.",
-    "No monitors, no red ink, just a Sunday morning on the floor with my son. He asked why his green Lego guy shouldn't go dead center. Thirty minutes later, he was talking about negative space without even knowing the word for it.",
-    "If you want to test your understanding of visual design, try explaining it to a kid with Legos. My son wanted his hero right in the middle. We moved him to the corner, and the whole story of his plastic castle changed.",
-    "Kids don't need text books to understand tension. My son moved his green Lego man to the edge of the castle wall because \"it felt like he was looking for someone.\" Honestly, his framing instinct is sharper than mine.",
-    "A green Lego guy, a plastic castle, and a lesson in keeping things simple. My son didn't care about the term \"negative space,\" but he immediately saw how moving the toy to the side made the castle feel huge.",
-    "Sometimes the best directing notes happen on the living room rug. My son wanted his Lego toy in the center. I told him to leave some room to breathe. He got the visual math instantly."
+    {
+      "text": "Cuttack streetlights don't just shine; they sweat. You can't capture that heavy, damp air with a ready-made filter. We spent hours in Resolve pulling the greens out and splitting the yellows to get this look. Slide 2 is raw log; Slide 3 is the graded frame. Does this feel like the nights you remember?",
+      "ratings": {
+        "curiosity": "High",
+        "relatability": "High balance of craft and local feel",
+        "share_potential": "High",
+        "corporate_risk": "None"
+      }
+    },
+    {
+      "text": "We spent three hours in Resolve just trying to get the sweat right. The raw footage (Slide 2) felt too digital and clean. To make these old lanes feel real, we had to push dust and humidity into the midtones. Look at Slide 3 to see how we split the yellows to mimic those old sodium lamps.",
+      "ratings": {
+        "curiosity": "High",
+        "relatability": "Strong peer appeal",
+        "share_potential": "Medium",
+        "corporate_risk": "None"
+      }
+    },
+    {
+      "text": "If you grew up in these lanes, you know this exact shade of yellow. It’s not clean. It’s damp, heavy, and smells like rain on old brick. Standard Hollywood LUTs don't work here. We built this from scratch in DaVinci. Slide 2 is the raw flat image. Slide 3 is where we landed. How close did we get?",
+      "ratings": {
+        "curiosity": "Medium",
+        "relatability": "Exceptional general audience appeal",
+        "share_potential": "Very High",
+        "corporate_risk": "None"
+      }
+    },
+    {
+      "text": "How do you color grade a memory? For us, Cuttack is defined by that heavy, dusty amber of old street lamps. It took a lot of node-splitting in Resolve to trap that exact humidity in the midtones. Slide 2 vs Slide 3 shows the process. No fancy tools, just trying to make digital feel real.",
+      "ratings": {
+        "curiosity": "High",
+        "relatability": "Deeply authentic and artistic",
+        "share_potential": "High",
+        "corporate_risk": "None"
+      }
+    },
+    {
+      "text": "My colorist initially went with a standard warm film look. I told him it looked too much like a commercial. Cuttack needs dirt, humidity, and age. We went back in and separated the yellows, pulling down the greens to match the actual lanes. Slide 2 is raw, Slide 3 is the final grade. What do you think?",
+      "ratings": {
+        "curiosity": "High",
+        "relatability": "Great behind-the-scenes narrative",
+        "share_potential": "Medium",
+        "corporate_risk": "None"
+      }
+    },
+    {
+      "text": "The camera sensor captures light, but it doesn't capture humidity. We had to paint that back in. Slide 2 shows the flat log frame, and Slide 3 is our final node layout where we isolated the old streetlamp yellows. It’s a lot of work for a quick night scene, but the atmosphere is everything.",
+      "ratings": {
+        "curiosity": "High",
+        "relatability": "Excellent technical breakdown",
+        "share_potential": "Medium",
+        "corporate_risk": "None"
+      }
+    },
+    {
+      "text": "You can't fake the dust-laden amber of a Cuttack streetlight. We spent a long night shift dialing in this specific color range. If you look at Slide 2 (raw) and Slide 3 (graded), you can see how the split-yellow technique brings out the heavy air. Does this match the alleyways you've walked?",
+      "ratings": {
+        "curiosity": "Medium",
+        "relatability": "Strong regional and peer connection",
+        "share_potential": "High",
+        "corporate_risk": "None"
+      }
+    },
+    {
+      "text": "If your grade is too clean, you've lost the story. Regional cinema needs local textures. For this night sequence, we avoided standard cinematic blue-and-orange looks. We wanted pure, dirty, humid amber. See Slide 2 for the raw log and Slide 3 for how we isolated the midtones. Thoughts?",
+      "ratings": {
+        "curiosity": "High",
+        "relatability": "Strong perspective on regional aesthetics",
+        "share_potential": "Very High",
+        "corporate_risk": "None"
+      }
+    },
+    {
+      "text": "A quick look at our workspace from last night. We were trying to match the actual color temperature of old Cuttack lanes. Modern LEDs are ruining this look in real life, so we had to reconstruct it in DaVinci. Slide 2 vs Slide 3. Let me know if you can feel the heat in this frame.",
+      "ratings": {
+        "curiosity": "Medium",
+        "relatability": "Highly personal and grounded",
+        "share_potential": "Medium",
+        "corporate_risk": "None"
+      }
+    },
+    {
+      "text": "We shot this in flat log (Slide 2), which looked completely dead. To bring back the physical feeling of a summer night, we spent hours adjusting the yellow channels (Slide 3). The goal wasn't to make it look 'pretty'—it was to make it feel heavy. Did we hit the mark?",
+      "ratings": {
+        "curiosity": "Medium",
+        "relatability": "Good simple process breakdown",
+        "share_potential": "Medium",
+        "corporate_risk": "None"
+      }
+    }
   ],
   "comment_bait_questions": [
-    "At what point in your life did you start noticing how things were framed, rather than just what was in the frame?",
-    "Do you remember the first film or scene that made you realize the middle of the frame isn't always the most powerful spot?",
-    "How do you unlearn all the technical rules when you're actually on set and just need to trust your gut?",
-    "What's the simplest way you've ever had to explain a complex visual concept to someone who doesn't work in film?",
-    "Do you find yourself naturally centering your subjects when you shoot, or do you instinctively look for the corners?"
+    {
+      "question": "For those who know Cuttack: does this yellow feel like the lanes near your house, or is it too dark?",
+      "ratings": {
+        "curiosity": "High",
+        "relatability": "Extremely high for locals",
+        "share_potential": "High",
+        "corporate_risk": "None"
+      }
+    },
+    {
+      "question": "Filmmakers: do you build custom show LUTs for night exteriors, or do you prefer grading shot-by-shot to match the actual streetlights?",
+      "ratings": {
+        "curiosity": "Medium",
+        "relatability": "Perfect for technical peers and industry discussions",
+        "share_potential": "Medium",
+        "corporate_risk": "None"
+      }
+    },
+    {
+      "question": "Does anyone else feel like modern digital sensors make Indian streetlights look way too clinical and green out of the box?",
+      "ratings": {
+        "curiosity": "High",
+        "relatability": "Great debate starter for cinematographers and editors",
+        "share_potential": "High",
+        "corporate_risk": "None"
+      }
+    },
+    {
+      "question": "What is one specific local texture or feeling from your hometown that you've struggled to translate visually?",
+      "ratings": {
+        "curiosity": "Very High",
+        "relatability": "Deeply engaging for creative minds and writers",
+        "share_potential": "Medium",
+        "corporate_risk": "None"
+      }
+    },
+    {
+      "question": "If you're from Odisha, which town has a completely different night vibe and color palette than this Cuttack amber?",
+      "ratings": {
+        "curiosity": "Medium",
+        "relatability": "Excellent for regional engagement and friendly town debates",
+        "share_potential": "High",
+        "corporate_risk": "None"
+      }
+    }
   ],
   "top_3": [
     {
-      "text": "\"Why can't the green Lego guy just stand in the middle?\"",
-      "why": "Extremely high curiosity because it starts mid-dialogue with a childlike question. Highly relatable to both general parents and film peers because it grounds a technical concept in a simple, domestic moment. Zero risk of sounding like generic marketing because it is a direct quote from a child, immediately establishing authenticity."
+      "text": "Cuttack streetlights don't just shine; they sweat.",
+      "why": "This hook is sensory, local, and completely avoids marketing clichés. It immediately creates a physical sensation in the reader's mind, appealing directly to both film lovers and anyone who has walked those streets at night."
     },
     {
-      "text": "My six-year-old just called me out on my composition.",
-      "why": "Instantly hooks the reader with a touch of self-deprecating wit. Peer relatability is high because filmmakers love talking about composition, while parents relate to getting humbled by their kids. High share potential as it balances professional life with raw personal truth."
+      "text": "Standard cinematic lookbooks don't work for Odisha.",
+      "why": "A strong, confident declaration of creative intent. It positions the creator as an industry authority pushing for regional authenticity over generic, Westernized visual templates. Highly shareable among local creators."
     },
     {
-      "text": "Film school takes four years; a box of Legos takes twenty minutes.",
-      "why": "A strong, punchy insider perspective that challenges formal film school pretense. It has great share potential among indie filmmakers and creative professionals who appreciate practical, intuitive learning over sterile theory. It sounds like an authentic thought straight from a director's notebook."
+      "text": "Cuttack streetlights don't just shine; they sweat. You can't capture that heavy, damp air with a ready-made filter. We spent hours in Resolve pulling the greens out and splitting the yellows to get this look. Slide 2 is raw log; Slide 3 is the graded frame. Does this feel like the nights you remember?",
+      "why": "This caption perfectly balances the technical craft of a hands-on director/editor with emotional, rooted storytelling. It feels like an actual note from a working filmmaker's journal rather than a social media strategy."
     }
   ]
 }
