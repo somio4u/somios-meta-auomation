@@ -388,3 +388,5 @@ RAW OUTPUT:
 
 - 2026-09-13 publisher_agent: OK sent for Telegram approval
 
+- 2026-09-13 performance_analyst: FAILED 400 error from Meta API: (#100) The value must be a valid insights metric
+
