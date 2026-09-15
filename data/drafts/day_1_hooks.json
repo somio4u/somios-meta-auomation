@@ -1,292 +1,292 @@
 {
   "hooks": [
     {
-      "text": "Left my desk for five minutes and lost my head writer job.",
+      "text": "Cuttack at 2 AM is never actually black.",
       "ratings": {
         "curiosity": 9,
-        "peer_relatability": 8,
+        "relatability": 8,
         "share_potential": 8,
-        "generic_marketing_risk": 2
+        "generic_risk": 2
       }
     },
     {
-      "text": "My seven-year-old just did a script doctor job on my new pilot.",
+      "text": "If you’ve walked down a Cuttack alley past midnight, you know this specific color.",
       "ratings": {
         "curiosity": 8,
-        "peer_relatability": 9,
-        "share_potential": 8,
-        "generic_marketing_risk": 1
-      }
-    },
-    {
-      "text": "Apparently, my dramatic pacing is \"too boring\" for a second grader.",
-      "ratings": {
-        "curiosity": 8,
-        "peer_relatability": 9,
-        "share_potential": 7,
-        "generic_marketing_risk": 1
-      }
-    },
-    {
-      "text": "Kids don't care about character arcs; they want laser-dogs.",
-      "ratings": {
-        "curiosity": 9,
-        "peer_relatability": 7,
+        "relatability": 10,
         "share_potential": 9,
-        "generic_marketing_risk": 2
+        "generic_risk": 1
       }
     },
     {
-      "text": "I've been writing drama for ten years, but my son just schooled me in three frames.",
-      "ratings": {
-        "curiosity": 8,
-        "peer_relatability": 8,
-        "share_potential": 7,
-        "generic_marketing_risk": 2
-      }
-    },
-    {
-      "text": "Note to self: never leave an open notebook near a seven-year-old.",
+      "text": "We shot this on a flat profile, but the air in the alley felt heavy.",
       "ratings": {
         "curiosity": 7,
-        "peer_relatability": 8,
-        "share_potential": 8,
-        "generic_marketing_risk": 1
+        "relatability": 6,
+        "share_potential": 5,
+        "generic_risk": 3
       }
     },
     {
-      "text": "The harshest script feedback I've ever received came from my own kid.",
-      "ratings": {
-        "curiosity": 9,
-        "peer_relatability": 9,
-        "share_potential": 8,
-        "generic_marketing_risk": 2
-      }
-    },
-    {
-      "text": "My son looked at my storyboard and asked why nobody was flying.",
+      "text": "Most camera sensors hate sodium-vapor streetlights. We decided to lean into them.",
       "ratings": {
         "curiosity": 8,
-        "peer_relatability": 7,
+        "relatability": 7,
+        "share_potential": 6,
+        "generic_risk": 2
+      }
+    },
+    {
+      "text": "The hardest part about shooting in Odisha during summer isn’t the heat—it’s the humidity on the lens.",
+      "ratings": {
+        "curiosity": 8,
+        "relatability": 9,
+        "share_potential": 8,
+        "generic_risk": 2
+      }
+    },
+    {
+      "text": "Why do we try so hard to make digital film look like a raw memory?",
+      "ratings": {
+        "curiosity": 9,
+        "relatability": 7,
+        "share_potential": 8,
+        "generic_risk": 3
+      }
+    },
+    {
+      "text": "This isn’t a filter. It’s three hours of arguing over shadows in the grading room.",
+      "ratings": {
+        "curiosity": 8,
+        "relatability": 8,
         "share_potential": 7,
-        "generic_marketing_risk": 1
+        "generic_risk": 2
       }
     },
     {
-      "text": "Just got replaced as director of my own project by a kid in pajamas.",
-      "ratings": {
-        "curiosity": 9,
-        "peer_relatability": 8,
-        "share_potential": 8,
-        "generic_marketing_risk": 2
-      }
-    },
-    {
-      "text": "He told me my dialogue has too many words. He's not wrong.",
-      "ratings": {
-        "curiosity": 8,
-        "peer_relatability": 9,
-        "share_potential": 7,
-        "generic_marketing_risk": 1
-      }
-    },
-    {
-      "text": "The newest member of our writers' room is seven and sleeps with a nightlight.",
-      "ratings": {
-        "curiosity": 9,
-        "peer_relatability": 8,
-        "share_potential": 9,
-        "generic_marketing_risk": 2
-      }
-    },
-    {
-      "text": "I spent three weeks on this scene. My kid fixed it in thirty seconds.",
-      "ratings": {
-        "curiosity": 8,
-        "peer_relatability": 9,
-        "share_potential": 8,
-        "generic_marketing_risk": 2
-      }
-    },
-    {
-      "text": "My son's pitch: \"Less talking, more laser-dogs.\"",
-      "ratings": {
-        "curiosity": 9,
-        "peer_relatability": 7,
-        "share_potential": 9,
-        "generic_marketing_risk": 1
-      }
-    },
-    {
-      "text": "This is what happens when you leave a storyboard pad open at home.",
+      "text": "The yellow of old Cuttack streets is a character of its own.",
       "ratings": {
         "curiosity": 7,
-        "peer_relatability": 8,
-        "share_potential": 7,
-        "generic_marketing_risk": 1
+        "relatability": 9,
+        "share_potential": 9,
+        "generic_risk": 3
       }
     },
     {
-      "text": "We worry so much about structure, but kids just go straight for the fun.",
+      "text": "Slide to see what the camera saw versus what we wanted you to feel.",
+      "ratings": {
+        "curiosity": 9,
+        "relatability": 8,
+        "share_potential": 7,
+        "generic_risk": 4
+      }
+    },
+    {
+      "text": "I’ve spent years trying to capture the exact shade of a dusty, humid night.",
+      "ratings": {
+        "curiosity": 8,
+        "relatability": 8,
+        "share_potential": 7,
+        "generic_risk": 2
+      }
+    },
+    {
+      "text": "Wet asphalt, yellow lights, and raw Log footage.",
       "ratings": {
         "curiosity": 7,
-        "peer_relatability": 8,
-        "share_potential": 7,
-        "generic_marketing_risk": 3
+        "relatability": 6,
+        "share_potential": 5,
+        "generic_risk": 2
+      }
+    },
+    {
+      "text": "You can’t fake the grit of our old towns with a clean studio light.",
+      "ratings": {
+        "curiosity": 8,
+        "relatability": 9,
+        "share_potential": 8,
+        "generic_risk": 3
+      }
+    },
+    {
+      "text": "Keeping the dark alive without losing the actor’s eyes.",
+      "ratings": {
+        "curiosity": 8,
+        "relatability": 7,
+        "share_potential": 6,
+        "generic_risk": 2
+      }
+    },
+    {
+      "text": "Our regional stories don't need to look clean to look beautiful.",
+      "ratings": {
+        "curiosity": 7,
+        "relatability": 9,
+        "share_potential": 9,
+        "generic_risk": 4
+      }
+    },
+    {
+      "text": "We did three drafts of this scene before we even looked at the color.",
+      "ratings": {
+        "curiosity": 9,
+        "relatability": 7,
+        "share_potential": 6,
+        "generic_risk": 2
       }
     }
   ],
   "caption_variations": [
     {
-      "text": "Left my script pad open for ten minutes and got replaced. My seven-year-old decided my dialogue was too slow and pitched a three-frame sequence involving a \"laser-dog.\" Honestly, his framing is bolder than mine. Might have to option this.",
-      "ratings": {
-        "curiosity": 8,
-        "peer_relatability": 9,
-        "share_potential": 8,
-        "generic_marketing_risk": 1
-      }
-    },
-    {
-      "text": "Spent all night tweaking a slow-burn dialogue scene for our next regional project. My seven-year-old found the notepad, crossed out three lines of subtext, and drew a dog shooting lasers out of its eyes. Sometimes we seriously overthink the draft.",
-      "ratings": {
-        "curiosity": 8,
-        "peer_relatability": 9,
-        "share_potential": 8,
-        "generic_marketing_risk": 1
-      }
-    },
-    {
-      "text": "The toughest critic in regional cinema is currently in the second grade. He took one look at my storyboard, called it \"too sleepy,\" and added a sci-fi twist. Honestly? His pacing is much tighter than mine.",
-      "ratings": {
-        "curiosity": 8,
-        "peer_relatability": 8,
-        "share_potential": 7,
-        "generic_marketing_risk": 2
-      }
-    },
-    {
-      "text": "Writers' room update: my son just pitched a three-frame sequence that makes my whole pilot look like a slow indie film. He wants a laser-dog. Honestly, it's a solid hook. Might run with it.",
+      "text": "Cuttack at 2 AM is never actually black. It’s this thick, humid amber that sticks to your skin. When we brought the raw Log footage into the suite, the first thing we did was push the shadows into that heavy, wet look. Slide to see how we got there.",
       "ratings": {
         "curiosity": 9,
-        "peer_relatability": 8,
+        "relatability": 8,
         "share_potential": 8,
-        "generic_marketing_risk": 1
+        "generic_risk": 2
       }
     },
     {
-      "text": "We spend years studying three-act structure and pacing. Then a seven-year-old with a red crayon shows you how to actually move a story forward. Less talking, more action. I'm taking notes.",
+      "text": "If you’ve walked down a Cuttack alley past midnight, you know this specific color. It’s that old sodium-vapor glow. In the grading room, the challenge was keeping the alley dark without losing the actor's eyes to the shadows.",
+      "ratings": {
+        "curiosity": 8,
+        "relatability": 9,
+        "share_potential": 8,
+        "generic_risk": 1
+      }
+    },
+    {
+      "text": "Clean digital night scenes feel fake to me. Our towns have dust, humidity, and broken streetlights. That’s what we wanted to capture here. Swipe to see the difference between the flat camera raw and the final grade.",
+      "ratings": {
+        "curiosity": 8,
+        "relatability": 8,
+        "share_potential": 7,
+        "generic_risk": 2
+      }
+    },
+    {
+      "text": "My colorist probably hated me when I said I wanted the shadows to look 'wet.' But look at the difference here. We pulled the flat Log footage right into that dusty amber hue.",
+      "ratings": {
+        "curiosity": 9,
+        "relatability": 7,
+        "share_potential": 6,
+        "generic_risk": 2
+      }
+    },
+    {
+      "text": "We shot this at 2 AM in a narrow alley. No giant lighting rigs, just one key light and the actual street atmosphere. Here is how we processed the raw footage to make the environment feel like a character.",
+      "ratings": {
+        "curiosity": 8,
+        "relatability": 7,
+        "share_potential": 7,
+        "generic_risk": 3
+      }
+    },
+    {
+      "text": "Why does modern digital cinema look so sterile? We’re fighting that by leaning into the raw, imperfect colors of our own backyard. This is Cuttack on a humid night, graded to lock in that local texture.",
+      "ratings": {
+        "curiosity": 8,
+        "relatability": 9,
+        "share_potential": 8,
+        "generic_risk": 3
+      }
+    },
+    {
+      "text": "Raw footage is just a canvas. The real storytelling happens when you decide what stays in the dark. We wanted the shadows heavy, but we needed the performance to cut through.",
+      "ratings": {
+        "curiosity": 8,
+        "relatability": 7,
+        "share_potential": 6,
+        "generic_risk": 2
+      }
+    },
+    {
+      "text": "There’s a specific yellow that lives in the older parts of our cities. It’s not clean, it’s not perfect, but it’s real. This breakdown shows how we preserved that sodium-vapor glow in DaVinci.",
       "ratings": {
         "curiosity": 7,
-        "peer_relatability": 9,
+        "relatability": 9,
         "share_potential": 8,
-        "generic_marketing_risk": 2
+        "generic_risk": 2
       }
     },
     {
-      "text": "Left my workspace for a cup of tea and came back to find my dialogue violently edited. My kid decided my characters talk too much. He replaced the subtext with a laser-dog. Might have to give him a co-writer credit on this one.",
+      "text": "Three hours of tweaking the midtones just to get the humidity to show up on screen. Was it worth it? Slide to see the raw vs. final frame and tell me.",
       "ratings": {
-        "curiosity": 8,
-        "peer_relatability": 9,
-        "share_potential": 8,
-        "generic_marketing_risk": 1
-      }
-    },
-    {
-      "text": "My son looked at my script layout and asked, \"Why are they just standing there?\" Good question. He fixed it with a three-frame action sequence. Kids are the ultimate script doctors.",
-      "ratings": {
-        "curiosity": 8,
-        "peer_relatability": 9,
-        "share_potential": 8,
-        "generic_marketing_risk": 1
-      }
-    },
-    {
-      "text": "You know you're overcomplicating a scene when your seven-year-old points out that a laser-dog would make the ending way better. Honestly, his framing has a lot of energy. I might be out of a job soon.",
-      "ratings": {
-        "curiosity": 8,
-        "peer_relatability": 8,
+        "curiosity": 9,
+        "relatability": 7,
         "share_potential": 7,
-        "generic_marketing_risk": 1
+        "generic_risk": 2
       }
     },
     {
-      "text": "House rules: lock your notebook. Otherwise, your kid will rewrite your gritty regional drama into a sci-fi blockbuster before lunch. Honestly, his storyboard pacing is elite.",
+      "text": "If the audience doesn't smell the dust in the air, we failed. That’s why we graded this scene with a heavy, warm bias instead of the usual cold, blue night look.",
       "ratings": {
-        "curiosity": 8,
-        "peer_relatability": 9,
-        "share_potential": 8,
-        "generic_marketing_risk": 2
-      }
-    },
-    {
-      "text": "Trying to build deep, realistic worlds, but my son is out here pitching pure cinema. His three-frame sequence has more momentum than my entire first act. Back to the drawing board.",
-      "ratings": {
-        "curiosity": 7,
-        "peer_relatability": 8,
-        "share_potential": 7,
-        "generic_marketing_risk": 2
+        "curiosity": 9,
+        "relatability": 9,
+        "share_potential": 9,
+        "generic_risk": 2
       }
     }
   ],
   "comment_bait_questions": [
     {
-      "question": "What's the weirdest script note your kid or family member has given you that actually made sense?",
+      "text": "When you're watching a thriller, does a clean, blue-tinted night take you out of the story, or do you prefer it over this kind of heavy, warm grit?",
       "ratings": {
         "curiosity": 8,
-        "peer_relatability": 9,
-        "share_potential": 8,
-        "generic_marketing_risk": 1
+        "relatability": 9,
+        "share_potential": 7,
+        "generic_risk": 2
       }
     },
     {
-      "question": "At what point in your creative process do you realize you're overcomplicating a simple scene?",
+      "text": "Fellow filmmakers: when you're shooting night exteriors on a tight budget, do you rely on grading to find the mood, or do you try to lock it all in on set?",
       "ratings": {
-        "curiosity": 7,
-        "peer_relatability": 9,
+        "curiosity": 8,
+        "relatability": 8,
         "share_potential": 6,
-        "generic_marketing_risk": 2
+        "generic_risk": 1
       }
     },
     {
-      "question": "If you had to add a \"laser-dog\" equivalent to your current project to fix the pacing, what would it be?",
+      "text": "What’s one specific visual detail in our old towns—like these yellow streetlights—that you rarely see captured right in Odia films?",
       "ratings": {
         "curiosity": 9,
-        "peer_relatability": 8,
-        "share_potential": 9,
-        "generic_marketing_risk": 1
+        "relatability": 9,
+        "share_potential": 8,
+        "generic_risk": 1
       }
     },
     {
-      "question": "Do you prefer writing tight, fast-paced action blocks, or do you always default to heavy dialogue first?",
-      "ratings": {
-        "curiosity": 7,
-        "peer_relatability": 9,
-        "share_potential": 6,
-        "generic_marketing_risk": 2
-      }
-    },
-    {
-      "question": "Who is the most honest, non-industry critic in your house who keeps your storytelling grounded?",
+      "text": "Do you think modern digital cameras have made us lazy with lighting, or has it just given us more room to play in post?",
       "ratings": {
         "curiosity": 8,
-        "peer_relatability": 9,
+        "relatability": 7,
+        "share_potential": 6,
+        "generic_risk": 2
+      }
+    },
+    {
+      "text": "For those who live here: does this grade actually feel like a Cuttack night to you, or is it too stylized?",
+      "ratings": {
+        "curiosity": 9,
+        "relatability": 10,
         "share_potential": 8,
-        "generic_marketing_risk": 1
+        "generic_risk": 1
       }
     }
   ],
   "top_3": [
     {
-      "text": "Left my desk for five minutes and lost my head writer job.",
-      "why": "It has an incredibly high curiosity loop. It sounds like real office/set drama, but immediately shifts into a lighthearted family story that shows the creator's human side without losing his filmmaker identity."
+      "text": "Cuttack at 2 AM is never actually black. It’s this thick, humid amber that sticks to your skin. When we brought the raw Log footage into the suite, the first thing we did was push the shadows into that heavy, wet look. Slide to see how we got there.",
+      "why": "It immediately establishes a sensory, local connection (Cuttack humidity) while transitioning smoothly into the technical craft of color grading. Highly relatable to both locals and filmmakers."
     },
     {
-      "text": "My seven-year-old just did a script doctor job on my new pilot.",
-      "why": "Using industry terms like 'script doctor' and 'pilot' keeps it highly relatable to industry peers, while the mention of his kid makes it warm and universally engaging for a general audience."
+      "text": "If the audience doesn't smell the dust in the air, we failed. That’s why we graded this scene with a heavy, warm bias instead of the usual cold, blue night look.",
+      "why": "Extremely strong artistic statement that rejects generic Hollywood/Bollywood grading templates in favor of visceral, regional authenticity."
     },
     {
-      "text": "If you had to add a \"laser-dog\" equivalent to your current project to fix the pacing, what would it be?",
-      "why": "It's a highly specific, fun, and creative prompt. It forces writers and film lovers to look at their serious work with some humor, driving highly entertaining comments instead of generic 'congrats' replies."
+      "text": "What’s one specific visual detail in our old towns—like these yellow streetlights—that you rarely see captured right in Odia films?",
+      "why": "It acts as genuine community engagement. It challenges local cinema fans to think critically about representation, texture, and regional aesthetic standards."
     }
   ]
 }
