@@ -22,7 +22,7 @@ def _raise_with_body(resp):
         raise requests.exceptions.HTTPError(f"{resp.status_code} error from Meta API: {detail}", response=resp)
 
 
-def get_page_insights(metrics="page_impressions,page_engaged_users", period="week"):
+def get_page_insights(metrics="page_impressions,page_post_engagements", period="week"):
     page_id = os.environ["META_PAGE_ID"]
     r = requests.get(f"{GRAPH}/{page_id}/insights",
                       params={"metric": metrics, "period": period},
