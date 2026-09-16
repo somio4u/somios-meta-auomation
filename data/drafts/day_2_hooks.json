@@ -1,52 +1,322 @@
 {
   "hooks": [
-    "We need to stop writing every Odia character like they grew up in the exact same pincode.",
-    "A Cuttack boy and a Sambalpur boy don’t just speak differently—they think differently.",
-    "If your script uses 'standard' Odia for a character from the west, you're losing the drama before the camera rolls.",
-    "I’ve sat in writers' rooms where we spent two hours arguing over a single Sambalpur verb.",
-    "Standardized language is the easiest way to kill a good character.",
-    "The magic isn't in the clean grammar; it's in the dirt of the street slang.",
-    "Why does every Odia OTT show sound like a textbook?",
-    "You can't capture Cuttack's attitude if your dialogue is grammatically perfect.",
-    "We are flattening our own map just to make things easy for the edit.",
-    "The moment a character speaks, you should know exactly which tea stall they hang out at.",
-    "People don't speak 'neutral' languages in real life.",
-    "A change in dialect changes the entire body language of an actor.",
-    "If you're writing a Western Odisha story from a desk in Bhubaneswar, it shows.",
-    "Audiences can smell fake regional accents from a mile away.",
-    "We don't need subtitles for our own soil."
+    {
+      "text": "We spent thirty years making people on screen talk like textbook chapters.",
+      "ratings": {
+        "curiosity": 8,
+        "industry_relatability": 9,
+        "general_relatability": 9,
+        "share_potential": 8,
+        "marketing_speak_risk": 1
+      }
+    },
+    {
+      "text": "Nobody says \"asrudhara\" when they're actually crying at home.",
+      "ratings": {
+        "curiosity": 9,
+        "industry_relatability": 7,
+        "general_relatability": 9,
+        "share_potential": 9,
+        "marketing_speak_risk": 1
+      }
+    },
+    {
+      "text": "The biggest spike in our watch-time happened when we stopped correcting the actors' grammar.",
+      "ratings": {
+        "curiosity": 9,
+        "industry_relatability": 9,
+        "general_relatability": 8,
+        "share_potential": 8,
+        "marketing_speak_risk": 2
+      }
+    },
+    {
+      "text": "If your characters sound like a news broadcast, your audience is already on Netflix.",
+      "ratings": {
+        "curiosity": 8,
+        "industry_relatability": 9,
+        "general_relatability": 7,
+        "share_potential": 8,
+        "marketing_speak_risk": 3
+      }
+    },
+    {
+      "text": "The best Odia scripts right now aren't being written in standard Cuttack dialect.",
+      "ratings": {
+        "curiosity": 8,
+        "industry_relatability": 8,
+        "general_relatability": 8,
+        "share_potential": 7,
+        "marketing_speak_risk": 2
+      }
+    },
+    {
+      "text": "We used to clean up the street language. Now, that's the only thing people want to watch.",
+      "ratings": {
+        "curiosity": 8,
+        "industry_relatability": 9,
+        "general_relatability": 8,
+        "share_potential": 8,
+        "marketing_speak_risk": 2
+      }
+    },
+    {
+      "text": "A Ganjami insult on screen is worth more than ten pages of poetic dialogue.",
+      "ratings": {
+        "curiosity": 9,
+        "industry_relatability": 8,
+        "general_relatability": 9,
+        "share_potential": 9,
+        "marketing_speak_risk": 1
+      }
+    },
+    {
+      "text": "For years, our movies sounded like they were written by schoolteachers.",
+      "ratings": {
+        "curiosity": 8,
+        "industry_relatability": 8,
+        "general_relatability": 9,
+        "share_potential": 8,
+        "marketing_speak_risk": 2
+      }
+    },
+    {
+      "text": "Listen to how people argue at a tea stall. That's your next hit show.",
+      "ratings": {
+        "curiosity": 8,
+        "industry_relatability": 9,
+        "general_relatability": 8,
+        "share_potential": 8,
+        "marketing_speak_risk": 2
+      }
+    },
+    {
+      "text": "You can't capture Baleswar on screen if your characters speak textbook Odia.",
+      "ratings": {
+        "curiosity": 7,
+        "industry_relatability": 7,
+        "general_relatability": 8,
+        "share_potential": 7,
+        "marketing_speak_risk": 1
+      }
+    },
+    {
+      "text": "Why did we think sanitizing our own language would make us look better?",
+      "ratings": {
+        "curiosity": 8,
+        "industry_relatability": 8,
+        "general_relatability": 8,
+        "share_potential": 7,
+        "marketing_speak_risk": 2
+      }
+    },
+    {
+      "text": "The data is in, and the messier the dialect, the longer people watch.",
+      "ratings": {
+        "curiosity": 9,
+        "industry_relatability": 9,
+        "general_relatability": 7,
+        "share_potential": 8,
+        "marketing_speak_risk": 3
+      }
+    },
+    {
+      "text": "My writer wanted to polish a Sambalpuri dialogue. I took his pen away.",
+      "ratings": {
+        "curiosity": 9,
+        "industry_relatability": 9,
+        "general_relatability": 8,
+        "share_potential": 8,
+        "marketing_speak_risk": 1
+      }
+    },
+    {
+      "text": "People don't want 'polite' cinema anymore. They want to hear their own kitchen arguments.",
+      "ratings": {
+        "curiosity": 8,
+        "industry_relatability": 7,
+        "general_relatability": 9,
+        "share_potential": 8,
+        "marketing_speak_risk": 1
+      }
+    },
+    {
+      "text": "We are finally making shows that sound like Odisha, not like a classroom.",
+      "ratings": {
+        "curiosity": 8,
+        "industry_relatability": 8,
+        "general_relatability": 9,
+        "share_potential": 9,
+        "marketing_speak_risk": 2
+      }
+    }
   ],
   "caption_variations": [
-    "If you make a character from Sambalpur speak the exact same flat, standardized Odia as someone from Cuttack, you aren’t just being lazy with the writing—you’re flattening the map. The sharp sass in Cuttacki street slang and the heavy, rhythmic warmth of Sambalpuri carry entirely different worldviews, not just different pronunciations.",
-    "We often water down our dialects on screen because we're afraid a section of the audience won't understand. But people don't watch films for perfect translation; they watch for truth. If a character from Bargarh doesn't sound like Bargarh, the magic is gone.",
-    "I was reading through a script last week where a character from Balasore sounded exactly like a news reader from DD Odia. We had to scratch it. The grit of our stories lies in the local flavor, not the standardized dictionary.",
-    "Dialect isn't just a gimmick or a comic relief tool. It's identity. When we force a 'neutral' Odia on screen, we lose the humor, the grit, and the texture of how our people actually live.",
-    "My son asked me why two characters in an old Odia movie sounded exactly the same even though one was from Rourkela and the other from Puri. It made me realize how long we've been lazy with our writing.",
-    "When we write dialogue, we often write for convenience, not reality. But the real joy is in the rhythm—the heavy, melodic pull of Sambalpur vs. the fast, sharp delivery of Cuttack. Let's let them breathe on screen.",
-    "You can't fake the warmth of a Sambalpuri conversation. It’s not just about changing a few words at the end of a sentence; it’s about a completely different way of looking at the world.",
-    "Every time we sterilize our language for the sake of 'broader reach,' we lose what makes regional cinema actually special. The audience wants the dirt, the local tea-stall gossip, the real deal.",
-    "It takes extra effort to coach actors on specific regional dialects, but the payoff on the monitor is unmatched. The moment the voice fits the face and the place, the scene just works.",
-    "If we want to build a real OTT wave in Odisha, we have to stop treating our diverse dialects as regional accents that need fixing. They are our biggest strength."
+    {
+      "text": "We spent decades writing Odia films in a language that literally nobody speaks at home. The moment we let Ganjami, Sambalpuri, and Baleswari slide into the dialogue uncut, the watch-times shot up. Turns out, people just wanted to hear themselves.",
+      "ratings": {
+        "curiosity": 8,
+        "industry_relatability": 9,
+        "general_relatability": 9,
+        "share_potential": 9,
+        "marketing_speak_risk": 1
+      }
+    },
+    {
+      "text": "Watch any old Odia movie and then listen to your neighbors. The gap is massive. We're finally closing that gap on OTT, and the response is wild.",
+      "ratings": {
+        "curiosity": 7,
+        "industry_relatability": 8,
+        "general_relatability": 9,
+        "share_potential": 8,
+        "marketing_speak_risk": 1
+      }
+    },
+    {
+      "text": "If you want to hook an audience, stop cleaning up the script. The typos of real life—the slang, the weird regional accents—are where the magic is.",
+      "ratings": {
+        "curiosity": 8,
+        "industry_relatability": 9,
+        "general_relatability": 8,
+        "share_potential": 8,
+        "marketing_speak_risk": 2
+      }
+    },
+    {
+      "text": "My son asked me why people on TV talk so 'differently' than his cousins in Sambalpur. It made me realize how much we've failed our regional roots. We're changing that now.",
+      "ratings": {
+        "curiosity": 9,
+        "industry_relatability": 7,
+        "general_relatability": 9,
+        "share_potential": 9,
+        "marketing_speak_risk": 1
+      }
+    },
+    {
+      "text": "It’s funny how we used to think regional dialects were 'uncouth' for cinema. Now, those are the exact projects holding the highest retention rates.",
+      "ratings": {
+        "curiosity": 8,
+        "industry_relatability": 9,
+        "general_relatability": 8,
+        "share_potential": 7,
+        "marketing_speak_risk": 2
+      }
+    },
+    {
+      "text": "A writer recently brought me a script with flawless, textbook Odia. I told him to go sit at a Cuttack tea stall for three hours and rewrite the whole thing.",
+      "ratings": {
+        "curiosity": 9,
+        "industry_relatability": 9,
+        "general_relatability": 8,
+        "share_potential": 8,
+        "marketing_speak_risk": 1
+      }
+    },
+    {
+      "text": "The math is simple: the more local we get, the wider the audience. Sambalpuri or Ganjami doesn't alienate viewers; it makes the world feel real.",
+      "ratings": {
+        "curiosity": 8,
+        "industry_relatability": 8,
+        "general_relatability": 8,
+        "share_potential": 7,
+        "marketing_speak_risk": 2
+      }
+    },
+    {
+      "text": "We used to dub over local inflections to make things 'standard.' What a waste of authentic talent. The raw grit is what people pay for.",
+      "ratings": {
+        "curiosity": 8,
+        "industry_relatability": 9,
+        "general_relatability": 8,
+        "share_potential": 8,
+        "marketing_speak_risk": 2
+      }
+    },
+    {
+      "text": "Ever notice how the best insults on streaming are always in a thick regional accent? You just can't write that in standard textbook language.",
+      "ratings": {
+        "curiosity": 9,
+        "industry_relatability": 8,
+        "general_relatability": 9,
+        "share_potential": 9,
+        "marketing_speak_risk": 1
+      }
+    },
+    {
+      "text": "The streaming era has killed the polite Odia hero. We want characters who sound like they just walked off a local bus in Balasore.",
+      "ratings": {
+        "curiosity": 8,
+        "industry_relatability": 8,
+        "general_relatability": 9,
+        "share_potential": 8,
+        "marketing_speak_risk": 1
+      }
+    }
   ],
   "comment_bait_questions": [
-    "Which Odia film or show do you think actually got the regional dialect 100% right without making it a caricature?",
-    "Writers, do you find yourselves fighting with producers to keep the local slang raw, or do they always ask to tone it down?",
-    "As a viewer, does a slightly off-accent ruin a good performance for you, or can you look past it if the story is strong?",
-    "What's that one local slang word from your town that you’ve never heard spoken naturally on screen?",
-    "If we did a show set entirely in Western Odisha, would you want authentic Sambalpuri dialogue with subtitles, or a slightly simplified version?"
+    {
+      "text": "Which Odia dialect has the best rhythm for a fast-paced thriller?",
+      "ratings": {
+        "curiosity": 9,
+        "industry_relatability": 9,
+        "general_relatability": 8,
+        "share_potential": 8,
+        "marketing_speak_risk": 1
+      }
+    },
+    {
+      "text": "Are we doing enough justice to Southern Odia dialects, or are we still treating them like comic relief?",
+      "ratings": {
+        "curiosity": 9,
+        "industry_relatability": 8,
+        "general_relatability": 9,
+        "share_potential": 9,
+        "marketing_speak_risk": 1
+      }
+    },
+    {
+      "text": "For the writers here: how do you write regional slang without making it hard for other regions to follow?",
+      "ratings": {
+        "curiosity": 8,
+        "industry_relatability": 10,
+        "general_relatability": 6,
+        "share_potential": 7,
+        "marketing_speak_risk": 1
+      }
+    },
+    {
+      "text": "What's one local slang word you've heard recently that absolutely belongs in a web series?",
+      "ratings": {
+        "curiosity": 9,
+        "industry_relatability": 8,
+        "general_relatability": 9,
+        "share_potential": 9,
+        "marketing_speak_risk": 1
+      }
+    },
+    {
+      "text": "If we did a show set entirely in a Western Odisha village, would we need subtitles for the coastal audience, or are we past that?",
+      "ratings": {
+        "curiosity": 9,
+        "industry_relatability": 9,
+        "general_relatability": 9,
+        "share_potential": 8,
+        "marketing_speak_risk": 1
+      }
+    }
   ],
   "top_3": [
     {
-      "text": "A Cuttack boy and a Sambalpur boy don’t just speak differently—they think differently.",
-      "why": "High curiosity and high relatability for both industry peers and general audience. It immediately sets up a cultural tension and contrasts two distinct worldviews without using marketing jargon."
+      "text": "Nobody says \"asrudhara\" when they're actually crying at home.",
+      "why": "It uses a specific, highly relatable contrast between textbook theatrical Odia and actual human behavior. It instantly connects with anyone who has watched classic regional cinema, avoiding all marketing buzzwords."
     },
     {
-      "text": "We need to stop writing every Odia character like they grew up in the exact same pincode.",
-      "why": "Strong share potential. It’s a bold, slightly punchy statement that criticizes a real, ongoing issue in regional writing, making it highly relatable to people who want to see authentic stories."
+      "text": "My writer wanted to polish a Sambalpuri dialogue. I took his pen away.",
+      "why": "This tells a micro-story from an insider creative director's point of view. It displays leadership, creative conviction, and respect for raw grassroots culture in one short, punchy sentence."
     },
     {
-      "text": "If you make a character from Sambalpur speak the exact same flat, standardized Odia as someone from Cuttack, you aren’t just being lazy with the writing—you’re flattening the map.",
-      "why": "This is an incredibly strong long-form opener for Facebook. It avoids sounding like a generic corporate post, instantly establishing the author as an insider who cares about the actual craft and geography of storytelling."
+      "text": "Are we doing enough justice to Southern Odia dialects, or are we still treating them like comic relief?",
+      "why": "A sharp, slightly provocative question that challenges industry norms. It invites serious discussion from both local film enthusiasts and writers, generating high-quality engagement rather than superficial comments."
     }
   ]
 }
