@@ -1,52 +1,292 @@
 {
   "hooks": [
-    "You can't fake a hundred years of dampness on a studio floor.",
-    "Old Cuttack at 5 PM does not need a production designer.",
-    "We spent three hours today squeezed between crumbling wooden doors and tangled cables.",
-    "No budget in the world can replicate the texture of an old Cuttack lane.",
-    "This is where our Episode 3 chase begins. No sets, just real grit.",
-    "Why do we spend lakhs on sets when Cuttack offers this for free?",
-    "If you want real tension, you don't build it. You find it.",
-    "Most art directors would cry trying to recreate this level of beautiful decay.",
-    "We found our Episode 3 location. It smells like old wood and rain.",
-    "You can't buy this kind of cinematic texture.",
-    "This lane has more character than half the sets we build.",
-    "Squeezing a camera crew through these alleys is going to be a nightmare. I can't wait.",
-    "Some stories can only be told where they actually happened.",
-    "We didn't design this. Cuttack did.",
-    "Forget green screens. Give me old wooden doors and tangled cables any day."
+    {
+      "text": "Cuttack at 2 AM is never actually black.",
+      "ratings": {
+        "curiosity": 9,
+        "relatability": 8,
+        "share_potential": 8,
+        "generic_risk": 2
+      }
+    },
+    {
+      "text": "If you’ve walked down a Cuttack alley past midnight, you know this specific color.",
+      "ratings": {
+        "curiosity": 8,
+        "relatability": 10,
+        "share_potential": 9,
+        "generic_risk": 1
+      }
+    },
+    {
+      "text": "We shot this on a flat profile, but the air in the alley felt heavy.",
+      "ratings": {
+        "curiosity": 7,
+        "relatability": 6,
+        "share_potential": 5,
+        "generic_risk": 3
+      }
+    },
+    {
+      "text": "Most camera sensors hate sodium-vapor streetlights. We decided to lean into them.",
+      "ratings": {
+        "curiosity": 8,
+        "relatability": 7,
+        "share_potential": 6,
+        "generic_risk": 2
+      }
+    },
+    {
+      "text": "The hardest part about shooting in Odisha during summer isn’t the heat—it’s the humidity on the lens.",
+      "ratings": {
+        "curiosity": 8,
+        "relatability": 9,
+        "share_potential": 8,
+        "generic_risk": 2
+      }
+    },
+    {
+      "text": "Why do we try so hard to make digital film look like a raw memory?",
+      "ratings": {
+        "curiosity": 9,
+        "relatability": 7,
+        "share_potential": 8,
+        "generic_risk": 3
+      }
+    },
+    {
+      "text": "This isn’t a filter. It’s three hours of arguing over shadows in the grading room.",
+      "ratings": {
+        "curiosity": 8,
+        "relatability": 8,
+        "share_potential": 7,
+        "generic_risk": 2
+      }
+    },
+    {
+      "text": "The yellow of old Cuttack streets is a character of its own.",
+      "ratings": {
+        "curiosity": 7,
+        "relatability": 9,
+        "share_potential": 9,
+        "generic_risk": 3
+      }
+    },
+    {
+      "text": "Slide to see what the camera saw versus what we wanted you to feel.",
+      "ratings": {
+        "curiosity": 9,
+        "relatability": 8,
+        "share_potential": 7,
+        "generic_risk": 4
+      }
+    },
+    {
+      "text": "I’ve spent years trying to capture the exact shade of a dusty, humid night.",
+      "ratings": {
+        "curiosity": 8,
+        "relatability": 8,
+        "share_potential": 7,
+        "generic_risk": 2
+      }
+    },
+    {
+      "text": "Wet asphalt, yellow lights, and raw Log footage.",
+      "ratings": {
+        "curiosity": 7,
+        "relatability": 6,
+        "share_potential": 5,
+        "generic_risk": 2
+      }
+    },
+    {
+      "text": "You can’t fake the grit of our old towns with a clean studio light.",
+      "ratings": {
+        "curiosity": 8,
+        "relatability": 9,
+        "share_potential": 8,
+        "generic_risk": 3
+      }
+    },
+    {
+      "text": "Keeping the dark alive without losing the actor’s eyes.",
+      "ratings": {
+        "curiosity": 8,
+        "relatability": 7,
+        "share_potential": 6,
+        "generic_risk": 2
+      }
+    },
+    {
+      "text": "Our regional stories don't need to look clean to look beautiful.",
+      "ratings": {
+        "curiosity": 7,
+        "relatability": 9,
+        "share_potential": 9,
+        "generic_risk": 4
+      }
+    },
+    {
+      "text": "We did three drafts of this scene before we even looked at the color.",
+      "ratings": {
+        "curiosity": 9,
+        "relatability": 7,
+        "share_potential": 6,
+        "generic_risk": 2
+      }
+    }
   ],
   "caption_variations": [
-    "Old Cuttack at 5 PM doesn’t need an art department. We spent the evening squeezed between decaying wooden doors and a messy web of black cables. You just can’t paint this kind of history onto a studio wall. This is the exact spot where our episode three chase sequence kicks off. Which frame feels the most raw to you—1, 2, or 3?",
-    "No set designer can match the damp, faded walls of these lanes. We were out scouting in Cuttack today, squeezed into alleys that haven't changed in a century. This is the backdrop for our big chase scene in Episode 3. Which frame has that real grit—1, 2, or 3?",
-    "There is a specific kind of beauty in Cuttack’s chaos. Tangled overhead wires, ancient wooden doors, and walls damp from years of monsoon. We’re staging a major chase here for Episode 3. It's going to be tight, messy, and absolutely real. Which shot catches your eye first?",
-    "I'll take a real, decaying Cuttack alley over a sterile studio floor any day. Spent the afternoon squeezing the camera team through 19th-century doorways for our upcoming series. Episode 3 starts right here. Frame 1, 2, or 3—which one feels most alive?",
-    "We spent hours today getting lost in the back alleys of Cuttack. You can smell the history in the wood and see the grit on the walls. It’s the perfect, chaotic setting for our next sequence. Swipe to see where the camera goes. Which frame speaks to you?",
-    "Production design is great, but Cuttack does it better. We found this perfect, claustrophobic spot for a key chase sequence in Episode 3. No paint, no artificial aging—just pure, unfiltered local texture. Tell me, which frame looks most intense?",
-    "Filming in real locations is a logistics nightmare, but look at these frames. You can't fake this level of wear and tear. This is where the tension builds in our new series. Which shot has the best mood—1, 2, or 3?",
-    "Sometimes the location does 90% of the work for you. We were scouting Cuttack lanes today, dodging cables and old wooden gates. This is the playground for our Episode 3 action. Which frame feels most cinematic to you?",
-    "You can't build soul. You have to go out and find it. These Cuttack alleys have been standing for a hundred years, and they are perfect for what we are shooting next month. Which of these three frames hits the hardest?",
-    "Behind the scenes of our location scout today. We're setting a high-stakes chase right in the heart of old Cuttack. Squeezing gear through here will be tough, but the visuals will be worth it. Which angle do you prefer?"
+    {
+      "text": "Cuttack at 2 AM is never actually black. It’s this thick, humid amber that sticks to your skin. When we brought the raw Log footage into the suite, the first thing we did was push the shadows into that heavy, wet look. Slide to see how we got there.",
+      "ratings": {
+        "curiosity": 9,
+        "relatability": 8,
+        "share_potential": 8,
+        "generic_risk": 2
+      }
+    },
+    {
+      "text": "If you’ve walked down a Cuttack alley past midnight, you know this specific color. It’s that old sodium-vapor glow. In the grading room, the challenge was keeping the alley dark without losing the actor's eyes to the shadows.",
+      "ratings": {
+        "curiosity": 8,
+        "relatability": 9,
+        "share_potential": 8,
+        "generic_risk": 1
+      }
+    },
+    {
+      "text": "Clean digital night scenes feel fake to me. Our towns have dust, humidity, and broken streetlights. That’s what we wanted to capture here. Swipe to see the difference between the flat camera raw and the final grade.",
+      "ratings": {
+        "curiosity": 8,
+        "relatability": 8,
+        "share_potential": 7,
+        "generic_risk": 2
+      }
+    },
+    {
+      "text": "My colorist probably hated me when I said I wanted the shadows to look 'wet.' But look at the difference here. We pulled the flat Log footage right into that dusty amber hue.",
+      "ratings": {
+        "curiosity": 9,
+        "relatability": 7,
+        "share_potential": 6,
+        "generic_risk": 2
+      }
+    },
+    {
+      "text": "We shot this at 2 AM in a narrow alley. No giant lighting rigs, just one key light and the actual street atmosphere. Here is how we processed the raw footage to make the environment feel like a character.",
+      "ratings": {
+        "curiosity": 8,
+        "relatability": 7,
+        "share_potential": 7,
+        "generic_risk": 3
+      }
+    },
+    {
+      "text": "Why does modern digital cinema look so sterile? We’re fighting that by leaning into the raw, imperfect colors of our own backyard. This is Cuttack on a humid night, graded to lock in that local texture.",
+      "ratings": {
+        "curiosity": 8,
+        "relatability": 9,
+        "share_potential": 8,
+        "generic_risk": 3
+      }
+    },
+    {
+      "text": "Raw footage is just a canvas. The real storytelling happens when you decide what stays in the dark. We wanted the shadows heavy, but we needed the performance to cut through.",
+      "ratings": {
+        "curiosity": 8,
+        "relatability": 7,
+        "share_potential": 6,
+        "generic_risk": 2
+      }
+    },
+    {
+      "text": "There’s a specific yellow that lives in the older parts of our cities. It’s not clean, it’s not perfect, but it’s real. This breakdown shows how we preserved that sodium-vapor glow in DaVinci.",
+      "ratings": {
+        "curiosity": 7,
+        "relatability": 9,
+        "share_potential": 8,
+        "generic_risk": 2
+      }
+    },
+    {
+      "text": "Three hours of tweaking the midtones just to get the humidity to show up on screen. Was it worth it? Slide to see the raw vs. final frame and tell me.",
+      "ratings": {
+        "curiosity": 9,
+        "relatability": 7,
+        "share_potential": 7,
+        "generic_risk": 2
+      }
+    },
+    {
+      "text": "If the audience doesn't smell the dust in the air, we failed. That’s why we graded this scene with a heavy, warm bias instead of the usual cold, blue night look.",
+      "ratings": {
+        "curiosity": 9,
+        "relatability": 9,
+        "share_potential": 9,
+        "generic_risk": 2
+      }
+    }
   ],
   "comment_bait_questions": [
-    "For the filmmakers here: how do you handle sound design in a tight alley like this with all the natural echo?",
-    "If you're from Cuttack, did you instantly recognize this lane? Or is it too hidden?",
-    "Would you light a narrow space like this with warm, practical streetlights or keep it cold and blue for a chase?",
-    "What’s the biggest challenge you’ve faced when shooting action in extremely tight, real-world spaces?",
-    "Does a high-speed chase in a cramped lane feel more tense than one on a wide-open highway?"
+    {
+      "text": "When you're watching a thriller, does a clean, blue-tinted night take you out of the story, or do you prefer it over this kind of heavy, warm grit?",
+      "ratings": {
+        "curiosity": 8,
+        "relatability": 9,
+        "share_potential": 7,
+        "generic_risk": 2
+      }
+    },
+    {
+      "text": "Fellow filmmakers: when you're shooting night exteriors on a tight budget, do you rely on grading to find the mood, or do you try to lock it all in on set?",
+      "ratings": {
+        "curiosity": 8,
+        "relatability": 8,
+        "share_potential": 6,
+        "generic_risk": 1
+      }
+    },
+    {
+      "text": "What’s one specific visual detail in our old towns—like these yellow streetlights—that you rarely see captured right in Odia films?",
+      "ratings": {
+        "curiosity": 9,
+        "relatability": 9,
+        "share_potential": 8,
+        "generic_risk": 1
+      }
+    },
+    {
+      "text": "Do you think modern digital cameras have made us lazy with lighting, or has it just given us more room to play in post?",
+      "ratings": {
+        "curiosity": 8,
+        "relatability": 7,
+        "share_potential": 6,
+        "generic_risk": 2
+      }
+    },
+    {
+      "text": "For those who live here: does this grade actually feel like a Cuttack night to you, or is it too stylized?",
+      "ratings": {
+        "curiosity": 9,
+        "relatability": 10,
+        "share_potential": 8,
+        "generic_risk": 1
+      }
+    }
   ],
   "top_3": [
     {
-      "text": "Old Cuttack at 5 PM does not need a production designer.",
-      "why": "It instantly establishes the creative tension between studio polish and real-world grit. Highly relatable to filmmakers and deeply nostalgic for locals."
+      "text": "Cuttack at 2 AM is never actually black. It’s this thick, humid amber that sticks to your skin. When we brought the raw Log footage into the suite, the first thing we did was push the shadows into that heavy, wet look. Slide to see how we got there.",
+      "why": "It immediately establishes a sensory, local connection (Cuttack humidity) while transitioning smoothly into the technical craft of color grading. Highly relatable to both locals and filmmakers."
     },
     {
-      "text": "You can't fake a hundred years of dampness on a studio floor.",
-      "why": "Focuses on the technical reality of production design while using sensory, visual language. High curiosity factor."
+      "text": "If the audience doesn't smell the dust in the air, we failed. That’s why we graded this scene with a heavy, warm bias instead of the usual cold, blue night look.",
+      "why": "Extremely strong artistic statement that rejects generic Hollywood/Bollywood grading templates in favor of visceral, regional authenticity."
     },
     {
-      "text": "Squeezing a camera crew through these Cuttack alleys is going to be a nightmare. I can't wait.",
-      "why": "Feels incredibly authentic to set life. Shows the physical grind of filmmaking with a touch of wit, which appeals to industry peers and excites the audience."
+      "text": "What’s one specific visual detail in our old towns—like these yellow streetlights—that you rarely see captured right in Odia films?",
+      "why": "It acts as genuine community engagement. It challenges local cinema fans to think critically about representation, texture, and regional aesthetic standards."
     }
   ]
 }
