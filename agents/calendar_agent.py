@@ -11,16 +11,14 @@ from lib.persona import FULL_CONTEXT
 PROMPT = """{persona}
 Turn these ideas into a 5 day calendar: {ideas_json}
 
-Rotate across all six pillars so consecutive days never repeat the same
-pillar+platform combo, and so Personal Life / People & Reflection show up in
-this batch too, not just the professional pillars. Weight toward Instagram for
-Craft/Process/visual-Personal content, Facebook for Industry/Culture/Reflection
-content, per the platform split above — but the pillar just sets direction, the
-day's actual post has freedom within it.
+Order them for growth, not even rotation: Industry Scoops and Hot Takes should
+dominate (most days), with Project Highlights and Personal Life spaced in as the
+occasional change of pace — not the same pillar two days in a row, but don't force
+artificial variety just to rotate through every pillar equally either. Weight
+toward Instagram (the growth priority) per the platform split above.
 
 For each day return an object with: day (1-5), date, topic, pillar, platform,
-format, hook, best_posting_time, cta, goal (reach/engagement/shares/followers/
-industry_credibility).
+format, hook, best_posting_time, cta, goal (reach/engagement/shares/followers).
 
 Return a JSON array of 5 such objects.
 """

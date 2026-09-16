@@ -1,6 +1,8 @@
-"""Agent 6 — Visual Agent. For Craft/Process pillar posts, generates a
-moodboard/concept-art-style image via Gemini. Industry/Culture posts on Facebook
-are text-forward by default — visuals stay optional there."""
+"""Agent 6 — Visual Agent. For Industry Scoops / Hot Takes posts, generates a
+designed graphic-card image via Gemini (not a fake photo of real people/events —
+that would misrepresent insider content). Project Highlights and Personal Life
+should use real photos (supplied by the human), not AI-generated ones, so they
+stay text-only here by design."""
 import sys
 import os
 
@@ -8,7 +10,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from lib import storage
 from lib.gemini_api import generate_image, build_visual_prompt
 
-VISUAL_PILLARS = {"craft", "process"}
+VISUAL_PILLARS = {"hot take", "scoop"}
 
 
 def maybe_generate(topic: str, pillar: str, draft_id: str):

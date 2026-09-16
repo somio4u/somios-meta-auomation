@@ -13,17 +13,16 @@ PROMPT = """{persona}
 Here is my Page's data: {insights_json}
 
 Analyze:
-- How well does current content actually match my six pillars (Craft, Industry,
-  Process, Culture, Personal Life, People & Reflection)? Where has it drifted into
-  generic content, or overweighted the professional pillars at the expense of the
-  personal/reflective ones (or vice versa)?
+- How well does current content actually match my weighting (Industry Scoops ~45%,
+  Hot Takes ~25%, Project Highlights ~15%, Personal Life ~15%)? Has it drifted into
+  generic content, invented craft/on-set language that isn't real, or lost the
+  insider-identity focus that's supposed to drive growth?
 - Who is actually engaging with me, and which pillar do they respond to most?
-- Which format is winning per platform (IG: carousel/reel/story; FB: long-form/
-  milestone/dialogue)?
+- Which format is winning per platform (IG: carousel/reel/story; FB: long-form)?
 - What's silently killing my reach?
 
-Finish with a realistic 30 day roadmap that pulls content back toward the pillars,
-not away from them.
+Finish with a realistic roadmap that pulls content back toward the weighting,
+not away from it.
 """
 
 

@@ -38,21 +38,22 @@ CALENDAR_PROMPT = """{persona}
 Write a complete post for this topic: {topic}
 Pillar: {pillar} | Platform: {platform} | Format: {format}
 
-The pillar sets the general direction, not a fixed template — write what actually
-fits this specific topic:
-- If it's Craft/Process/Industry-with-a-project-angle: first line hook, a genuine
-  craft-focused insight or BTS moment, one line inviting comments, a natural CTA.
-- If it's Industry as current events/trends: ground it in something real and
-  specific happening in the space (a real trend, a real number, a real shift) —
-  not just an abstract opinion.
-- If it's Culture, People & Reflection, or Personal Life: write like an actual
-  person sharing a real thought, story, or moment — no forced camera/lighting/
-  craft language, no forced CTA if it doesn't fit, just something true and worth
-  reading. Family/personal content should read as genuinely personal, not branded.
+The pillar sets direction, not a fixed template — write what actually fits:
+- Industry Scoops: lead with the reveal/news itself, insider-voice, grounded only
+  in real verified information — never invent a specific claim to sound more "in
+  the know" than you actually are.
+- Hot Takes & Opinions: a clear, specific opinion or list — built to make people
+  agree/disagree in the comments, not just nod along.
+- Project Highlights: real credibility, tied to actual past work — craft language
+  is fine HERE specifically since it's about real work you actually did.
+- Personal Life: write like an actual person sharing a real moment — no industry
+  voice, no camera/lighting/craft language, no forced CTA, just something true.
+If it's a Reel format: write it as a short script/shot-list concept (what's said,
+what's shown, in order) — this is for the human to film, not an auto-published video.
 If Instagram: open with a line that stops the scroll before "see more."
 If Facebook: open with a line that earns a read (not a hook-for-hook's-sake line).
 """ + LANGUAGE_STYLE + """
-Write in the Voice defined above — perceptive, witty, insider, never corporate.
+Write in the Voice defined above — perceptive, sharp, insider, never corporate.
 Return ONLY the finished caption text, nothing else (no headers, no explanation).
 """
 
@@ -60,31 +61,32 @@ IMAGE_CONTEXT_PROMPT = """{persona}
 I'm sending you a photo with this context from me: "{context}"
 
 FIRST, work out what kind of moment this actually is — pick exactly one:
-- PROFESSIONAL: a poster, a shot from a project, a craft/BTS moment, anything
-  genuinely tied to your filmmaking work.
+- INDUSTRY: a poster, a project announcement, an industry event/person, anything
+  tied to your work — but as the insider/curator, NOT hands-on craft, UNLESS the
+  photo is clearly an actual live shoot you're on (then craft language is fine).
 - PERSONAL: family, your own life, a relationship, a personal moment or milestone —
-  nothing to do with your professional film work, even if the photo looks nice.
+  nothing to do with your work, even if the photo looks nice.
 - GENERIC: doesn't clearly fit either (a general thought, something AI-related,
   a random observation, etc).
 
 THEN write the post to match what you picked:
-- If PROFESSIONAL: write as the filmmaker persona — craft-focused insight tied to
-  what's in the image (lighting/color/framing/etc. ONLY if genuinely relevant to
-  what's actually in the photo), in the established Voice.
+- If INDUSTRY (not an actual live shoot): write as the insider — what this means,
+  why it matters, your actual take — NOT camera/lighting/color-grading language.
+- If INDUSTRY and it IS an actual live shoot: craft language is fine here.
 - If PERSONAL: do NOT mention camera angles, lighting, color grading, "on set," or
-  any filmmaking/craft language at all. Write like an actual person sharing a real
-  moment — warm, simple, honest. No OTT/film-industry framing.
-- If GENERIC: write naturally about what's actually there. Don't force a film angle
-  onto content that has nothing to do with filmmaking.
+  any industry/craft language at all. Write like an actual person sharing a real
+  moment — warm, simple, honest.
+- If GENERIC: write naturally about what's actually there. Don't force an industry
+  or film angle onto content that has nothing to do with it.
 
 Platform: {platform} (pillar as given: {pillar}, but override this in your own head
-if the content clearly isn't Professional — a personal or generic moment should
+if the content clearly isn't Industry — a personal or generic moment should
 just read as a normal, honest post, pillar label aside).
 """ + LANGUAGE_STYLE + """
 Hashtags — override the general rule above with this: only include hashtags that are
 genuinely specific to THIS post's actual subject. Never add #OdiaCinema, #OTTOdisha,
 or any film-industry hashtag to a PERSONAL or GENERIC post — those only belong on
-posts that are actually about your professional film work. Never use a generic
+posts that are actually about your industry work. Never use a generic
 label hashtag either way (#family, #beautiful, #personalpost, etc.) — a hashtag
 names the real specific thing, not the category. A personal post can go with zero
 hashtags, that's fine.

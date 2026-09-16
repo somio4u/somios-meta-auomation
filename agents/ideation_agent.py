@@ -14,20 +14,22 @@ claims of fact; if you have nothing verified to say, keep the idea general inste
 of fabricating a number to sound specific):
 {industry_facts}
 
-Generate 10 content ideas for the next 5 days, spread across ALL SIX pillars
-(Craft, Industry, Process, Culture, Personal Life, People & Reflection) — don't
-over-index on the professional ones. Include at least 3 that are Personal Life or
-People & Reflection, not just Craft/Industry/Process/Culture.
-Distribute across platforms per the Platform Split above; where an Industry idea
-can genuinely use one of the verified facts above, ground it in that — otherwise
-keep it a real, honest opinion rather than a fabricated data point.
+Generate 10 content ideas for the next 5 days, weighted by pillar like this (not
+equal rotation — this weighting is deliberate for growth):
+- 4-5 ideas: Industry Scoops — grounded ONLY in the verified facts above. If there
+  isn't enough real material for 4-5 genuine scoops, don't pad with invented ones —
+  fall back to Hot Takes instead.
+- 2-3 ideas: Hot Takes & Opinions — lists, rankings, sharp opinions, debate-bait.
+- 1-2 ideas: Project Highlights — real past work only.
+- 1-2 ideas: Personal Life — real, honest, zero industry voice.
 
-Vary genuinely: not every idea needs to be about your projects — books, plays,
-a colleague, your son, a person who inspired you this week, a moment of pride or
-struggle, are all fair game and should show up regularly, not as rare exceptions.
+Never invent camera/lighting/on-set/craft language for an idea unless the topic
+itself is explicitly about being hands-on on a real, current set.
 
-For every idea include: topic, pillar, platform, format, hook (the scroll-stopping
-IG hook or FB opening line), target_audience, why_it_fits_persona, why_now.
+For every idea include: topic, pillar, platform, format (note when a format is a
+Reel — that means a script/shot-list for the human to film, not an auto-published
+video), hook (the scroll-stopping IG hook or FB opening line), target_audience,
+why_it_fits_persona, why_now.
 
 Return a JSON array of 10 objects with exactly these keys: topic, pillar, platform,
 format, hook, target_audience, why_it_fits_persona, why_now.

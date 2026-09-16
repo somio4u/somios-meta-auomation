@@ -15,15 +15,17 @@ from agents import ideation_agent, calendar_agent
 PROMPT = """{persona}
 Reviewing a full month: {monthly_insights_json}
 
-Tell me: which pillar is building genuine audience/industry credibility vs. just
-reach, which platform is doing the heavier lifting, whether the persona is landing
-as a real, whole person (not just "hands-on filmmaker" and not generic page content
-either), ideal posting frequency per platform, KPIs to track weekly.
+Tell me: which pillar is actually driving growth (follows/shares/reach) vs. just
+existing, which platform is doing the heavier lifting, whether the insider identity
+is landing (people engaging like this account genuinely knows things first) or
+reading as generic page content, ideal posting frequency per platform, KPIs to
+track weekly.
 
-Recommend an updated pillar weighting across all six pillars (Craft, Industry,
-Process, Culture, Personal Life, People & Reflection) if one is underperforming or
-one is crowding out the others, and best formats to prioritize — this feeds into
-the next 5-day content batch, generated automatically right after this review.
+Recommend an updated weighting across the 4 pillars (Industry Scoops, Hot Takes &
+Opinions, Project Highlights, Personal Life — started at roughly 45/25/15/15) if
+one is underperforming or one is crowding out the others, and best formats to
+prioritize — this feeds into the next 5-day content batch, generated automatically
+right after this review.
 
 Give three growth scenarios: cautious, realistic, optimistic, based purely on actual
 data. No income or follower count promises.

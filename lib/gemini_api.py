@@ -48,11 +48,18 @@ def generate_image(prompt: str, out_path: str) -> str:
 
 
 def build_visual_prompt(topic: str, pillar: str) -> str:
-    base = (
-        "Cinematic concept-art / moodboard still for an Odia OTT production. "
-        "Moody, high-contrast color grade, film-still composition (not stock photo, "
-        "not corporate, not clip-art). Shallow depth of field, naturalistic lighting."
-    )
-    if pillar.lower() == "process":
-        base += " Style: raw behind-the-scenes monitor/set photo, slightly desaturated, documentary feel."
-    return f"{base}\nSubject/topic: {topic}"
+    """Generates a designed graphic-card style prompt — deliberately NOT a fake
+    photo of real people/events (that would be misleading for insider/scoop
+    content). This is for Hot Takes and Industry Scoops only; Project Highlights
+    and Personal Life should use real photos, not AI-generated ones."""
+    pillar_lower = pillar.lower()
+    if "hot take" in pillar_lower:
+        style = ("Bold, modern quote-card graphic design for an Instagram opinion post. "
+                 "Strong typography-led layout, high contrast, dark cinematic background "
+                 "texture (not a real photo of a specific person/place), editorial magazine feel.")
+    else:
+        style = ("Bold, modern 'breaking update' announcement graphic-card design for an "
+                 "Instagram industry-news post. Strong typography-led layout, high contrast, "
+                 "abstract cinematic background texture (not a real photo of a specific "
+                 "person/event), editorial feel.")
+    return f"{style}\nSubject/topic: {topic}"
