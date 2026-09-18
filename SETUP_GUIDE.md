@@ -150,14 +150,32 @@ You should now have three values in Notepad: `META_PAGE_ACCESS_TOKEN`, `META_PAG
 
 ---
 
-## STEP 5 — Get a Gemini API key
+## STEP 5 — Set up Gemini via Vertex AI (a GCP service account, not an API key)
 
-This one key powers everything the system generates — ideas, captions, hooks, analysis, and images.
+This is what powers everything the system generates — ideas, captions, hooks,
+analysis, and images. It uses Google Cloud's Vertex AI (a service account),
+not a plain Gemini API key — Google stopped accepting unrestricted API keys
+for this in September 2026, and a service account also never expires the way
+an API key can.
 
-1. In your browser, go to `https://aistudio.google.com/apikey`
-2. Sign in with a Google account if asked.
-3. Click **Create API Key**.
-4. Copy the key shown and label it **GEMINI_API_KEY** in Notepad.
+1. In your browser, go to `https://console.cloud.google.com/` and sign in.
+2. Create a new project (or pick an existing one) — note its **Project ID**
+   (not the display name; it's the short lowercase-with-hyphens id shown
+   under the project name). Copy it and label it **GCP_PROJECT_ID** in Notepad.
+3. Go to `https://console.cloud.google.com/apis/library/aiplatform.googleapis.com`
+   with that project selected, and click **Enable** (this turns on Vertex AI).
+   If prompted, link a billing account — Vertex AI's Gemini usage has a free tier.
+4. Go to `https://console.cloud.google.com/iam-admin/serviceaccounts` and click
+   **Create Service Account**. Give it any name (e.g. `content-bot`), click
+   **Create and Continue**, then under **Grant this service account access to
+   project** add the role **Vertex AI User**, and click **Done**.
+5. Click on the service account you just created → the **Keys** tab → **Add
+   Key** → **Create new key** → choose **JSON** → **Create**. A `.json` file
+   downloads automatically.
+6. Open that downloaded file in Notepad — you'll paste its *entire raw
+   contents* (starting with `{` and ending with `}`) as the
+   **GCP_SERVICE_ACCOUNT_KEY** secret in Step 8. Keep the file safe until then;
+   delete it afterward since it's a live credential.
 
 ---
 
@@ -187,7 +205,7 @@ Instagram's API needs to fetch your generated images from a genuinely public URL
 
 ---
 
-## STEP 8 — Add all 7 secrets to GitHub
+## STEP 8 — Add all 8 secrets to GitHub
 
 1. In your browser, go to your repository: `https://github.com/YOUR-USERNAME/odia-ott-content-system`
 2. Click **Settings** (top menu of the repo, not your account settings).
@@ -197,7 +215,8 @@ Instagram's API needs to fetch your generated images from a genuinely public URL
 
 | Name | Value |
 |---|---|
-| `GEMINI_API_KEY` | from Step 5 |
+| `GCP_PROJECT_ID` | from Step 5.2 |
+| `GCP_SERVICE_ACCOUNT_KEY` | the entire raw JSON file contents from Step 5.6 |
 | `META_PAGE_ACCESS_TOKEN` | from Step 4.13 |
 | `META_PAGE_ID` | from Step 4.14 |
 | `META_IG_BUSINESS_ID` | from Step 4.15 |
@@ -264,4 +283,5 @@ You don't need to keep your PC or the Telegram app open — GitHub runs the sche
 - **Posts stop going out after ~2 months**: your Meta token expired — redo Step 4, sections "Now the developer app" through "Turn it into a 60-day token", and update the `META_PAGE_ACCESS_TOKEN` secret in Step 8.
 - **Gemini image generation fails**: Google occasionally renames its image models. Check `https://ai.google.dev/gemini-api/docs/image-generation` for the current model id, then add a repository secret named `GEMINI_IMAGE_MODEL` with that id.
 - **Gemini text generation fails** (ideas/captions/hooks/reports): similarly, check `https://ai.google.dev/gemini-api/docs/models` for the current model id, then add a repository secret named `GEMINI_TEXT_MODEL` with that id.
+- **Gemini/Vertex calls fail with 403 Forbidden**: check that (1) the Vertex AI API is enabled on the project in `GCP_PROJECT_ID` (Step 5.3), and (2) the service account in `GCP_SERVICE_ACCOUNT_KEY` has the **Vertex AI User** role on that project (Step 5.4) — a service account with no role, or a role on the wrong project, is the usual cause.
 - **Instagram publish fails with "Only photo or video can be accepted as media type"**: your `IMGBB_API_KEY` secret is missing or wrong — recheck Step 7/8.

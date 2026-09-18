@@ -3,26 +3,24 @@ import base64
 import time
 import requests
 
+from lib import vertex_auth
+
 GEMINI_IMAGE_MODEL = os.environ.get("GEMINI_IMAGE_MODEL", "gemini-3.1-flash-image")
 RETRY_STATUS_CODES = {429, 500, 502, 503, 504}
 MAX_RETRIES = 7
 
 
 def generate_image(prompt: str, out_path: str) -> str:
-    """Generates an image with Gemini and writes it to out_path.
+    """Generates an image with Gemini (via Vertex AI) and writes it to out_path.
     Model names on Google's side change over time — if this starts failing,
     check https://ai.google.dev/gemini-api/docs/image-generation for the current
     model id and update GEMINI_IMAGE_MODEL (env var) accordingly."""
-    api_key = os.environ["GEMINI_API_KEY"]
-    url = (
-        f"https://generativelanguage.googleapis.com/v1beta/models/"
-        f"{GEMINI_IMAGE_MODEL}:generateContent?key={api_key}"
-    )
+    url = vertex_auth.endpoint(GEMINI_IMAGE_MODEL)
     payload = {"contents": [{"parts": [{"text": prompt}]}]}
 
     resp = None
     for attempt in range(MAX_RETRIES):
-        resp = requests.post(url, json=payload, timeout=120)
+        resp = requests.post(url, json=payload, headers=vertex_auth.auth_headers(), timeout=120)
         if resp.status_code in RETRY_STATUS_CODES and attempt < MAX_RETRIES - 1:
             time.sleep(min(2 ** attempt, 30))
             continue
