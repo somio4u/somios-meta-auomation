@@ -1,4 +1,4 @@
-# Project Status (last updated 2026-09-18, second pass)
+# Project Status (last updated 2026-09-18, third pass)
 
 Read this first if you're a new Claude Code session picking this project up —
 it covers what's actually happened and what's still open, faster than reading
@@ -64,40 +64,53 @@ Insider, Opinion, or Personal voice otherwise.
 - The calendar batch in progress at rebuild time was forced to regenerate so the
   next daily post reflects the new strategy immediately.
 
-## Active blocker: the pipeline has been silently stuck since 2026-09-17
+## Active blocker: migrated Gemini calls to Vertex AI, owner still needs to do the GCP setup
 
-No draft has gone to Telegram approval since 2026-09-16. Root cause, found by
-reading `data/reports/orchestrator_log_2026-09.md`:
+The pipeline has been silently stuck since 2026-09-17 — no draft has gone to
+Telegram approval since 09-16. Root cause, found by reading
+`data/reports/orchestrator_log_2026-09.md`: the calendar pointer hit
+`next_day: 6` on a 5-day batch, correctly triggering `auto_reseed`, which
+calls Gemini and got **`403 Forbidden`**. This was **not** a stale-model-id
+problem — Google retired unrestricted "Standard" Gemini API keys entirely in
+September 2026, and the `GEMINI_API_KEY` secret here was one of those.
 
-- The calendar pointer (`data/calendar/pointer.json`) hit `next_day: 6` on a
-  5-day batch, which correctly triggers `auto_reseed` in `orchestrator.py`.
-- `auto_reseed` calls the ideation agent, which calls Gemini via
-  `lib/llm_api.py`, which failed with **`403 Forbidden`** on 2026-09-17.
-- This is **not** a stale-model-id problem (the existing troubleshooting entry
-  in `SETUP_GUIDE.md` for that doesn't apply here). Google retired unrestricted
-  "Standard" Gemini API keys entirely in September 2026 — only "Authorization"
-  keys (bound to a service account) are accepted now. The `GEMINI_API_KEY`
-  secret in this repo is almost certainly an old Standard key.
-- Fix (needs the repo owner, not something a Claude Code session can do
-  itself): generate a new key at `https://aistudio.google.com/apikey` (new
-  keys there default to the Authorization type) and replace the
-  `GEMINI_API_KEY` GitHub secret with it. See `SETUP_GUIDE.md`'s troubleshooting
-  section for the same note.
-- Because `daily()` in `orchestrator.py` catches the reseed exception and
-  returns early (by design, so it doesn't crash the workflow), the GitHub
-  Actions run still shows green/"success" even though nothing was posted —
-  don't trust the Actions checkmark alone, check
-  `data/reports/orchestrator_log_2026-09.md` for `FAILED` lines too.
-- Made one code improvement while diagnosing this: `lib/llm_api.py` now raises
-  a specific error message pointing at this exact fix when Gemini returns 403,
-  instead of a bare HTTP error, so this doesn't require re-diagnosing next time.
-- Once the key is replaced, the very next `daily.yml` run (or a manual
-  `workflow_dispatch`) should self-heal: `auto_reseed` re-runs automatically
-  since the pointer was never advanced past the failed attempt.
+Rather than just rotate to a new-style "Authorization" key, the code has now
+been switched to call Gemini through **Vertex AI** (GCP service-account auth)
+instead of the Gemini Developer API (API-key auth) — this sidesteps the
+whole API-key deprecation class of problem going forward, since IAM service
+accounts don't expire the way API keys/rotate policies do.
+
+What changed in code (already committed/pushed to this branch):
+- New `lib/vertex_auth.py` — shared helper that turns a service-account JSON
+  key (`GCP_SERVICE_ACCOUNT_KEY` env var) into a Bearer token via `google-auth`,
+  and builds the `{location}-aiplatform.googleapis.com` endpoint URL from
+  `GCP_PROJECT_ID` (+ optional `GCP_LOCATION`, defaults to `us-central1`).
+- `lib/llm_api.py` and `lib/gemini_api.py` now call `vertex_auth.endpoint(...)`
+  with `vertex_auth.auth_headers()` instead of building a `?key=` URL.
+- `requirements.txt` gained `google-auth`.
+- All 5 workflow YAML files (`daily`, `weekly`, `monthly`, `poll_telegram`,
+  `seed`) now pass `GCP_PROJECT_ID` / `GCP_SERVICE_ACCOUNT_KEY` instead of
+  `GEMINI_API_KEY`.
+- `SETUP_GUIDE.md` Step 5 rewritten for the GCP project / Vertex AI API
+  enable / service account / IAM role / JSON key flow; secrets table and
+  troubleshooting section updated to match.
+
+What's still needed from the repo owner (can't be done from a Claude Code
+session — needs their Google Cloud console access):
+1. Create/pick a GCP project, note its Project ID.
+2. Enable the Vertex AI API on it.
+3. Create a service account, grant it the **Vertex AI User** role.
+4. Create a JSON key for it, download it.
+5. Add `GCP_PROJECT_ID` and `GCP_SERVICE_ACCOUNT_KEY` (the raw JSON file
+   contents) as GitHub repo secrets — `GEMINI_API_KEY` can be deleted once
+   this is confirmed working.
+6. Trigger `daily.yml` manually (or wait for the next scheduled run) — it
+   should self-heal on its own since the calendar pointer was never advanced
+   past the failed attempt.
 
 ## What to check / do next
 
-- **Do the Gemini key fix above first** — nothing else in this list matters
+- **Do the Vertex AI setup above first** — nothing else in this list matters
   until posts are flowing again.
 - Confirm the next daily post actually reflects the new Industry-Insider voice
   (not old craft/filmmaker language) — check Telegram after the next `daily.yml`
