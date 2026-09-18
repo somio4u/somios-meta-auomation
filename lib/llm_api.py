@@ -29,6 +29,15 @@ def call_llm(prompt: str, system: str = None, max_tokens: int = 4096, model: str
             last_error = resp
             time.sleep(min(2 ** attempt, 30))  # 1,2,4,8,16,30,30s
             continue
+        if resp.status_code == 403:
+            raise RuntimeError(
+                "Gemini API returned 403 Forbidden. As of September 2026 Google "
+                "rejects unrestricted 'Standard' API keys entirely — you likely need "
+                "a new 'Authorization' key instead. Generate one at "
+                "https://aistudio.google.com/apikey (keys created there now default "
+                "to the Authorization type) and update the GEMINI_API_KEY GitHub "
+                "secret. Raw response: " + resp.text[:500]
+            )
         resp.raise_for_status()
         data = resp.json()
         parts = data["candidates"][0]["content"]["parts"]

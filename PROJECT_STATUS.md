@@ -1,4 +1,4 @@
-# Project Status (last updated 2026-09-18)
+# Project Status (last updated 2026-09-18, second pass)
 
 Read this first if you're a new Claude Code session picking this project up —
 it covers what's actually happened and what's still open, faster than reading
@@ -64,8 +64,41 @@ Insider, Opinion, or Personal voice otherwise.
 - The calendar batch in progress at rebuild time was forced to regenerate so the
   next daily post reflects the new strategy immediately.
 
+## Active blocker: the pipeline has been silently stuck since 2026-09-17
+
+No draft has gone to Telegram approval since 2026-09-16. Root cause, found by
+reading `data/reports/orchestrator_log_2026-09.md`:
+
+- The calendar pointer (`data/calendar/pointer.json`) hit `next_day: 6` on a
+  5-day batch, which correctly triggers `auto_reseed` in `orchestrator.py`.
+- `auto_reseed` calls the ideation agent, which calls Gemini via
+  `lib/llm_api.py`, which failed with **`403 Forbidden`** on 2026-09-17.
+- This is **not** a stale-model-id problem (the existing troubleshooting entry
+  in `SETUP_GUIDE.md` for that doesn't apply here). Google retired unrestricted
+  "Standard" Gemini API keys entirely in September 2026 — only "Authorization"
+  keys (bound to a service account) are accepted now. The `GEMINI_API_KEY`
+  secret in this repo is almost certainly an old Standard key.
+- Fix (needs the repo owner, not something a Claude Code session can do
+  itself): generate a new key at `https://aistudio.google.com/apikey` (new
+  keys there default to the Authorization type) and replace the
+  `GEMINI_API_KEY` GitHub secret with it. See `SETUP_GUIDE.md`'s troubleshooting
+  section for the same note.
+- Because `daily()` in `orchestrator.py` catches the reseed exception and
+  returns early (by design, so it doesn't crash the workflow), the GitHub
+  Actions run still shows green/"success" even though nothing was posted —
+  don't trust the Actions checkmark alone, check
+  `data/reports/orchestrator_log_2026-09.md` for `FAILED` lines too.
+- Made one code improvement while diagnosing this: `lib/llm_api.py` now raises
+  a specific error message pointing at this exact fix when Gemini returns 403,
+  instead of a bare HTTP error, so this doesn't require re-diagnosing next time.
+- Once the key is replaced, the very next `daily.yml` run (or a manual
+  `workflow_dispatch`) should self-heal: `auto_reseed` re-runs automatically
+  since the pointer was never advanced past the failed attempt.
+
 ## What to check / do next
 
+- **Do the Gemini key fix above first** — nothing else in this list matters
+  until posts are flowing again.
 - Confirm the next daily post actually reflects the new Industry-Insider voice
   (not old craft/filmmaker language) — check Telegram after the next `daily.yml`
   run or trigger it manually from the Actions tab.
