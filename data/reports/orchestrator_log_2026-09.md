@@ -548,3 +548,5 @@ RAW OUTPUT:
       {
         "@type": "type.googleapis.com/google.rpc.ErrorIn
 
+- 2026-09-27 performance_analyst: FAILED 400 error from Meta API: (#100) The value must be a valid insights metric
+
