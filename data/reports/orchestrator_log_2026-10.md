@@ -7,3 +7,7 @@
       {
         "@type": "type.googleapis.com/google.rpc.ErrorIn
 
+- 2026-10-01 page_analyst: FAILED 400 error from Meta API: (#100) The value must be a valid insights metric
+
+- 2026-10-01 growth_director: FAILED 400 error from Meta API: (#100) The value must be a valid insights metric
+
