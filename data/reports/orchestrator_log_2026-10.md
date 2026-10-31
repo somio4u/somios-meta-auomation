@@ -231,3 +231,5 @@
 
 - 2026-10-30 auto_reseed: FAILED 404 Client Error: Not Found for url: https://us-central1-aiplatform.googleapis.com/v1/projects/somios-content-system/locations/us-central1/publishers/google/models/gemini-3.5-flash:generateContent
 
+- 2026-10-31 auto_reseed: FAILED 404 Client Error: Not Found for url: https://us-central1-aiplatform.googleapis.com/v1/projects/somios-content-system/locations/us-central1/publishers/google/models/gemini-3.5-flash:generateContent
+
