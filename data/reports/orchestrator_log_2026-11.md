@@ -2,3 +2,7 @@
 
 - 2026-11-01 performance_analyst: FAILED 400 error from Meta API: (#100) The value must be a valid insights metric
 
+- 2026-11-01 page_analyst: FAILED 400 error from Meta API: (#100) The value must be a valid insights metric
+
+- 2026-11-01 growth_director: FAILED 400 error from Meta API: (#100) The value must be a valid insights metric
+
